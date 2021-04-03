@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c56c0224.chunk.css",
+    "main.js": "/static/js/main.bb4aa9c7.chunk.js",
+    "main.js.map": "/static/js/main.bb4aa9c7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5972c62a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5972c62a.js.map",
+    "static/js/2.6545d1d0.chunk.js": "/static/js/2.6545d1d0.chunk.js",
+    "static/js/2.6545d1d0.chunk.js.map": "/static/js/2.6545d1d0.chunk.js.map",
+    "static/js/3.622babc2.chunk.js": "/static/js/3.622babc2.chunk.js",
+    "static/js/3.622babc2.chunk.js.map": "/static/js/3.622babc2.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.c56c0224.chunk.css.map": "/static/css/main.c56c0224.chunk.css.map",
+    "static/js/2.6545d1d0.chunk.js.LICENSE.txt": "/static/js/2.6545d1d0.chunk.js.LICENSE.txt",
+    "static/media/KadajLogo.ca0d18ea.png": "/static/media/KadajLogo.ca0d18ea.png",
+    "static/media/Warlock.3267526e.jpg": "/static/media/Warlock.3267526e.jpg",
+    "static/media/affimg2.02fb2d32.jpg": "/static/media/affimg2.02fb2d32.jpg",
+    "static/media/classlogo.98f5a5c5.png": "/static/media/classlogo.98f5a5c5.png",
+    "static/media/demoimg.a5d18a93.jpg": "/static/media/demoimg.a5d18a93.jpg",
+    "static/media/destroimg.ec3f0977.jpg": "/static/media/destroimg.ec3f0977.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5972c62a.js",
+    "static/js/2.6545d1d0.chunk.js",
+    "static/css/main.c56c0224.chunk.css",
+    "static/js/main.bb4aa9c7.chunk.js"
+  ]
+}
