@@ -4,7 +4,7 @@ const useStyles = makeStyles((theme) => ({
   background: {
     padding: "20px 0px",
     opacity: "0.9",
-    transition: "0.6s",
+    transition: "1s",
   },
   sticky: {
     display: "flex",
@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     position: "sticky",
     top: "0",
     zIndex: "1",
-    transition: "0.6s",
+    transition: "1s",
     height: "60px",
     alignContent: "center",
   },
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
   headerfontSticky: {
     margin: "0px 20px",
     display: "flex",
-    color: "black",
+    color: "#2e2e2e",
     fontFamily: "Poppins, sans-serif",
     justifyContent: "center",
   },

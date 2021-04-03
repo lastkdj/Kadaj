@@ -11,7 +11,7 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      const isTop = window.scrollY < 70;
+      const isTop = window.scrollY < 76;
 
       if (isTop === false) {
         setScrolled(true);
@@ -40,7 +40,7 @@ const Header = () => {
           <Grid container item xs={2}>
             <Typography
               className={classes.navbarLogo}
-              style={{ color: scrolled ? "black" : "white" }}
+              style={{ color: scrolled ? "#2e2e2e" : "white" }}
             >
               KADAJ
             </Typography>

@@ -67,7 +67,7 @@ const Main = () => {
       <Grid>
         <Typography className={classes.spec} style={{ textAlign: "center" }}>
           Specializations,{" "}
-          <span style={{ fontWeight: "400" }}>Select what's ideal</span>
+          <span style={{ fontWeight: "400" }}>Choose your destiny</span>
         </Typography>
       </Grid>
       <Grid
