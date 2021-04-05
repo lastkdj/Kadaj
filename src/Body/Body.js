@@ -1,30 +1,32 @@
 import React from "react";
-import Grid from "@material-ui/core/Grid";
-import Header from "../Header/Header";
-import Warlock from "../Img/Warlock.jpg";
 import Particles from "./Particles";
 import logo from "../Img/KadajLogo.png";
-import logo2 from "../Img/classlogo.png";
-import { makeStyles, Typography } from "@material-ui/core";
+import { makeStyles, Typography, Grid } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
+  kadajLogo: {
+    margin: "50px 20px 0px 150px",
+  },
+
   firstsectiontext: {
-    fontWeight: 700,
+    fontWeight: 500,
     color: "white",
     textDecoration: "none",
     textShadow: "2px 2px #000000",
     fontFamily: "Poppins, sans-serif",
     fontSize: "3em",
+    animation: "fadeIn ease 1.5s",
   },
 
   firstsectionh2: {
     color: "white",
     fontSize: "2em",
     margin: "0%",
-    fontWeight: "700",
+    fontWeight: 500,
     textDecoration: "none",
     textShadow: "2px 2px #000000",
     fontFamily: "Poppins, sans-serif",
+    animation: "fadeInBot ease 1.7s",
   },
 
   firstsectionspan: {
@@ -36,10 +38,11 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     textShadow: "2px 2px #000000",
     fontFamily: "Poppins, sans-serif",
+    animation: "fadeInBot ease 1.9s",
   },
 
   spec: {
-    fontWeight: 700,
+    fontWeight: 600,
     color: "black",
     textDecoration: "none",
     fontFamily: "Poppins, sans-serif",
@@ -50,16 +53,11 @@ const useStyles = makeStyles((theme) => ({
 const Body = () => {
   const classes = useStyles();
   return (
-    <Grid style={{ height: "110vh", backgroundImage: `url(${Warlock})` }}>
+    <Grid container alignItems="center" style={{ height: "106vh" }}>
       <Particles />
-      <Header />
-
-      <Grid
-        container
-        style={{ backgroundRepeat: "no-repeat", marginTop: "250px" }}
-      >
-        <Grid item style={{ marginLeft: "150px", marginTop: "150px" }}>
-          <img alt="logo" src={logo}></img>
+      <Grid container item style={{ backgroundRepeat: "no-repeat" }}>
+        <Grid item>
+          <img alt="logo" src={logo} className={classes.kadajLogo}></img>
         </Grid>
 
         <Grid item style={{ marginTop: "60px" }}>
@@ -84,9 +82,6 @@ const Body = () => {
               </span>
             </Typography>
           </Grid>
-        </Grid>
-        <Grid item style={{ marginLeft: "20px", marginTop: "420px" }}>
-          <img alt="logo2" src={logo2}></img>
         </Grid>
       </Grid>
     </Grid>

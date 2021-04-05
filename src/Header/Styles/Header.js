@@ -4,18 +4,21 @@ const useStyles = makeStyles((theme) => ({
   background: {
     padding: "20px 0px",
     opacity: "0.9",
-    transition: "1s",
+    transition: "all 0.5s ease-in-out",
+    height: "70px",
+    position: "absolute",
   },
   sticky: {
     display: "flex",
     padding: "20px 0px",
     backgroundColor: "white",
-    position: "sticky",
+    position: "fixed",
     top: "0",
     zIndex: "1",
-    transition: "1s",
+    transition: "all 0.3s ease-in-out",
     height: "60px",
     alignContent: "center",
+    boxShadow: "2px 7px 24px 12px rgba(0,0,0,0.1)",
   },
 
   headerfont: {
@@ -50,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     justifyContent: "center",
     alignItems: "center",
-    animation: "fadeInTop ease 2s",
+    animation: "fadeInTop ease 1s",
     margin: "0",
   },
 

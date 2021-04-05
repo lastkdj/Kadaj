@@ -1,4 +1,5 @@
 import React from "react";
+import "../Body/Styles.css";
 import { useEffect, useState } from "react";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
@@ -30,11 +31,7 @@ const Header = () => {
   };
 
   return (
-    <Grid
-      container
-      xs={12}
-      className={scrolled ? classes.sticky : classes.background}
-    >
+    <Grid container className={scrolled ? classes.sticky : classes.background}>
       <Grid container item xs={12} style={{ margin: "0px 450px" }}>
         <Grid container item xs={3} className={classes.menulist}>
           <Grid container item xs={2}>
@@ -63,7 +60,7 @@ const Header = () => {
                   scrolled ? classes.headerfontSticky : classes.headerfont
                 }
               >
-                Details
+                About
               </Typography>
             </li>
             <li className={classes.li}>
