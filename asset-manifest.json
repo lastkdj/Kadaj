@@ -1,28 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.c56c0224.chunk.css",
-    "main.js": "/static/js/main.9b71f3f0.chunk.js",
-    "main.js.map": "/static/js/main.9b71f3f0.chunk.js.map",
+    "main.css": "/static/css/main.e2794554.chunk.css",
+    "main.js": "/static/js/main.6f5cb7bf.chunk.js",
+    "main.js.map": "/static/js/main.6f5cb7bf.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1365618d.js",
     "runtime-main.js.map": "/static/js/runtime-main.1365618d.js.map",
-    "static/js/2.8d88a904.chunk.js": "/static/js/2.8d88a904.chunk.js",
-    "static/js/2.8d88a904.chunk.js.map": "/static/js/2.8d88a904.chunk.js.map",
+    "static/js/2.ead44f3a.chunk.js": "/static/js/2.ead44f3a.chunk.js",
+    "static/js/2.ead44f3a.chunk.js.map": "/static/js/2.ead44f3a.chunk.js.map",
     "static/js/3.d0bc6825.chunk.js": "/static/js/3.d0bc6825.chunk.js",
     "static/js/3.d0bc6825.chunk.js.map": "/static/js/3.d0bc6825.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.c56c0224.chunk.css.map": "/static/css/main.c56c0224.chunk.css.map",
-    "static/js/2.8d88a904.chunk.js.LICENSE.txt": "/static/js/2.8d88a904.chunk.js.LICENSE.txt",
+    "static/css/main.e2794554.chunk.css.map": "/static/css/main.e2794554.chunk.css.map",
+    "static/js/2.ead44f3a.chunk.js.LICENSE.txt": "/static/js/2.ead44f3a.chunk.js.LICENSE.txt",
     "static/media/KadajLogo.ca0d18ea.png": "/static/media/KadajLogo.ca0d18ea.png",
-    "static/media/Warlock.3267526e.jpg": "/static/media/Warlock.3267526e.jpg",
+    "static/media/index.css": "/static/media/Warlocknew.e5fe7311.jpg",
     "static/media/affimg2.02fb2d32.jpg": "/static/media/affimg2.02fb2d32.jpg",
     "static/media/classlogo.98f5a5c5.png": "/static/media/classlogo.98f5a5c5.png",
     "static/media/demoimg.a5d18a93.jpg": "/static/media/demoimg.a5d18a93.jpg",
-    "static/media/destroimg.ec3f0977.jpg": "/static/media/destroimg.ec3f0977.jpg"
+    "static/media/destroimg.ec3f0977.jpg": "/static/media/destroimg.ec3f0977.jpg",
+    "static/media/shape1light.f93b9617.jpg": "/static/media/shape1light.f93b9617.jpg",
+    "static/media/shape2.ac15f21c.jpg": "/static/media/shape2.ac15f21c.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.1365618d.js",
-    "static/js/2.8d88a904.chunk.js",
-    "static/css/main.c56c0224.chunk.css",
-    "static/js/main.9b71f3f0.chunk.js"
+    "static/js/2.ead44f3a.chunk.js",
+    "static/css/main.e2794554.chunk.css",
+    "static/js/main.6f5cb7bf.chunk.js"
   ]
 }
