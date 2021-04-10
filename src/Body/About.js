@@ -1,42 +1,42 @@
 import React, { useEffect } from "react";
 import "./Styles.css";
 import { Grid, makeStyles, Typography } from "@material-ui/core";
-import Asset1 from "../Img/shape1light.jpg";
+import Asset1 from "../Img/asset2.jpg";
+import about from "../Img/kadaj.png";
+import Awareness from "../Img/Awareness.png";
 
 const useStyles = makeStyles((theme) => ({
   asset1: {
     backgroundImage: `url(${Asset1})`,
-    filter: "opacity (80%)",
-    height: "70vh",
-    paddingTop: "70px",
+    height: "207.5vh",
+    marginTop: "90px",
   },
 
   about: {
     fontWeight: 700,
-    color: "#2e2e2e",
+    color: "white",
     textDecoration: "none",
     fontFamily: "Poppins, sans-serif",
     fontSize: "2.1em",
     animation: "fadeInBot ease 1.8s",
+    textShadow: "2px 2px #000000",
   },
 
   aboutText: {
     fontSize: "16px",
     fontWeight: 400,
     lineHeight: "26px",
-    color: "#6a6972",
+    color: "white",
     margin: 0,
     textAlign: "justify",
+    textShadow: "2px 2px #000000",
   },
 }));
 
 const About = () => {
-  const ref = React.useRef();
-
   useEffect(() => {
     const observerOptions = {
       root: null,
-      rootMargin: "0px",
       threshold: 0.7,
     };
 
@@ -44,7 +44,7 @@ const About = () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           // fade in observed elements that are in view
-          entry.target.classList.replace("fadeOut", "fadeIn");
+          entry.target.classList.replace("fadeOut", "fadeInLeft");
         } else {
           // fade out observed elements that are not in view
           return;
@@ -61,29 +61,95 @@ const About = () => {
     fadeElms.forEach((el) => observer.observe(el));
   }, []);
 
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      threshold: 0.7,
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // fade in observed elements that are in view
+          entry.target.classList.replace("fadeOut", "fadeInRight");
+        } else {
+          // fade out observed elements that are not in view
+          return;
+        }
+      });
+    };
+
+    const fadeElms = document.querySelectorAll(".aboutFadetwo");
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+    fadeElms.forEach((el) => observer.observe(el));
+  }, []);
+
   const classes = useStyles();
   return (
-    <Grid container justify="center" className={classes.asset1}>
-      <Grid container item xs={12} justify="flex-end" class="aboutFade fadeOut">
-        <Grid item xs={6} style={{ paddingRight: "20px" }}>
-          <Grid item xs={7}>
-            <Typography className={classes.about}>ABOUT ME</Typography>
+    <Grid container className={classes.asset1} id="About">
+      <Grid
+        container
+        item
+        xs={12}
+        style={{
+          justifyContent: "center",
+          paddingTop: "50px",
+          height: "650px",
+        }}
+      >
+        <Grid container item xs={6} class="aboutFade fadeOut">
+          <Typography className={classes.about}>ABOUT ME</Typography>
+          <Typography className={classes.aboutText}>
+            Hello friends! My name is Ricardo, I'm 31 years old. I'm a Top Tier
+            Warlock and I've been playing wow since Wotlk, I dedicate most of my
+            time optimizing my game, and also doing some programing. In this
+            oportunity I bring to you this website, for all the fellow warlocks
+            around the globe that need some sort of guidance to maximize their
+            playstyle, and help in a certain way their posibility of improvement
+          </Typography>
+        </Grid>
+        <Grid container item xs={6} class="aboutFadetwo fadeOut">
+          <img alt="about" src={about} style={{ width: "400px" }}></img>
+        </Grid>
+        <Grid
+          container
+          item
+          xs={12}
+          style={{ marginTop: "150px" }}
+          justify="center"
+        >
+          <Grid
+            container
+            item
+            xs={6}
+            justify="flex-end"
+            class="aboutFade fadeOut"
+          >
+            <img alt="about" src={Awareness}></img>
+          </Grid>
+
+          <Grid
+            container
+            item
+            xs={6}
+            justify="flex-end"
+            class="aboutFadetwo fadeOut"
+            style={{ width: "500px" }}
+          >
+            <Typography className={classes.about}>GUILD INFO</Typography>
             <Typography className={classes.aboutText}>
-              Hello friends! My name is Ricardo, I'm a warlock, Lorem Ipsum is
-              simply dummy text of the printing and typesetting industry. Lorem
-              Ipsum has been the industry's standard dummy text ever since the
-              1500s, when an unknown printer took a galley of type and scrambled
-              it to make a type specimen book. It has survived not only five
-              centuries, but also the leap into electronic typesetting,
-              remaining essentially unchanged. It was popularised in the 1960s
-              with the release of Letraset sheets containing Lorem Ipsum
-              passages, and more recently with desktop publishing software like
-              Aldus PageMaker including versions of Lorem Ipsum.
+              I Raid in the Guild Awareness in the Ragnaros US server. Currently
+              10/10 Mythic Castle Nathria, Top 2 Guild Latam We are a group of
+              dedicated raiders that try to make the best out of each raid
+              content. Most of the Raiders are located in South America so there
+              is not Toxicity at all... sure...
             </Typography>
           </Grid>
-          <Grid item xs={5}></Grid>
         </Grid>
-        <Grid item xs={6}></Grid>
       </Grid>
     </Grid>
   );

@@ -1,10 +1,11 @@
 import React from "react";
 import "../Body/Styles.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import useStyles from "./Styles/Header";
 import Button from "@material-ui/core/Button";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -35,33 +36,60 @@ const Header = () => {
       <Grid container item xs={12} style={{ margin: "0px 450px" }}>
         <Grid container item xs={3} className={classes.menulist}>
           <Grid container item xs={2}>
-            <Typography
-              className={classes.navbarLogo}
-              style={{ color: scrolled ? "#2e2e2e" : "white" }}
+            <Link
+              activeClass="active"
+              to="Home"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1000}
             >
-              KADAJ
-            </Typography>
+              <Typography
+                className={classes.navbarLogo}
+                style={{ color: scrolled ? "#2e2e2e" : "white" }}
+              >
+                KADAJ
+              </Typography>
+            </Link>
           </Grid>
         </Grid>
         <Grid container item xs={9} style={{ justifyContent: "flex-end" }}>
           <ul className={classes.ul}>
             <li className={classes.li}>
-              <Typography
-                className={
-                  scrolled ? classes.headerfontSticky : classes.headerfont
-                }
+              <Link
+                activeClass="active"
+                to="Specs"
+                spy={true}
+                smooth={true}
+                offset={-40}
+                duration={1000}
               >
-                Specs
-              </Typography>
+                <Typography
+                  className={
+                    scrolled ? classes.headerfontSticky : classes.headerfont
+                  }
+                >
+                  Specs
+                </Typography>
+              </Link>
             </li>
             <li className={classes.li}>
-              <Typography
-                className={
-                  scrolled ? classes.headerfontSticky : classes.headerfont
-                }
+              <Link
+                activeClass="active"
+                to="About"
+                spy={true}
+                smooth={true}
+                offset={-40}
+                duration={1000}
               >
-                About
-              </Typography>
+                <Typography
+                  className={
+                    scrolled ? classes.headerfontSticky : classes.headerfont
+                  }
+                >
+                  About
+                </Typography>
+              </Link>
             </li>
             <li className={classes.li}>
               <Typography

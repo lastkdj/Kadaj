@@ -1,7 +1,7 @@
 import { Grid } from "@material-ui/core";
 import "./Styles.css";
 import Paper from "@material-ui/core/Paper";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import { makeStyles, Typography } from "@material-ui/core";
 import affImage from "../Img/affimg2.jpg";
 import demoImage from "../Img/demoimg.jpg";
@@ -64,7 +64,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Spec = () => {
-  const ref = useRef();
   const classes = useStyles();
 
   useEffect(() => {
@@ -102,7 +101,7 @@ const Spec = () => {
   }, []);
 
   return (
-    <Grid>
+    <Grid id="Specs">
       <Grid
         class="fade fadeOut"
         style={{
@@ -146,7 +145,7 @@ const Spec = () => {
                 style={{
                   fontFamily: "Poppins, sans-serif",
                   fontSize: "2em",
-                  fontWeight: "700",
+                  fontWeight: "600",
                   color: "white",
                   marginBottom: "20px",
                 }}
@@ -182,7 +181,7 @@ const Spec = () => {
                 style={{
                   fontFamily: "Poppins, sans-serif",
                   fontSize: "2em",
-                  fontWeight: "700",
+                  fontWeight: "600",
                   color: "white",
                   marginBottom: "20px",
                 }}
@@ -218,7 +217,7 @@ const Spec = () => {
                 style={{
                   fontFamily: "Poppins, sans-serif",
                   fontSize: "2em",
-                  fontWeight: "700",
+                  fontWeight: "600",
                   color: "white",
                   marginBottom: "20px",
                 }}

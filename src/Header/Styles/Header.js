@@ -41,6 +41,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.4em",
     fontWeight: 700,
     color: "white",
+    cursor: "pointer",
   },
 
   menulist: {
@@ -60,6 +61,7 @@ const useStyles = makeStyles((theme) => ({
   li: {
     position: "relative",
     listStyle: "none",
+    cursor: "pointer",
   },
 }));
 
