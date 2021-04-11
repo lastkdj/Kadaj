@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import "./Styles.css";
 import { Grid, makeStyles, Typography } from "@material-ui/core";
-import Asset1 from "../Img/asset2.jpg";
+import Asset1 from "../Img/aboutwall.jpg";
 import about from "../Img/kadaj.png";
 import Awareness from "../Img/Awareness.png";
 
 const useStyles = makeStyles((theme) => ({
   asset1: {
     backgroundImage: `url(${Asset1})`,
-    height: "207.5vh",
+    height: "208vh",
     marginTop: "90px",
   },
 
@@ -146,7 +146,7 @@ const About = () => {
               10/10 Mythic Castle Nathria, Top 2 Guild Latam We are a group of
               dedicated raiders that try to make the best out of each raid
               content. Most of the Raiders are located in South America so there
-              is not Toxicity at all... sure...
+              is not Toxicity at all... yeah sure...
             </Typography>
           </Grid>
         </Grid>

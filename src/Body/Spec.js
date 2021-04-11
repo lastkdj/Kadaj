@@ -10,6 +10,7 @@ import aff from "../Img/aff.jpg";
 import demo from "../Img/demo.jpg";
 import destro from "../Img/destro.jpg";
 import logo2 from "../Img/classlogo.png";
+import { Link } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
   spec: {
@@ -115,7 +116,7 @@ const Spec = () => {
       <Grid class="fade fadeOut">
         <Typography className={classes.spec} style={{ textAlign: "center" }}>
           Specializations,{" "}
-          <span style={{ fontWeight: "400" }}>Choose your destiny</span>
+          <span style={{ fontWeight: "400" }}>Choose your Guide</span>
         </Typography>
       </Grid>
       <Grid
@@ -123,115 +124,142 @@ const Spec = () => {
         justify="center"
         style={{ marginTop: "30px", marginBottom: "30px" }}
       >
-        <Grid class="fadeaff fadeOut">
-          <Paper
-            style={{
-              width: "350px",
-              height: "445px",
-              margin: "0 20px",
-              borderRadius: "7px",
-              display: "flex",
-            }}
-            className={classes.onHoveraff}
-          >
-            <Grid
-              container
-              justify="flex-start"
-              direction="column-reverse"
-              alignItems="center"
-              className={classes.override}
+        <Link
+          activeClass="active"
+          to="Guides"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={1500}
+        >
+          <Grid class="fadeaff fadeOut">
+            <Paper
+              style={{
+                width: "350px",
+                height: "445px",
+                margin: "0 20px",
+                borderRadius: "7px",
+                display: "flex",
+              }}
+              className={classes.onHoveraff}
             >
-              <Typography
-                style={{
-                  fontFamily: "Poppins, sans-serif",
-                  fontSize: "2em",
-                  fontWeight: "600",
-                  color: "white",
-                  marginBottom: "20px",
-                }}
+              <Grid
+                container
+                justify="flex-start"
+                direction="column-reverse"
+                alignItems="center"
+                className={classes.override}
               >
-                Affliction
-              </Typography>
-              <img
-                src={aff}
-                alt="aff"
-                style={{ border: "solid", borderRadius: "40px" }}
-              />
-            </Grid>
-          </Paper>
-        </Grid>
-        <Grid class="fadeDemo fadeOut">
-          <Paper
-            style={{
-              width: "350px",
-              height: "445px",
-              margin: "0 20px",
-              borderRadius: "7px",
-              display: "flex",
-            }}
-            className={classes.onHoverdemo}
-          >
-            <Grid
-              container
-              justify="flex-start"
-              direction="column-reverse"
-              alignItems="center"
+                <Typography
+                  style={{
+                    fontFamily: "Poppins, sans-serif",
+                    fontSize: "2em",
+                    fontWeight: "600",
+                    color: "white",
+                    marginBottom: "20px",
+                  }}
+                >
+                  Affliction
+                </Typography>
+                <img
+                  src={aff}
+                  alt="aff"
+                  style={{ border: "solid", borderRadius: "40px" }}
+                />
+              </Grid>
+            </Paper>
+          </Grid>
+        </Link>
+        <Link
+          activeClass="active"
+          to="Guides"
+          spy={true}
+          smooth={true}
+          offset={900}
+          duration={1500}
+        >
+          <Grid class="fadeDemo fadeOut">
+            <Paper
+              style={{
+                width: "350px",
+                height: "445px",
+                margin: "0 20px",
+                borderRadius: "7px",
+                display: "flex",
+              }}
+              className={classes.onHoverdemo}
             >
-              <Typography
-                style={{
-                  fontFamily: "Poppins, sans-serif",
-                  fontSize: "2em",
-                  fontWeight: "600",
-                  color: "white",
-                  marginBottom: "20px",
-                }}
+              <Grid
+                container
+                justify="flex-start"
+                direction="column-reverse"
+                alignItems="center"
               >
-                Demonology
-              </Typography>
-              <img
-                src={demo}
-                alt="demo"
-                style={{ border: "solid", borderRadius: "40px" }}
-              />
-            </Grid>
-          </Paper>
-        </Grid>
-        <Grid class="fadeDestro fadeOut">
-          <Paper
-            style={{
-              width: "350px",
-              height: "445px",
-              margin: "0 20px",
-              borderRadius: "7px",
-              display: "flex",
-            }}
-            className={classes.onHoverdestro}
-          >
-            <Grid
-              container
-              justify="flex-start"
-              direction="column-reverse"
-              alignItems="center"
+                <Typography
+                  style={{
+                    fontFamily: "Poppins, sans-serif",
+                    fontSize: "2em",
+                    fontWeight: "600",
+                    color: "white",
+                    marginBottom: "20px",
+                  }}
+                >
+                  Demonology
+                </Typography>
+                <img
+                  src={demo}
+                  alt="demo"
+                  style={{ border: "solid", borderRadius: "40px" }}
+                />
+              </Grid>
+            </Paper>
+          </Grid>
+        </Link>
+        <Link
+          activeClass="active"
+          to="Guides"
+          spy={true}
+          smooth={true}
+          offset={1900}
+          duration={1500}
+        >
+          <Grid class="fadeDestro fadeOut">
+            <Paper
+              style={{
+                width: "350px",
+                height: "445px",
+                margin: "0 20px",
+                borderRadius: "7px",
+                display: "flex",
+              }}
+              className={classes.onHoverdestro}
             >
-              <Typography
-                style={{
-                  fontFamily: "Poppins, sans-serif",
-                  fontSize: "2em",
-                  fontWeight: "600",
-                  color: "white",
-                  marginBottom: "20px",
-                }}
+              <Grid
+                container
+                justify="flex-start"
+                direction="column-reverse"
+                alignItems="center"
               >
-                Destruction
-              </Typography>
-              <img
-                src={destro}
-                alt="destro"
-                style={{ border: "solid", borderRadius: "40px" }}
-              />
-            </Grid>
-          </Paper>
-        </Grid>
+                <Typography
+                  style={{
+                    fontFamily: "Poppins, sans-serif",
+                    fontSize: "2em",
+                    fontWeight: "600",
+                    color: "white",
+                    marginBottom: "20px",
+                  }}
+                >
+                  Destruction
+                </Typography>
+                <img
+                  src={destro}
+                  alt="destro"
+                  style={{ border: "solid", borderRadius: "40px" }}
+                />
+              </Grid>
+            </Paper>
+          </Grid>
+        </Link>
       </Grid>
     </Grid>
   );
