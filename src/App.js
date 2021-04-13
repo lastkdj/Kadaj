@@ -3,7 +3,7 @@ import Header from "./Header/Header";
 import Banner from "./Body/Banner";
 import Spec from "./Body/Spec";
 import About from "./Body/About";
-import Covenant from "./Body/Covenant";
+import VideosPOV from "./Body/VideosPOV";
 import Affliction from "./Body/Affliction";
 import { Grid } from "@material-ui/core";
 
@@ -14,7 +14,7 @@ function App() {
       <Banner />
       <Spec />
       <About />
-      <Covenant />
+      <VideosPOV />
       <Affliction />
     </Grid>
   );

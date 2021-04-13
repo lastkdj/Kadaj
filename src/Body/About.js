@@ -4,6 +4,7 @@ import { Grid, makeStyles, Typography } from "@material-ui/core";
 import Asset1 from "../Img/aboutwall.jpg";
 import about from "../Img/kadaj.png";
 import Awareness from "../Img/Awareness.png";
+import Void from "../Img/Voidsmall.png";
 
 const useStyles = makeStyles((theme) => ({
   asset1: {
@@ -140,7 +141,7 @@ const About = () => {
             class="aboutFadetwo fadeOut"
             style={{ width: "500px" }}
           >
-            <Typography className={classes.about}>GUILD INFO</Typography>
+            <Typography className={classes.about}>AWARENESS GUILD</Typography>
             <Typography className={classes.aboutText}>
               I Raid in the Guild Awareness in the Ragnaros US server. Currently
               10/10 Mythic Castle Nathria, Top 2 Guild Latam We are a group of
@@ -148,6 +149,38 @@ const About = () => {
               content. Most of the Raiders are located in South America so there
               is not Toxicity at all... yeah sure...
             </Typography>
+          </Grid>
+        </Grid>
+        <Grid
+          container
+          item
+          xs={12}
+          style={{ marginTop: "150px" }}
+          justify="center"
+        >
+          <Grid
+            container
+            item
+            xs={6}
+            justify="flex-end"
+            class="aboutFade fadeOut"
+            style={{ width: "500px" }}
+          >
+            <Typography className={classes.about}>THE VOID GUILD</Typography>
+            <Typography className={classes.aboutText}>
+              I Also Raid with my alt during the weekends, as a Vengance Demon
+              Hunter with some friends. This is more like a chill group, and we
+              usually seek to clear the content with no rush.
+            </Typography>
+          </Grid>
+          <Grid
+            container
+            item
+            xs={6}
+            justify="flex-end"
+            class="aboutFadetwo fadeOut"
+          >
+            <img alt="about" src={Void}></img>
           </Grid>
         </Grid>
       </Grid>
