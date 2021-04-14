@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Kadaj/static/css/main.78fd6c82.chunk.css",
-    "main.js": "/Kadaj/static/js/main.90bb0d0c.chunk.js",
-    "main.js.map": "/Kadaj/static/js/main.90bb0d0c.chunk.js.map",
+    "main.js": "/Kadaj/static/js/main.3a7f56db.chunk.js",
+    "main.js.map": "/Kadaj/static/js/main.3a7f56db.chunk.js.map",
     "runtime-main.js": "/Kadaj/static/js/runtime-main.d3bc555a.js",
     "runtime-main.js.map": "/Kadaj/static/js/runtime-main.d3bc555a.js.map",
     "static/js/2.b1ec8fc2.chunk.js": "/Kadaj/static/js/2.b1ec8fc2.chunk.js",
@@ -17,10 +17,10 @@
     "static/media/Voidsmall.e8c71754.png": "/Kadaj/static/media/Voidsmall.e8c71754.png",
     "static/media/index.css": "/Kadaj/static/media/Warlocknew.e5fe7311.jpg",
     "static/media/affimg2.02fb2d32.jpg": "/Kadaj/static/media/affimg2.02fb2d32.jpg",
+    "static/media/affwall3.bdb0d285.png": "/Kadaj/static/media/affwall3.bdb0d285.png",
     "static/media/classlogo.98f5a5c5.png": "/Kadaj/static/media/classlogo.98f5a5c5.png",
     "static/media/demoimg.a5d18a93.jpg": "/Kadaj/static/media/demoimg.a5d18a93.jpg",
     "static/media/destroimg.ec3f0977.jpg": "/Kadaj/static/media/destroimg.ec3f0977.jpg",
-    "static/media/guidewall.2ef838aa.png": "/Kadaj/static/media/guidewall.2ef838aa.png",
     "static/media/kadaj.85c43380.png": "/Kadaj/static/media/kadaj.85c43380.png",
     "static/media/oribosback4.5b2cfaa2.jpg": "/Kadaj/static/media/oribosback4.5b2cfaa2.jpg"
   },
@@ -28,6 +28,6 @@
     "static/js/runtime-main.d3bc555a.js",
     "static/js/2.b1ec8fc2.chunk.js",
     "static/css/main.78fd6c82.chunk.css",
-    "static/js/main.90bb0d0c.chunk.js"
+    "static/js/main.3a7f56db.chunk.js"
   ]
 }
