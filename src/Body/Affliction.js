@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, makeStyles } from "@material-ui/core";
-import Affwall from "../Img/guidewall.png";
+import Affwall from "../Img/affwall3.png";
 
 const useStyles = makeStyles((theme) => ({
   asset1: {
