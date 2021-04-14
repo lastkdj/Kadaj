@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Styles.css";
 import { Grid, makeStyles, Typography } from "@material-ui/core";
-import Asset1 from "../Img/aboutwall.jpg";
+import Asset1 from "../Img/oribosback4.jpg";
 import about from "../Img/kadaj.png";
 import Awareness from "../Img/Awareness.png";
 import Void from "../Img/Voidsmall.png";
@@ -103,7 +103,9 @@ const About = () => {
         }}
       >
         <Grid container item xs={6} class="aboutFade fadeOut">
-          <Typography className={classes.about}>ABOUT ME</Typography>
+          <Typography className={classes.about} style={{ marginTop: "200px" }}>
+            ABOUT ME
+          </Typography>
           <Typography className={classes.aboutText}>
             Hello friends! My name is Ricardo, I'm 31 years old. I'm a Top Tier
             Warlock and I've been playing wow since Wotlk, I dedicate most of my
@@ -120,7 +122,7 @@ const About = () => {
           container
           item
           xs={12}
-          style={{ marginTop: "150px" }}
+          style={{ marginTop: "130px" }}
           justify="center"
         >
           <Grid
@@ -129,6 +131,7 @@ const About = () => {
             xs={6}
             justify="flex-end"
             class="aboutFade fadeOut"
+            style={{}}
           >
             <img alt="about" src={Awareness}></img>
           </Grid>
@@ -139,7 +142,7 @@ const About = () => {
             xs={6}
             justify="flex-end"
             class="aboutFadetwo fadeOut"
-            style={{ width: "500px" }}
+            style={{ width: "500px", paddingTop: "200px" }}
           >
             <Typography className={classes.about}>AWARENESS GUILD</Typography>
             <Typography className={classes.aboutText}>
@@ -155,7 +158,7 @@ const About = () => {
           container
           item
           xs={12}
-          style={{ marginTop: "150px" }}
+          style={{ marginTop: "10px" }}
           justify="center"
         >
           <Grid
