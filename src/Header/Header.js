@@ -92,13 +92,22 @@ const Header = () => {
               </Link>
             </li>
             <li className={classes.li}>
-              <Typography
-                className={
-                  scrolled ? classes.headerfontSticky : classes.headerfont
-                }
+              <Link
+                activeClass="active"
+                to="raid"
+                spy={true}
+                smooth={true}
+                offset={-60}
+                duration={1000}
               >
-                Contact
-              </Typography>
+                <Typography
+                  className={
+                    scrolled ? classes.headerfontSticky : classes.headerfont
+                  }
+                >
+                  Raid
+                </Typography>
+              </Link>
             </li>
             <li className={classes.li}>
               <Typography
@@ -106,7 +115,7 @@ const Header = () => {
                   scrolled ? classes.headerfontSticky : classes.headerfont
                 }
               >
-                FAQ
+                Guides
               </Typography>
             </li>
             <li className={classes.li}>

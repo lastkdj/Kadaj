@@ -129,7 +129,7 @@ const Spec = () => {
           to="Guides"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-50}
           duration={1500}
         >
           <Grid class="fadeaff fadeOut">
