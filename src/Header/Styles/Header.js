@@ -7,6 +7,7 @@ const useStyles = makeStyles((theme) => ({
     transition: "all 0.5s ease-in-out",
     height: "70px",
     position: "absolute",
+    zIndex: "1",
   },
   sticky: {
     display: "flex",
@@ -19,6 +20,12 @@ const useStyles = makeStyles((theme) => ({
     height: "60px",
     alignContent: "center",
     boxShadow: "2px 7px 24px 12px rgba(0,0,0,0.1)",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
   },
 
   headerfont: {
@@ -50,12 +57,20 @@ const useStyles = makeStyles((theme) => ({
   },
 
   ul: {
-    display: "flex",
+    display: "none",
     position: "relative",
     justifyContent: "center",
     alignItems: "center",
     animation: "fadeInTop ease 1s",
     margin: "0",
+
+    [theme.breakpoints.up("md")]: {
+      display: "flex",
+    },
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
   },
 
   li: {

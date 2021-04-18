@@ -5,6 +5,7 @@ import Asset1 from "../Img/oribosback4.jpg";
 import about from "../Img/kadaj.png";
 import Awareness from "../Img/Awareness.png";
 import Void from "../Img/void.png";
+import { useMediaQuery } from "react-responsive";
 
 const useStyles = makeStyles((theme) => ({
   asset1: {
@@ -89,6 +90,8 @@ const About = () => {
     fadeElms.forEach((el) => observer.observe(el));
   }, []);
 
+  const isMobile = useMediaQuery({ query: "(max-width: 375px)" });
+
   const classes = useStyles();
   return (
     <Grid container className={classes.asset1} id="About">
@@ -116,7 +119,11 @@ const About = () => {
           </Typography>
         </Grid>
         <Grid container item xs={6} class="aboutFadetwo fadeOut">
-          <img alt="about" src={about} style={{ width: "400px" }}></img>
+          <img
+            alt="about"
+            src={about}
+            style={isMobile ? { width: "100px" } : { width: "400px" }}
+          ></img>
         </Grid>
         <Grid
           container
@@ -133,7 +140,11 @@ const About = () => {
             class="aboutFade fadeOut"
             style={{}}
           >
-            <img alt="about" src={Awareness}></img>
+            <img
+              style={isMobile ? { width: "100px" } : null}
+              alt="about"
+              src={Awareness}
+            ></img>
           </Grid>
 
           <Grid
@@ -158,7 +169,7 @@ const About = () => {
           container
           item
           xs={12}
-          style={{ marginTop: "10px" }}
+          style={{ marginTop: "200px" }}
           justify="center"
         >
           <Grid
@@ -183,7 +194,11 @@ const About = () => {
             justify="flex-end"
             class="aboutFadetwo fadeOut"
           >
-            <img alt="about" src={Void}></img>
+            <img
+              style={isMobile ? { width: "100px" } : null}
+              alt="about"
+              src={Void}
+            ></img>
           </Grid>
         </Grid>
       </Grid>

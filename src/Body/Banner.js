@@ -5,7 +5,15 @@ import { makeStyles, Typography, Grid } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   kadajLogo: {
-    margin: "50px 20px 0px 150px",
+    margin: "0px",
+
+    [theme.breakpoints.up("md")]: {
+      margin: "50px 20px 0px 150px",
+    },
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
   },
 
   firstsectiontext: {

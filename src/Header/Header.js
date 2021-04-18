@@ -6,6 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import useStyles from "./Styles/Header";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-scroll";
+import { useMediaQuery } from "react-responsive";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -31,9 +32,16 @@ const Header = () => {
     window.open("https://www.youtube.com/user/darkkadaj11");
   };
 
+  const isMobile = useMediaQuery({ query: "(max-width: 375px)" });
+
   return (
     <Grid container className={scrolled ? classes.sticky : classes.background}>
-      <Grid container item xs={12} style={{ margin: "0px 450px" }}>
+      <Grid
+        container
+        item
+        xs={12}
+        style={!isMobile ? { margin: "0px 450px" } : null}
+      >
         <Grid container item xs={3} className={classes.menulist}>
           <Grid container item xs={2}>
             <Link
@@ -53,7 +61,13 @@ const Header = () => {
             </Link>
           </Grid>
         </Grid>
-        <Grid container item xs={9} style={{ justifyContent: "flex-end" }}>
+        <Grid
+          container
+          item
+          xs={12}
+          md={9}
+          style={{ justifyContent: "flex-end" }}
+        >
           <ul className={classes.ul}>
             <li className={classes.li}>
               <Link
@@ -137,23 +151,25 @@ const Header = () => {
               </Typography>
             </li>
           </ul>
-          <Grid item>
-            <Button
-              stlye={{ margin: "0px 20px" }}
-              variant="contained"
-              color="primary"
-              onClick={onClick}
-              style={{
-                backgroundColor: "#CF0404",
-                borderRadius: "9px",
-                "&:hover": {
-                  backgroundColor: "#6461B9",
-                },
-              }}
-            >
-              Youtube
-            </Button>
-          </Grid>
+          {!isMobile ? (
+            <Grid item>
+              <Button
+                stlye={{ margin: "0px 20px" }}
+                variant="contained"
+                color="primary"
+                onClick={onClick}
+                style={{
+                  backgroundColor: "#CF0404",
+                  borderRadius: "9px",
+                  "&:hover": {
+                    backgroundColor: "#6461B9",
+                  },
+                }}
+              >
+                Youtube
+              </Button>
+            </Grid>
+          ) : null}
         </Grid>
       </Grid>
     </Grid>

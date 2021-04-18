@@ -4,7 +4,7 @@ import Banner from "./Body/Banner";
 import Spec from "./Body/Spec";
 import About from "./Body/About";
 import VideosPOV from "./Body/VideosPOV";
-import Affliction from "./Body/Affliction";
+import Guides from "./Body/Guides";
 import { Grid } from "@material-ui/core";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Spec />
       <About />
       <VideosPOV />
-      <Affliction />
+      <Guides />
     </Grid>
   );
 }

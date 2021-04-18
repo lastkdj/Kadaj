@@ -12,6 +12,8 @@ import Sludgefist from "../Img/cn/Castle Nathria Mythic Sludgefist.jpg";
 import Generals from "../Img/cn/Castle Nathria Mythic Stone Legion Generals.jpg";
 import Denathrius from "../Img/cn/Castle Nathria Mythic Denathrius.jpg";
 import "./cnStyles.css";
+import { useMediaQuery } from "react-responsive";
+import Carousel from "./Carousel";
 
 const useStyles = makeStyles((theme) => ({
   spec: {
@@ -169,6 +171,8 @@ const VideosPOV = () => {
     fadeElms.forEach((el) => observer.observe(el));
   }, []);
 
+  const isMobile = useMediaQuery({ query: "(max-width: 375px)" });
+
   return (
     <Grid
       container
@@ -183,36 +187,39 @@ const VideosPOV = () => {
       justify="center"
       id="raid"
     >
-      <Grid item xs={12} style={{ height: "50px" }} class="fade fadeOut">
+      <Grid item xs={12} class="fade fadeOut">
         <Typography className={classes.spec} style={{ textAlign: "center" }}>
           <span style={{ color: "rgb(254, 179, 0)" }}>Mythic</span> Castle
           Nathria, <span style={{ fontWeight: "400" }}>Warlock POV</span>
         </Typography>
       </Grid>
-      <Grid container item xs={12} style={{ marginTop: "150px" }}>
-        <Grid
-          container
-          item
-          xs={6}
-          style={{ paddingLeft: "80px" }}
-          class="cnPlayer fadeOut"
-        >
-          {" "}
-          <iframe
-            style={{
-              borderRadius: "6px",
-              borderStyle: "solid",
-              borderWidth: "3px",
-              borderColor: "rgb(254, 179, 0)",
-            }}
-            width="760"
-            height="430"
-            src={url}
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </Grid>
+
+      <Grid container item xs={12}>
+        {!isMobile ? (
+          <Grid
+            container
+            item
+            xs={6}
+            style={{ paddingLeft: "80px" }}
+            class="cnPlayer fadeOut"
+          >
+            {" "}
+            <iframe
+              style={{
+                borderRadius: "6px",
+                borderStyle: "solid",
+                borderWidth: "3px",
+                borderColor: "rgb(254, 179, 0)",
+              }}
+              width="760"
+              height="430"
+              src={url}
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </Grid>
+        ) : null}
 
         <Grid
           container
