@@ -3,10 +3,13 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import MaxProvider from "./Context/MaxProvider";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MaxProvider>
+      <App />
+    </MaxProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

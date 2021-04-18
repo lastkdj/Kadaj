@@ -13,7 +13,6 @@ import Generals from "../Img/cn/Castle Nathria Mythic Stone Legion Generals.jpg"
 import Denathrius from "../Img/cn/Castle Nathria Mythic Denathrius.jpg";
 import "./cnStyles.css";
 import { useMediaQuery } from "react-responsive";
-import Carousel from "./Carousel";
 
 const useStyles = makeStyles((theme) => ({
   spec: {

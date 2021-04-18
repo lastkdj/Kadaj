@@ -169,7 +169,7 @@ const About = () => {
           container
           item
           xs={12}
-          style={{ marginTop: "200px" }}
+          style={{ marginTop: "100px" }}
           justify="center"
         >
           <Grid
