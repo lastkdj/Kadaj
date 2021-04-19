@@ -24,6 +24,10 @@ import HungeringComponent from "./RaidBosses/Hungering";
 import LadyComponent from "./RaidBosses/Lady";
 import XymoxComponent from "./RaidBosses/Xymox";
 import SunskingComponent from "./RaidBosses/Sunsking";
+import CouncilComponent from "./RaidBosses/Council";
+import SludgefistComponent from "./RaidBosses/Sludgefist";
+import GeneralsComponent from "./RaidBosses/Generals";
+import DenathriusComponent from "./RaidBosses/Denathrius";
 
 const useStyles = makeStyles((theme) => ({
   tittle: {
@@ -225,19 +229,27 @@ const Raid = (props) => {
                 </TabPanel>
                 <TabPanel value={value} index={6}>
                   {" "}
-                  <Grid className={classes.bossframe}></Grid>
+                  <Grid className={classes.bossframe}>
+                    <CouncilComponent />
+                  </Grid>
                 </TabPanel>
                 <TabPanel value={value} index={7}>
                   {" "}
-                  <Grid className={classes.bossframe}></Grid>
+                  <Grid className={classes.bossframe}>
+                    <SludgefistComponent />
+                  </Grid>
                 </TabPanel>
                 <TabPanel value={value} index={8}>
                   {" "}
-                  <Grid className={classes.bossframe}></Grid>
+                  <Grid className={classes.bossframe}>
+                    <GeneralsComponent />
+                  </Grid>
                 </TabPanel>
                 <TabPanel value={value} index={9}>
                   {" "}
-                  <Grid className={classes.bossframe}></Grid>
+                  <Grid className={classes.bossframe}>
+                    <DenathriusComponent />
+                  </Grid>
                 </TabPanel>
               </Grid>
               <Grid

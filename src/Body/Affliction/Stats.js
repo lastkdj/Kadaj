@@ -109,7 +109,8 @@ const Stats = (props) => {
                       fontWeight: 600,
                     }}
                   >
-                    Intellect > Spell Power > Mastery > Haste > Crit >
+                    Intellect{" > "}Spell Power{" > "}Mastery{" > "}Haste{" > "}
+                    Crit{" > "}
                     Versatility
                   </span>
                 </Typography>

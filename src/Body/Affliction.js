@@ -11,9 +11,8 @@ import { Menu } from "../Context/MenuContext";
 const useStyles = makeStyles((theme) => ({}));
 
 const Affliction = () => {
-  const { state, dispatch } = Menu();
+  const { state } = Menu();
   const { stats, lego, covenant, talents, raid } = state;
-  const classes = useStyles();
 
   return (
     <Grid container id="Guides">

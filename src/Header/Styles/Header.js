@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     transition: "all 0.5s ease-in-out",
     height: "70px",
     position: "absolute",
-    zIndex: "1",
+    zIndex: "5000",
   },
   sticky: {
     display: "flex",
@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "white",
     position: "fixed",
     top: "0",
-    zIndex: "1",
+    zIndex: "5000",
     transition: "all 0.3s ease-in-out",
     height: "60px",
     alignContent: "center",
