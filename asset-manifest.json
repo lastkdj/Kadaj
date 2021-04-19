@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Kadaj/static/css/main.5234f586.chunk.css",
-    "main.js": "/Kadaj/static/js/main.61049390.chunk.js",
-    "main.js.map": "/Kadaj/static/js/main.61049390.chunk.js.map",
-    "runtime-main.js": "/Kadaj/static/js/runtime-main.047ac5fb.js",
-    "runtime-main.js.map": "/Kadaj/static/js/runtime-main.047ac5fb.js.map",
-    "static/js/2.ae028e07.chunk.js": "/Kadaj/static/js/2.ae028e07.chunk.js",
-    "static/js/2.ae028e07.chunk.js.map": "/Kadaj/static/js/2.ae028e07.chunk.js.map",
-    "static/js/3.0100cb62.chunk.js": "/Kadaj/static/js/3.0100cb62.chunk.js",
-    "static/js/3.0100cb62.chunk.js.map": "/Kadaj/static/js/3.0100cb62.chunk.js.map",
+    "main.js": "/Kadaj/static/js/main.c270b507.chunk.js",
+    "main.js.map": "/Kadaj/static/js/main.c270b507.chunk.js.map",
+    "runtime-main.js": "/Kadaj/static/js/runtime-main.88962605.js",
+    "runtime-main.js.map": "/Kadaj/static/js/runtime-main.88962605.js.map",
+    "static/js/2.95db1167.chunk.js": "/Kadaj/static/js/2.95db1167.chunk.js",
+    "static/js/2.95db1167.chunk.js.map": "/Kadaj/static/js/2.95db1167.chunk.js.map",
+    "static/js/3.b234ae9c.chunk.js": "/Kadaj/static/js/3.b234ae9c.chunk.js",
+    "static/js/3.b234ae9c.chunk.js.map": "/Kadaj/static/js/3.b234ae9c.chunk.js.map",
     "index.html": "/Kadaj/index.html",
     "static/css/main.5234f586.chunk.css.map": "/Kadaj/static/css/main.5234f586.chunk.css.map",
-    "static/js/2.ae028e07.chunk.js.LICENSE.txt": "/Kadaj/static/js/2.ae028e07.chunk.js.LICENSE.txt",
+    "static/js/2.95db1167.chunk.js.LICENSE.txt": "/Kadaj/static/js/2.95db1167.chunk.js.LICENSE.txt",
     "static/media/Awareness.ad8b6ec3.png": "/Kadaj/static/media/Awareness.ad8b6ec3.png",
     "static/media/Castle Nathria Mythic Artificer Xymox.1f2b2ead.jpg": "/Kadaj/static/media/Castle Nathria Mythic Artificer Xymox.1f2b2ead.jpg",
     "static/media/Castle Nathria Mythic Denathrius.4fa5adc6.jpg": "/Kadaj/static/media/Castle Nathria Mythic Denathrius.4fa5adc6.jpg",
@@ -29,6 +29,8 @@
     "static/media/affimg2.02fb2d32.jpg": "/Kadaj/static/media/affimg2.02fb2d32.jpg",
     "static/media/affwall4.95ec5cd1.png": "/Kadaj/static/media/affwall4.95ec5cd1.png",
     "static/media/aoe.499f4fd8.png": "/Kadaj/static/media/aoe.499f4fd8.png",
+    "static/media/aoetalents.93e20649.png": "/Kadaj/static/media/aoetalents.93e20649.png",
+    "static/media/cabalist.4177cc38.png": "/Kadaj/static/media/cabalist.4177cc38.png",
     "static/media/classlogo.98f5a5c5.png": "/Kadaj/static/media/classlogo.98f5a5c5.png",
     "static/media/cn.37811254.jpg": "/Kadaj/static/media/cn.37811254.jpg",
     "static/media/council.adf9b121.jpg": "/Kadaj/static/media/council.adf9b121.jpg",
@@ -37,6 +39,7 @@
     "static/media/destroimg.ec3f0977.jpg": "/Kadaj/static/media/destroimg.ec3f0977.jpg",
     "static/media/flicker.79f1c9e7.png": "/Kadaj/static/media/flicker.79f1c9e7.png",
     "static/media/generals.9ab057c9.jpg": "/Kadaj/static/media/generals.9ab057c9.jpg",
+    "static/media/gladiator.0a633975.png": "/Kadaj/static/media/gladiator.0a633975.png",
     "static/media/hungering.22845fe7.jpg": "/Kadaj/static/media/hungering.22845fe7.jpg",
     "static/media/huntsman.6bf6f377.jpg": "/Kadaj/static/media/huntsman.6bf6f377.jpg",
     "static/media/kadaj.85c43380.png": "/Kadaj/static/media/kadaj.85c43380.png",
@@ -45,9 +48,11 @@
     "static/media/nightfae.7881eeb1.jpg": "/Kadaj/static/media/nightfae.7881eeb1.jpg",
     "static/media/niya.b9c92bf9.png": "/Kadaj/static/media/niya.b9c92bf9.png",
     "static/media/oribosback4.5b2cfaa2.jpg": "/Kadaj/static/media/oribosback4.5b2cfaa2.jpg",
+    "static/media/quantum.918aa9e9.png": "/Kadaj/static/media/quantum.918aa9e9.png",
     "static/media/runecarver.0b2daeb2.jpg": "/Kadaj/static/media/runecarver.0b2daeb2.jpg",
     "static/media/sacrolash.70a64166.png": "/Kadaj/static/media/sacrolash.70a64166.png",
     "static/media/shriekwing.c2f84d0c.jpg": "/Kadaj/static/media/shriekwing.c2f84d0c.jpg",
+    "static/media/shriekwingtalents.40380dd4.png": "/Kadaj/static/media/shriekwingtalents.40380dd4.png",
     "static/media/sludgefist.4c09edd0.jpg": "/Kadaj/static/media/sludgefist.4c09edd0.jpg",
     "static/media/st.a0502efb.png": "/Kadaj/static/media/st.a0502efb.png",
     "static/media/stats.a3aefbd6.jpg": "/Kadaj/static/media/stats.a3aefbd6.jpg",
@@ -57,9 +62,9 @@
     "static/media/xymox.f6fa56b1.jpg": "/Kadaj/static/media/xymox.f6fa56b1.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.047ac5fb.js",
-    "static/js/2.ae028e07.chunk.js",
+    "static/js/runtime-main.88962605.js",
+    "static/js/2.95db1167.chunk.js",
     "static/css/main.5234f586.chunk.css",
-    "static/js/main.61049390.chunk.js"
+    "static/js/main.c270b507.chunk.js"
   ]
 }
