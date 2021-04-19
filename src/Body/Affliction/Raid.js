@@ -8,6 +8,16 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import PropTypes from "prop-types";
 import Box from "@material-ui/core/Box";
+import Shriekwing from "../../Img/aff/shriekwing.jpg";
+import Huntsman from "../../Img/aff/huntsman.jpg";
+import Hungering from "../../Img/aff/hungering.jpg";
+import Lady from "../../Img/aff/lady.jpg";
+import Xymox from "../../Img/aff/xymox.jpg";
+import Sunsking from "../../Img/aff/sunsking.jpg";
+import Council from "../../Img/aff/council.jpg";
+import Sludgefist from "../../Img/aff/sludgefist.jpg";
+import Generals from "../../Img/aff/generals.jpg";
+import Denathrius from "../../Img/aff/denathrius.jpg";
 
 const useStyles = makeStyles((theme) => ({
   tittle: {
@@ -40,6 +50,11 @@ const useStyles = makeStyles((theme) => ({
     borderStyle: "solid",
     borderWidth: "2px",
     borderColor: "#2AB602",
+  },
+
+  bossframe: {
+    width: "700px",
+    height: "485px",
   },
 }));
 
@@ -118,14 +133,30 @@ const Raid = (props) => {
               </Typography>
             </Grid>
             <Divider variant="inset" component="hr" />
-            <Grid container item xs={12} style={{ marginTop: "20px" }}>
-              <Grid item style={{ display: "flex", flexDirection: "row" }}>
+            <Grid
+              container
+              item
+              xs={12}
+              style={{
+                marginTop: "20px",
+                justifyContent: "space-between",
+                paddingLeft: "20px",
+              }}
+            >
+              <Grid
+                item
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                }}
+              >
                 <AppBar
                   position="static"
                   style={{
                     backgroundColor: "#60338A",
                     borderRadius: "9px 0px 0px 9px",
                     justifyContent: "center",
+                    maxWidth: "fit-content",
                   }}
                 >
                   <Tabs
@@ -151,23 +182,80 @@ const Raid = (props) => {
                     <Tab label="Denathrius" {...a11yProps(9)} />
                   </Tabs>
                 </AppBar>
-                <TabPanel value={value} index={0}></TabPanel>
-                <TabPanel value={value} index={1}></TabPanel>
-                <TabPanel value={value} index={2}></TabPanel>
-                <TabPanel value={value} index={3}></TabPanel>
-                <TabPanel value={value} index={4}></TabPanel>
-                <TabPanel value={value} index={5}></TabPanel>
-                <TabPanel value={value} index={6}></TabPanel>
-                <TabPanel value={value} index={7}></TabPanel>
-                <TabPanel value={value} index={8}></TabPanel>
-                <TabPanel value={value} index={9}></TabPanel>
+                <TabPanel value={value} index={0}>
+                  <Grid className={classes.bossframe}></Grid>
+                </TabPanel>
+                <TabPanel value={value} index={1}>
+                  {" "}
+                  <Grid className={classes.bossframe}></Grid>
+                </TabPanel>
+                <TabPanel value={value} index={2}>
+                  {" "}
+                  <Grid className={classes.bossframe}></Grid>
+                </TabPanel>
+                <TabPanel value={value} index={3}>
+                  {" "}
+                  <Grid className={classes.bossframe}></Grid>
+                </TabPanel>
+                <TabPanel value={value} index={4}>
+                  {" "}
+                  <Grid className={classes.bossframe}></Grid>
+                </TabPanel>
+                <TabPanel value={value} index={5}>
+                  {" "}
+                  <Grid className={classes.bossframe}></Grid>
+                </TabPanel>
+                <TabPanel value={value} index={6}>
+                  {" "}
+                  <Grid className={classes.bossframe}></Grid>
+                </TabPanel>
+                <TabPanel value={value} index={7}>
+                  {" "}
+                  <Grid className={classes.bossframe}></Grid>
+                </TabPanel>
+                <TabPanel value={value} index={8}>
+                  {" "}
+                  <Grid className={classes.bossframe}></Grid>
+                </TabPanel>
+                <TabPanel value={value} index={9}>
+                  {" "}
+                  <Grid className={classes.bossframe}></Grid>
+                </TabPanel>
               </Grid>
-              <Grid container item xs={4} style={{ maxHeight: "400px" }}>
-                {/* <img
+              <Grid
+                container
+                item
+                justify="center"
+                xs={4}
+                style={{ maxHeight: "400px" }}
+              >
+                <img
                   width="400px"
-                  src={TalentsImg}
+                  src={
+                    value === 0
+                      ? Shriekwing
+                      : value === 1
+                      ? Huntsman
+                      : value === 2
+                      ? Hungering
+                      : value === 3
+                      ? Lady
+                      : value === 4
+                      ? Xymox
+                      : value === 5
+                      ? Sunsking
+                      : value === 6
+                      ? Council
+                      : value === 7
+                      ? Sludgefist
+                      : value === 8
+                      ? Generals
+                      : value === 9
+                      ? Denathrius
+                      : null
+                  }
                   className={classes.border}
-                /> */}
+                />
               </Grid>
             </Grid>
           </Grid>
