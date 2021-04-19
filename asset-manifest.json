@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Kadaj/static/css/main.5234f586.chunk.css",
-    "main.js": "/Kadaj/static/js/main.c270b507.chunk.js",
-    "main.js.map": "/Kadaj/static/js/main.c270b507.chunk.js.map",
+    "main.js": "/Kadaj/static/js/main.2fd0ebd6.chunk.js",
+    "main.js.map": "/Kadaj/static/js/main.2fd0ebd6.chunk.js.map",
     "runtime-main.js": "/Kadaj/static/js/runtime-main.88962605.js",
     "runtime-main.js.map": "/Kadaj/static/js/runtime-main.88962605.js.map",
-    "static/js/2.95db1167.chunk.js": "/Kadaj/static/js/2.95db1167.chunk.js",
-    "static/js/2.95db1167.chunk.js.map": "/Kadaj/static/js/2.95db1167.chunk.js.map",
+    "static/js/2.d0292b9c.chunk.js": "/Kadaj/static/js/2.d0292b9c.chunk.js",
+    "static/js/2.d0292b9c.chunk.js.map": "/Kadaj/static/js/2.d0292b9c.chunk.js.map",
     "static/js/3.b234ae9c.chunk.js": "/Kadaj/static/js/3.b234ae9c.chunk.js",
     "static/js/3.b234ae9c.chunk.js.map": "/Kadaj/static/js/3.b234ae9c.chunk.js.map",
     "index.html": "/Kadaj/index.html",
     "static/css/main.5234f586.chunk.css.map": "/Kadaj/static/css/main.5234f586.chunk.css.map",
-    "static/js/2.95db1167.chunk.js.LICENSE.txt": "/Kadaj/static/js/2.95db1167.chunk.js.LICENSE.txt",
+    "static/js/2.d0292b9c.chunk.js.LICENSE.txt": "/Kadaj/static/js/2.d0292b9c.chunk.js.LICENSE.txt",
     "static/media/Awareness.ad8b6ec3.png": "/Kadaj/static/media/Awareness.ad8b6ec3.png",
     "static/media/Castle Nathria Mythic Artificer Xymox.1f2b2ead.jpg": "/Kadaj/static/media/Castle Nathria Mythic Artificer Xymox.1f2b2ead.jpg",
     "static/media/Castle Nathria Mythic Denathrius.4fa5adc6.jpg": "/Kadaj/static/media/Castle Nathria Mythic Denathrius.4fa5adc6.jpg",
@@ -39,6 +39,7 @@
     "static/media/destroimg.ec3f0977.jpg": "/Kadaj/static/media/destroimg.ec3f0977.jpg",
     "static/media/flicker.79f1c9e7.png": "/Kadaj/static/media/flicker.79f1c9e7.png",
     "static/media/generals.9ab057c9.jpg": "/Kadaj/static/media/generals.9ab057c9.jpg",
+    "static/media/generaltalents.2f158fd4.png": "/Kadaj/static/media/generaltalents.2f158fd4.png",
     "static/media/gladiator.0a633975.png": "/Kadaj/static/media/gladiator.0a633975.png",
     "static/media/hungering.22845fe7.jpg": "/Kadaj/static/media/hungering.22845fe7.jpg",
     "static/media/huntsman.6bf6f377.jpg": "/Kadaj/static/media/huntsman.6bf6f377.jpg",
@@ -63,8 +64,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.88962605.js",
-    "static/js/2.95db1167.chunk.js",
+    "static/js/2.d0292b9c.chunk.js",
     "static/css/main.5234f586.chunk.css",
-    "static/js/main.c270b507.chunk.js"
+    "static/js/main.2fd0ebd6.chunk.js"
   ]
 }
