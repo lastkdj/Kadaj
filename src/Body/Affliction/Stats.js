@@ -51,7 +51,7 @@ const Stats = (props) => {
         <Paper
           elevation={3}
           style={{
-            width: "100%",
+            maxWidth: "100%",
             height: "650px",
             backgroundColor: "#1c1c1c",
           }}

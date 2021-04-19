@@ -65,7 +65,7 @@ const Lego = (props) => {
         <Paper
           elevation={3}
           style={{
-            width: "100%",
+            maxWidth: "100%",
             height: "650px",
             backgroundColor: "#1c1c1c",
           }}
@@ -101,51 +101,53 @@ const Lego = (props) => {
                 >
                   Best Affliction Warlock Legendary for Raiding and Mythic +
                 </Typography>
-                <Grid container style={{ marginTop: "30px" }}>
-                  <ListItemAvatar>
-                    <Avatar
-                      variant="rounded"
-                      src={Demonic}
-                      style={{
-                        boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
-                      }}
-                    ></Avatar>
-                  </ListItemAvatar>
-                  <Typography
-                    className={classes.subtittle}
-                    style={{ color: "orange", paddingTop: "10px" }}
-                    variant="h2"
-                  >
-                    Relic of Demonic Synergy{" "}
+                <Grid>
+                  <Grid container style={{ marginTop: "30px" }}>
+                    <ListItemAvatar>
+                      <Avatar
+                        variant="rounded"
+                        src={Demonic}
+                        style={{
+                          boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
+                        }}
+                      ></Avatar>
+                    </ListItemAvatar>
+                    <Typography
+                      className={classes.subtittle}
+                      style={{ color: "orange", paddingTop: "10px" }}
+                      variant="h2"
+                    >
+                      Relic of Demonic Synergy{" "}
+                    </Typography>
+                  </Grid>
+                  <Typography className={classes.info}>
+                    <ul>
+                      <li>
+                        Available Slots:{" "}
+                        <span style={{ color: "#adb0bb", fontSize: "0.9em" }}>
+                          Head, Shoulder{" "}
+                        </span>
+                      </li>
+                      <li>
+                        Crafting Preference:{" "}
+                        <span style={{ color: "#adb0bb", fontSize: "0.9em" }}>
+                          Head
+                        </span>
+                      </li>
+                      <li>
+                        Secondaries to use:{" "}
+                        <span style={{ color: "#adb0bb", fontSize: "0.9em" }}>
+                          Haste/Mastery
+                        </span>
+                      </li>
+                    </ul>
                   </Typography>
                 </Grid>
-                <Typography className={classes.info}>
-                  <ul>
-                    <li>
-                      Available Slots:{" "}
-                      <span style={{ color: "#adb0bb", fontSize: "0.9em" }}>
-                        Head, Shoulder{" "}
-                      </span>
-                    </li>
-                    <li>
-                      Crafting Preference:{" "}
-                      <span style={{ color: "#adb0bb", fontSize: "0.9em" }}>
-                        Head
-                      </span>
-                    </li>
-                    <li>
-                      Secondaries to use:{" "}
-                      <span style={{ color: "#adb0bb", fontSize: "0.9em" }}>
-                        Haste/Mastery
-                      </span>
-                    </li>
-                  </ul>
-                </Typography>
                 <Grid style={{ display: "flex" }}>
                   <Grid container item>
                     <Typography
                       className={classes.subtittle}
-                      style={{ marginTop: "20px", color: "#2AB602" }}
+                      style={{ marginTop: "20px", color: "darkkhaki" }}
                     >
                       Alternative for Mythic +
                     </Typography>
@@ -193,7 +195,7 @@ const Lego = (props) => {
                   <Grid container item>
                     <Typography
                       className={classes.subtittle}
-                      style={{ marginTop: "20px", color: "#2AB602" }}
+                      style={{ marginTop: "20px", color: "darkkhaki" }}
                     >
                       Alternative for Raiding & Mythic +
                     </Typography>

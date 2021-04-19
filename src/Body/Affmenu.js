@@ -13,6 +13,7 @@ import Skull from "../Img/skull.png";
 import LocalHospitalIcon from "@material-ui/icons/LocalHospital";
 import "./guideStyles.css";
 import { Menu } from "../Context/MenuContext";
+import { SignalCellularNull } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 200,
     backgroundColor: "#60338A",
     color: "white",
-    borderRadius: "5px",
+    borderRadius: "9px",
   },
 
   spec: {
@@ -35,6 +36,14 @@ const useStyles = makeStyles((theme) => ({
   large: {
     width: theme.spacing(10),
     height: theme.spacing(10),
+  },
+
+  topMenu: {
+    borderRadius: "9px 9px 0px 0px",
+  },
+
+  bottomMenu: {
+    borderRadius: "0px 0px 9px 9px",
   },
 }));
 
@@ -123,8 +132,13 @@ const Affmenu = (props) => {
           maxHeight: 360,
         }}
       >
-        <List className={classes.root}>
-          <ListItem button onClick={onClickStats}>
+        <List className={classes.root} disablePadding={true}>
+          <ListItem
+            button
+            onClick={onClickStats}
+            className={classes.topMenu}
+            style={stats ? { backgroundColor: "#F58900" } : null}
+          >
             <ListItemAvatar>
               <Avatar
                 style={{
@@ -139,20 +153,25 @@ const Affmenu = (props) => {
             <Typography style={{ fontSize: "1em" }}> Stats</Typography>
           </ListItem>
           <Divider variant="inset" component="li" />
-          <ListItem button onClick={onClickLego}>
+          <ListItem
+            button
+            onClick={onClickLego}
+            style={lego ? { backgroundColor: "#F58900" } : null}
+          >
             <ListItemAvatar>
               <Avatar
                 src={Demonic}
                 style={{ boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)" }}
               ></Avatar>
             </ListItemAvatar>
-            <Typography style={{ fontSize: "1em", color: "orange" }}>
-              {" "}
-              Legendaries
-            </Typography>
+            <Typography style={{ fontSize: "1em" }}> Legendaries</Typography>
           </ListItem>
           <Divider variant="inset" component="li" />
-          <ListItem button onClick={onClickCovenant}>
+          <ListItem
+            button
+            onClick={onClickCovenant}
+            style={covenant ? { backgroundColor: "#F58900" } : null}
+          >
             <ListItemAvatar>
               <Avatar
                 src={SoulRot}
@@ -164,7 +183,11 @@ const Affmenu = (props) => {
             <Typography style={{ fontSize: "1em" }}>Covenant</Typography>
           </ListItem>
           <Divider variant="inset" component="li" />
-          <ListItem button onClick={onClickTalents}>
+          <ListItem
+            button
+            onClick={onClickTalents}
+            style={talents ? { backgroundColor: "#F58900" } : null}
+          >
             <ListItemAvatar>
               <Avatar
                 src={Afflogo}
@@ -176,7 +199,12 @@ const Affmenu = (props) => {
             <ListItemText primary="Talents" />
           </ListItem>
           <Divider variant="inset" component="li" />
-          <ListItem button onClick={onClickRaid}>
+          <ListItem
+            button
+            onClick={onClickRaid}
+            className={classes.bottomMenu}
+            style={raid ? { backgroundColor: "#F58900" } : null}
+          >
             <ListItemAvatar>
               <Avatar
                 src={Skull}
