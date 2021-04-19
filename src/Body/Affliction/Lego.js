@@ -102,24 +102,30 @@ const Lego = (props) => {
                   Best Affliction Warlock Legendary for Raiding and Mythic +
                 </Typography>
                 <Grid>
-                  <Grid container style={{ marginTop: "30px" }}>
-                    <ListItemAvatar>
-                      <Avatar
-                        variant="rounded"
-                        src={Demonic}
-                        style={{
-                          boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
-                        }}
-                      ></Avatar>
-                    </ListItemAvatar>
-                    <Typography
-                      className={classes.subtittle}
-                      style={{ color: "orange", paddingTop: "10px" }}
-                      variant="h2"
-                    >
-                      Relic of Demonic Synergy{" "}
-                    </Typography>
-                  </Grid>
+                  <a
+                    href="https://www.wowhead.com/spell=337057/relic-of-demonic-synergy"
+                    data-wowhead="spell=337057"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <Grid container style={{ marginTop: "30px" }}>
+                      <ListItemAvatar>
+                        <Avatar
+                          variant="rounded"
+                          src={Demonic}
+                          style={{
+                            boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
+                          }}
+                        ></Avatar>
+                      </ListItemAvatar>
+                      <Typography
+                        className={classes.subtittle}
+                        style={{ color: "orange", paddingTop: "10px" }}
+                        variant="h2"
+                      >
+                        Relic of Demonic Synergy{" "}
+                      </Typography>
+                    </Grid>
+                  </a>
                   <Typography className={classes.info}>
                     <ul>
                       <li>
@@ -151,24 +157,30 @@ const Lego = (props) => {
                     >
                       Alternative for Mythic +
                     </Typography>
-                    <Grid container style={{ marginTop: "30px" }}>
-                      <ListItemAvatar>
-                        <Avatar
-                          variant="rounded"
-                          src={Wrath}
-                          style={{
-                            boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
-                          }}
-                        ></Avatar>
-                      </ListItemAvatar>
-                      <Typography
-                        className={classes.subtittle}
-                        style={{ color: "orange", paddingTop: "10px" }}
-                        variant="h2"
-                      >
-                        Wrath of Consumption{" "}
-                      </Typography>
-                    </Grid>
+                    <a
+                      href="https://www.wowhead.com/spell=337128/wrath-of-consumption"
+                      data-wowhead="spell=337128"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <Grid container style={{ marginTop: "30px" }}>
+                        <ListItemAvatar>
+                          <Avatar
+                            variant="rounded"
+                            src={Wrath}
+                            style={{
+                              boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
+                            }}
+                          ></Avatar>
+                        </ListItemAvatar>
+                        <Typography
+                          className={classes.subtittle}
+                          style={{ color: "orange", paddingTop: "10px" }}
+                          variant="h2"
+                        >
+                          Wrath of Consumption{" "}
+                        </Typography>
+                      </Grid>
+                    </a>
                     <Typography className={classes.info}>
                       <ul>
                         <li>
@@ -199,24 +211,30 @@ const Lego = (props) => {
                     >
                       Alternative for Raiding & Mythic +
                     </Typography>
-                    <Grid container style={{ marginTop: "30px" }}>
-                      <ListItemAvatar>
-                        <Avatar
-                          variant="rounded"
-                          src={Sacrolash}
-                          style={{
-                            boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
-                          }}
-                        ></Avatar>
-                      </ListItemAvatar>
-                      <Typography
-                        className={classes.subtittle}
-                        style={{ color: "orange", paddingTop: "10px" }}
-                        variant="h2"
-                      >
-                        Sacrolash's Dark Strike{" "}
-                      </Typography>
-                    </Grid>
+                    <a
+                      href="https://www.wowhead.com/spell=337111/sacrolashs-dark-strike"
+                      data-wowhead="spell=337111"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <Grid container style={{ marginTop: "30px" }}>
+                        <ListItemAvatar>
+                          <Avatar
+                            variant="rounded"
+                            src={Sacrolash}
+                            style={{
+                              boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
+                            }}
+                          ></Avatar>
+                        </ListItemAvatar>
+                        <Typography
+                          className={classes.subtittle}
+                          style={{ color: "orange", paddingTop: "10px" }}
+                          variant="h2"
+                        >
+                          Sacrolash's Dark Strike{" "}
+                        </Typography>
+                      </Grid>
+                    </a>
                     <Typography className={classes.info}>
                       <ul>
                         <li>

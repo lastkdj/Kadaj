@@ -13,7 +13,6 @@ import Skull from "../Img/skull.png";
 import LocalHospitalIcon from "@material-ui/icons/LocalHospital";
 import "./guideStyles.css";
 import { Menu } from "../Context/MenuContext";
-import { SignalCellularNull } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   root: {

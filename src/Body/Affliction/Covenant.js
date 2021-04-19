@@ -135,19 +135,31 @@ const Covenant = (props) => {
                 <Grid container item justify="center">
                   {" "}
                   <img src={Niya} style={{ width: "fit-content" }} />
-                  <img
-                    src={Soulrot}
-                    width="50px"
-                    height="50px"
-                    style={{ marginRight: "10px" }}
-                    className={classes.border}
-                  />
-                  <img
-                    src={Flicker}
-                    width="50px"
-                    height="50px"
-                    className={classes.border}
-                  />
+                  <a
+                    href="https://www.wowhead.com/spell=325640/soul-rot"
+                    data-wowhead="spell=325640"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <img
+                      src={Soulrot}
+                      width="50px"
+                      height="50px"
+                      style={{ marginRight: "10px" }}
+                      className={classes.border}
+                    />
+                  </a>
+                  <a
+                    href="https://www.wowhead.com/spell=310143/soulshape"
+                    data-wowhead="spell=310143"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <img
+                      src={Flicker}
+                      width="50px"
+                      height="50px"
+                      className={classes.border}
+                    />
+                  </a>
                 </Grid>
               </Grid>
             </Grid>

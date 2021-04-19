@@ -18,6 +18,12 @@ import Council from "../../Img/aff/council.jpg";
 import Sludgefist from "../../Img/aff/sludgefist.jpg";
 import Generals from "../../Img/aff/generals.jpg";
 import Denathrius from "../../Img/aff/denathrius.jpg";
+import ShriekwingComponent from "./RaidBosses/Shriekwing";
+import HuntsmanComponent from "./RaidBosses/Huntsman";
+import HungeringComponent from "./RaidBosses/Hungering";
+import LadyComponent from "./RaidBosses/Lady";
+import XymoxComponent from "./RaidBosses/Xymox";
+import SunskingComponent from "./RaidBosses/Sunsking";
 
 const useStyles = makeStyles((theme) => ({
   tittle: {
@@ -183,27 +189,39 @@ const Raid = (props) => {
                   </Tabs>
                 </AppBar>
                 <TabPanel value={value} index={0}>
-                  <Grid className={classes.bossframe}></Grid>
+                  <Grid className={classes.bossframe}>
+                    <ShriekwingComponent />
+                  </Grid>
                 </TabPanel>
                 <TabPanel value={value} index={1}>
                   {" "}
-                  <Grid className={classes.bossframe}></Grid>
+                  <Grid className={classes.bossframe}>
+                    <HuntsmanComponent />
+                  </Grid>
                 </TabPanel>
                 <TabPanel value={value} index={2}>
                   {" "}
-                  <Grid className={classes.bossframe}></Grid>
+                  <Grid className={classes.bossframe}>
+                    <HungeringComponent />
+                  </Grid>
                 </TabPanel>
                 <TabPanel value={value} index={3}>
                   {" "}
-                  <Grid className={classes.bossframe}></Grid>
+                  <Grid className={classes.bossframe}>
+                    <LadyComponent />
+                  </Grid>
                 </TabPanel>
                 <TabPanel value={value} index={4}>
                   {" "}
-                  <Grid className={classes.bossframe}></Grid>
+                  <Grid className={classes.bossframe}>
+                    <XymoxComponent />
+                  </Grid>
                 </TabPanel>
                 <TabPanel value={value} index={5}>
                   {" "}
-                  <Grid className={classes.bossframe}></Grid>
+                  <Grid className={classes.bossframe}>
+                    <SunskingComponent />
+                  </Grid>
                 </TabPanel>
                 <TabPanel value={value} index={6}>
                   {" "}

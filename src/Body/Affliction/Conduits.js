@@ -148,24 +148,30 @@ const Conduits = () => {
           Best Raiding and M+ Potency Conduits for Affliction Warlocks
         </Typography>
         <Grid style={{ marginLeft: "20px", marginTop: "20px" }}>
-          <Grid container>
-            <ListItemAvatar>
-              <Avatar
-                variant="rounded"
-                src={Focused}
-                style={{
-                  boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
-                }}
-              ></Avatar>
-            </ListItemAvatar>
-            <Typography
-              className={classes.boxText}
-              style={{ color: "orange", paddingTop: "10px" }}
-              variant="h2"
-            >
-              Focused Malignancy{" "}
-            </Typography>
-          </Grid>
+          <a
+            href="https://www.wowhead.com/spell=339500/focused-malignancy"
+            data-wowhead="spell=339500"
+            style={{ textDecoration: "none" }}
+          >
+            <Grid container>
+              <ListItemAvatar>
+                <Avatar
+                  variant="rounded"
+                  src={Focused}
+                  style={{
+                    boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
+                  }}
+                ></Avatar>
+              </ListItemAvatar>
+              <Typography
+                className={classes.boxText}
+                style={{ color: "orange", paddingTop: "10px" }}
+                variant="h2"
+              >
+                Focused Malignancy{" "}
+              </Typography>
+            </Grid>
+          </a>
           <Typography className={classes.infoBox}>
             <ul>
               <li style={{ color: "#adb0bb", fontSize: "0.9em" }}>
@@ -176,24 +182,30 @@ const Conduits = () => {
           </Typography>
         </Grid>
         <Grid style={{ marginLeft: "20px" }}>
-          <Grid container style={{ marginTop: "10px" }}>
-            <ListItemAvatar>
-              <Avatar
-                variant="rounded"
-                src={Cold}
-                style={{
-                  boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
-                }}
-              ></Avatar>
-            </ListItemAvatar>
-            <Typography
-              className={classes.boxText}
-              style={{ color: "orange", paddingTop: "10px" }}
-              variant="h2"
-            >
-              Cold Embrace{" "}
-            </Typography>
-          </Grid>
+          <a
+            href="https://www.wowhead.com/spell=339576/cold-embrace"
+            data-wowhead="spell=339576"
+            style={{ textDecoration: "none" }}
+          >
+            <Grid container style={{ marginTop: "10px" }}>
+              <ListItemAvatar>
+                <Avatar
+                  variant="rounded"
+                  src={Cold}
+                  style={{
+                    boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
+                  }}
+                ></Avatar>
+              </ListItemAvatar>
+              <Typography
+                className={classes.boxText}
+                style={{ color: "orange", paddingTop: "10px" }}
+                variant="h2"
+              >
+                Cold Embrace{" "}
+              </Typography>
+            </Grid>
+          </a>
           <Typography className={classes.infoBox}>
             <ul>
               <li style={{ color: "#adb0bb", fontSize: "0.9em" }}>
@@ -203,24 +215,30 @@ const Conduits = () => {
           </Typography>
         </Grid>
         <Grid style={{ marginLeft: "20px" }}>
-          <Grid container style={{ marginTop: "20px" }}>
-            <ListItemAvatar>
-              <Avatar
-                variant="rounded"
-                src={ra}
-                style={{
-                  boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
-                }}
-              ></Avatar>
-            </ListItemAvatar>
-            <Typography
-              className={classes.boxText}
-              style={{ color: "orange", paddingTop: "10px" }}
-              variant="h2"
-            >
-              Focused Malignancy{" "}
-            </Typography>
-          </Grid>
+          <a
+            href="https://www.wowhead.com/spell=339481/rolling-agony"
+            data-wowhead="spell=339481"
+            style={{ textDecoration: "none" }}
+          >
+            <Grid container style={{ marginTop: "20px" }}>
+              <ListItemAvatar>
+                <Avatar
+                  variant="rounded"
+                  src={ra}
+                  style={{
+                    boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
+                  }}
+                ></Avatar>
+              </ListItemAvatar>
+              <Typography
+                className={classes.boxText}
+                style={{ color: "orange", paddingTop: "10px" }}
+                variant="h2"
+              >
+                Focused Malignancy{" "}
+              </Typography>
+            </Grid>
+          </a>
           <Typography className={classes.infoBox}>
             <ul>
               <li style={{ color: "#adb0bb", fontSize: "0.9em" }}>
@@ -238,24 +256,30 @@ const Conduits = () => {
           Best Raiding and M+ Endurance Conduits for Affliction Warlocks
         </Typography>
         <Grid style={{ marginLeft: "20px", marginTop: "20px" }}>
-          <Grid container>
-            <ListItemAvatar>
-              <Avatar
-                variant="rounded"
-                src={Diabolic}
-                style={{
-                  boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
-                }}
-              ></Avatar>
-            </ListItemAvatar>
-            <Typography
-              className={classes.boxText}
-              style={{ color: "orange", paddingTop: "10px" }}
-              variant="h2"
-            >
-              Focused Malignancy{" "}
-            </Typography>
-          </Grid>
+          <a
+            href="https://www.wowhead.com/spell=340562/diabolic-bloodstone"
+            data-wowhead="spell=340562"
+            style={{ textDecoration: "none" }}
+          >
+            <Grid container>
+              <ListItemAvatar>
+                <Avatar
+                  variant="rounded"
+                  src={Diabolic}
+                  style={{
+                    boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
+                  }}
+                ></Avatar>
+              </ListItemAvatar>
+              <Typography
+                className={classes.boxText}
+                style={{ color: "orange", paddingTop: "10px" }}
+                variant="h2"
+              >
+                Diabolic Bloodstone{" "}
+              </Typography>
+            </Grid>
+          </a>
           <Typography className={classes.infoBox}>
             <ul>
               <li style={{ color: "#adb0bb", fontSize: "0.9em" }}>
@@ -268,24 +292,30 @@ const Conduits = () => {
           </Typography>
         </Grid>
         <Grid style={{ marginLeft: "20px" }}>
-          <Grid container style={{ marginTop: "10px" }}>
-            <ListItemAvatar>
-              <Avatar
-                variant="rounded"
-                src={Barrier}
-                style={{
-                  boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
-                }}
-              ></Avatar>
-            </ListItemAvatar>
-            <Typography
-              className={classes.boxText}
-              style={{ color: "orange", paddingTop: "10px" }}
-              variant="h2"
-            >
-              Resolute Barrier{" "}
-            </Typography>
-          </Grid>
+          <a
+            href="https://www.wowhead.com/spell=339272/resolute-barrier"
+            data-wowhead="spell=339272"
+            style={{ textDecoration: "none" }}
+          >
+            <Grid container style={{ marginTop: "10px" }}>
+              <ListItemAvatar>
+                <Avatar
+                  variant="rounded"
+                  src={Barrier}
+                  style={{
+                    boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
+                  }}
+                ></Avatar>
+              </ListItemAvatar>
+              <Typography
+                className={classes.boxText}
+                style={{ color: "orange", paddingTop: "10px" }}
+                variant="h2"
+              >
+                Resolute Barrier{" "}
+              </Typography>
+            </Grid>
+          </a>
           <Typography className={classes.infoBox}>
             <ul>
               <li style={{ color: "#adb0bb", fontSize: "0.9em" }}>
@@ -304,24 +334,30 @@ const Conduits = () => {
           Best Raiding and M+ Finesse Conduits for Affliction Warlocks
         </Typography>
         <Grid style={{ marginLeft: "20px", marginTop: "20px" }}>
-          <Grid container>
-            <ListItemAvatar>
-              <Avatar
-                variant="rounded"
-                src={Momentum}
-                style={{
-                  boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
-                }}
-              ></Avatar>
-            </ListItemAvatar>
-            <Typography
-              className={classes.boxText}
-              style={{ color: "orange", paddingTop: "10px" }}
-              variant="h2"
-            >
-              Demonic Momentum{" "}
-            </Typography>
-          </Grid>
+          <a
+            href="https://www.wowhead.com/spell=339411/demonic-momentum"
+            data-wowhead="spell=339411"
+            style={{ textDecoration: "none" }}
+          >
+            <Grid container>
+              <ListItemAvatar>
+                <Avatar
+                  variant="rounded"
+                  src={Momentum}
+                  style={{
+                    boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
+                  }}
+                ></Avatar>
+              </ListItemAvatar>
+              <Typography
+                className={classes.boxText}
+                style={{ color: "orange", paddingTop: "10px" }}
+                variant="h2"
+              >
+                Demonic Momentum{" "}
+              </Typography>
+            </Grid>
+          </a>
           <Typography className={classes.infoBox}>
             <ul>
               <li style={{ color: "#adb0bb", fontSize: "0.9em" }}>
@@ -331,24 +367,30 @@ const Conduits = () => {
           </Typography>
         </Grid>
         <Grid style={{ marginLeft: "20px" }}>
-          <Grid container style={{ marginTop: "10px" }}>
-            <ListItemAvatar>
-              <Avatar
-                variant="rounded"
-                src={Celerity}
-                style={{
-                  boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
-                }}
-              ></Avatar>
-            </ListItemAvatar>
-            <Typography
-              className={classes.boxText}
-              style={{ color: "orange", paddingTop: "10px" }}
-              variant="h2"
-            >
-              Fel Celerity{" "}
-            </Typography>
-          </Grid>
+          <a
+            href="https://www.wowhead.com/spell=339130/fel-celerity"
+            data-wowhead="spell=339130"
+            style={{ textDecoration: "none" }}
+          >
+            <Grid container style={{ marginTop: "10px" }}>
+              <ListItemAvatar>
+                <Avatar
+                  variant="rounded"
+                  src={Celerity}
+                  style={{
+                    boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
+                  }}
+                ></Avatar>
+              </ListItemAvatar>
+              <Typography
+                className={classes.boxText}
+                style={{ color: "orange", paddingTop: "10px" }}
+                variant="h2"
+              >
+                Fel Celerity{" "}
+              </Typography>
+            </Grid>
+          </a>
           <Typography className={classes.infoBox}>
             <ul>
               <li style={{ color: "#adb0bb", fontSize: "0.9em" }}>
