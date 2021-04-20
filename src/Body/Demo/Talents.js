@@ -120,7 +120,7 @@ const Talents = (props) => {
                 className={classes.tittle}
                 style={{ textAlign: "center" }}
               >
-                Best Affliction Warlock Talents
+                Best Demonology Warlock Talents
               </Typography>
             </Grid>
             <Divider variant="inset" component="hr" />

@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "6px",
     borderStyle: "solid",
     borderWidth: "2px",
-    borderColor: "#2AB602",
+    borderColor: "#B97AF4",
   },
 
   bossframe: {
@@ -139,7 +139,7 @@ const Raid = (props) => {
                 className={classes.tittle}
                 style={{ textAlign: "center" }}
               >
-                Best Affliction Setup per Boss
+                Best Demonology Setup per Boss
               </Typography>
             </Grid>
             <Divider variant="inset" component="hr" />
