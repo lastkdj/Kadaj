@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Kadaj/static/css/main.5234f586.chunk.css",
-    "main.js": "/Kadaj/static/js/main.17750626.chunk.js",
-    "main.js.map": "/Kadaj/static/js/main.17750626.chunk.js.map",
+    "main.js": "/Kadaj/static/js/main.bf4dc815.chunk.js",
+    "main.js.map": "/Kadaj/static/js/main.bf4dc815.chunk.js.map",
     "runtime-main.js": "/Kadaj/static/js/runtime-main.88962605.js",
     "runtime-main.js.map": "/Kadaj/static/js/runtime-main.88962605.js.map",
-    "static/js/2.de60f3aa.chunk.js": "/Kadaj/static/js/2.de60f3aa.chunk.js",
-    "static/js/2.de60f3aa.chunk.js.map": "/Kadaj/static/js/2.de60f3aa.chunk.js.map",
+    "static/js/2.107a5fe0.chunk.js": "/Kadaj/static/js/2.107a5fe0.chunk.js",
+    "static/js/2.107a5fe0.chunk.js.map": "/Kadaj/static/js/2.107a5fe0.chunk.js.map",
     "static/js/3.b234ae9c.chunk.js": "/Kadaj/static/js/3.b234ae9c.chunk.js",
     "static/js/3.b234ae9c.chunk.js.map": "/Kadaj/static/js/3.b234ae9c.chunk.js.map",
     "index.html": "/Kadaj/index.html",
     "static/css/main.5234f586.chunk.css.map": "/Kadaj/static/css/main.5234f586.chunk.css.map",
-    "static/js/2.de60f3aa.chunk.js.LICENSE.txt": "/Kadaj/static/js/2.de60f3aa.chunk.js.LICENSE.txt",
+    "static/js/2.107a5fe0.chunk.js.LICENSE.txt": "/Kadaj/static/js/2.107a5fe0.chunk.js.LICENSE.txt",
     "static/media/Awareness.ad8b6ec3.png": "/Kadaj/static/media/Awareness.ad8b6ec3.png",
     "static/media/Castle Nathria Mythic Artificer Xymox.1f2b2ead.jpg": "/Kadaj/static/media/Castle Nathria Mythic Artificer Xymox.1f2b2ead.jpg",
     "static/media/Castle Nathria Mythic Denathrius.4fa5adc6.jpg": "/Kadaj/static/media/Castle Nathria Mythic Denathrius.4fa5adc6.jpg",
@@ -44,6 +44,7 @@
     "static/media/denathrius.ecc76e3d.jpg": "/Kadaj/static/media/denathrius.ecc76e3d.jpg",
     "static/media/destroaoefull.398c4634.png": "/Kadaj/static/media/destroaoefull.398c4634.png",
     "static/media/destroimg.ec3f0977.jpg": "/Kadaj/static/media/destroimg.ec3f0977.jpg",
+    "static/media/destrost.f132e5c4.png": "/Kadaj/static/media/destrost.f132e5c4.png",
     "static/media/destrostfull.82143748.png": "/Kadaj/static/media/destrostfull.82143748.png",
     "static/media/flicker.79f1c9e7.png": "/Kadaj/static/media/flicker.79f1c9e7.png",
     "static/media/generals.9ab057c9.jpg": "/Kadaj/static/media/generals.9ab057c9.jpg",
@@ -80,8 +81,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.88962605.js",
-    "static/js/2.de60f3aa.chunk.js",
+    "static/js/2.107a5fe0.chunk.js",
     "static/css/main.5234f586.chunk.css",
-    "static/js/main.17750626.chunk.js"
+    "static/js/main.bf4dc815.chunk.js"
   ]
 }
