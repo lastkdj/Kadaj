@@ -1,4 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
+import textura from "../../Img/textura.jpg";
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -12,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   sticky: {
     display: "flex",
     padding: "20px 0px",
-    backgroundColor: "white",
+    backgroundColor: "rgb(28, 28, 28)",
     position: "fixed",
     top: "0",
     zIndex: "5000",
@@ -39,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
   headerfontSticky: {
     margin: "0px 20px",
     display: "flex",
-    color: "#2e2e2e",
+    color: "white",
     fontFamily: "Poppins, sans-serif",
     justifyContent: "center",
   },

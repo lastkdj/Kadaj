@@ -1,14 +1,14 @@
 import React from "react";
 import Paper from "@material-ui/core/Paper";
 import { Grid, Slide, Typography, makeStyles } from "@material-ui/core";
-import { Menu } from "../../Context/AffMenuContext";
+import { Menu } from "../../Context/DemoMenuContext";
 import Divider from "@material-ui/core/Divider";
 import Runecarver from "../../Img/aff/runecarver.jpg";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import Avatar from "@material-ui/core/Avatar";
 import Demonic from "../../Img/aff/demonic.png";
-import Wrath from "../../Img/aff/wrath.png";
-import Sacrolash from "../../Img/aff/sacrolash.png";
+import Wilfreds from "../../Img/demo/wilfreds.png";
+import Grim from "../../Img/demo/grim.png";
 
 const useStyles = makeStyles((theme) => ({
   tittle: {
@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "6px",
     borderStyle: "solid",
     borderWidth: "2px",
-    borderColor: "#2AB602",
+    borderColor: "#B97AF4",
   },
 }));
 
@@ -78,7 +78,7 @@ const Lego = (props) => {
                 className={classes.tittle}
                 style={{ textAlign: "center" }}
               >
-                Best Affliction Warlock Legendaries
+                Best Demonology Warlock Legendaries
               </Typography>
             </Grid>
             <Divider variant="inset" component="hr" />
@@ -97,21 +97,21 @@ const Lego = (props) => {
                 </Typography>
                 <Typography
                   className={classes.subtittle}
-                  style={{ marginTop: "20px", color: "#2AB602" }}
+                  style={{ marginTop: "20px", color: "#B97AF4" }}
                 >
-                  Best Affliction Warlock Legendary for Raiding and Mythic +
+                  Best Demonology Warlock Legendary for Raiding and Mythic +
                 </Typography>
                 <Grid>
                   <a
-                    href="https://www.wowhead.com/spell=337057/relic-of-demonic-synergy"
-                    data-wowhead="spell=337057"
+                    href="https://www.wowhead.com/spell=337020/wilfreds-sigil-of-superior-summoning"
+                    data-wowhead="spell=337020"
                     style={{ textDecoration: "none" }}
                   >
                     <Grid container style={{ marginTop: "30px" }}>
                       <ListItemAvatar>
                         <Avatar
                           variant="rounded"
-                          src={Demonic}
+                          src={Wilfreds}
                           style={{
                             boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
                           }}
@@ -122,7 +122,7 @@ const Lego = (props) => {
                         style={{ color: "orange", paddingTop: "10px" }}
                         variant="h2"
                       >
-                        Relic of Demonic Synergy{" "}
+                        Wilfred's Sigil of Superior Summoning{" "}
                       </Typography>
                     </Grid>
                   </a>
@@ -131,13 +131,13 @@ const Lego = (props) => {
                       <li>
                         Available Slots:{" "}
                         <span style={{ color: "#adb0bb", fontSize: "0.9em" }}>
-                          Head, Shoulder{" "}
+                          Wrist, Finger{" "}
                         </span>
                       </li>
                       <li>
                         Crafting Preference:{" "}
                         <span style={{ color: "#adb0bb", fontSize: "0.9em" }}>
-                          Head
+                          Wrist
                         </span>
                       </li>
                       <li>
@@ -155,18 +155,18 @@ const Lego = (props) => {
                       className={classes.subtittle}
                       style={{ marginTop: "20px", color: "darkkhaki" }}
                     >
-                      Alternative for Mythic +
+                      Alternative for Raiding & Mythic +
                     </Typography>
                     <a
-                      href="https://www.wowhead.com/spell=337128/wrath-of-consumption"
-                      data-wowhead="spell=337128"
+                      href="https://www.wowhead.com/spell=337141/grim-inquisitors-dread-calling"
+                      data-wowhead="spell=337141"
                       style={{ textDecoration: "none" }}
                     >
                       <Grid container style={{ marginTop: "30px" }}>
                         <ListItemAvatar>
                           <Avatar
                             variant="rounded"
-                            src={Wrath}
+                            src={Grim}
                             style={{
                               boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
                             }}
@@ -177,7 +177,7 @@ const Lego = (props) => {
                           style={{ color: "orange", paddingTop: "10px" }}
                           variant="h2"
                         >
-                          Wrath of Consumption{" "}
+                          Grim Inquisitor's Dread Calling{" "}
                         </Typography>
                       </Grid>
                     </a>
@@ -186,13 +186,13 @@ const Lego = (props) => {
                         <li>
                           Available Slots:{" "}
                           <span style={{ color: "#adb0bb", fontSize: "0.9em" }}>
-                            Feet, Back{" "}
+                            Neck, Bracers{" "}
                           </span>
                         </li>
                         <li>
                           Crafting Preference:{" "}
                           <span style={{ color: "#adb0bb", fontSize: "0.9em" }}>
-                            Feet
+                            Neck
                           </span>
                         </li>
                         <li>
@@ -204,23 +204,17 @@ const Lego = (props) => {
                       </ul>
                     </Typography>
                   </Grid>
-                  <Grid container item>
-                    <Typography
-                      className={classes.subtittle}
-                      style={{ marginTop: "20px", color: "darkkhaki" }}
-                    >
-                      Alternative for Raiding & Mythic +
-                    </Typography>
+                  <Grid container item style={{ marginTop: "50px" }}>
                     <a
-                      href="https://www.wowhead.com/spell=337111/sacrolashs-dark-strike"
-                      data-wowhead="spell=337111"
+                      href="https://www.wowhead.com/spell=337057/relic-of-demonic-synergy"
+                      data-wowhead="spell=337057"
                       style={{ textDecoration: "none" }}
                     >
                       <Grid container style={{ marginTop: "30px" }}>
                         <ListItemAvatar>
                           <Avatar
                             variant="rounded"
-                            src={Sacrolash}
+                            src={Demonic}
                             style={{
                               boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
                             }}
@@ -231,7 +225,7 @@ const Lego = (props) => {
                           style={{ color: "orange", paddingTop: "10px" }}
                           variant="h2"
                         >
-                          Sacrolash's Dark Strike{" "}
+                          Relic of Demonic Synergy{" "}
                         </Typography>
                       </Grid>
                     </a>
@@ -240,13 +234,13 @@ const Lego = (props) => {
                         <li>
                           Available Slots:{" "}
                           <span style={{ color: "#adb0bb", fontSize: "0.9em" }}>
-                            Legs, Feet{" "}
+                            Head, Shoulder{" "}
                           </span>
                         </li>
                         <li>
                           Crafting Preference:{" "}
                           <span style={{ color: "#adb0bb", fontSize: "0.9em" }}>
-                            Legs
+                            Head
                           </span>
                         </li>
                         <li>

@@ -1,12 +1,12 @@
 import React from "react";
 import { Grid, makeStyles } from "@material-ui/core";
 import Affwall from "../Img/affwall4.png";
-import Affliction from "./Affliction";
+import Affliction from "./Affliction/Affliction";
+import Demonology from "./Demo/Demonology";
 
 const useStyles = makeStyles((theme) => ({
   asset1: {
     backgroundImage: `url(${Affwall})`,
-    height: "300vh",
     opacity: "",
   },
 }));
@@ -16,6 +16,7 @@ const Guides = () => {
   return (
     <Grid container className={classes.asset1} id="Guides">
       <Affliction />
+      <Demonology />
     </Grid>
   );
 };

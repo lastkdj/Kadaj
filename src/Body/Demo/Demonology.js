@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import { Grid, makeStyles } from "@material-ui/core";
-import Affmenu from "./Affmenu";
-import Stats from "./Affliction/Stats";
-import Lego from "./Affliction/Lego";
-import Covenant from "./Affliction/Covenant";
-import Talents from "./Affliction/Talents";
-import Raid from "./Affliction/Raid";
-import { Menu } from "../Context/MenuContext";
+import Demomenu from "./Demomenu";
+import Stats from "./Stats";
+import Lego from "./Lego";
+import Covenant from "./Covenant";
+import Talents from "./Talents";
+import Raid from "./Raid";
+import { Menu } from "../../Context/DemoMenuContext";
 
 const useStyles = makeStyles((theme) => ({}));
 
-const Affliction = () => {
+const Demonology = () => {
   const { state } = Menu();
   const { stats, lego, covenant, talents, raid } = state;
 
   return (
-    <Grid container id="Guides">
-      <Affmenu />
+    <Grid container id="Guides" style={{ marginTop: "150px", height: "300vh" }}>
+      <Demomenu />
       {stats ? (
         <Stats />
       ) : lego ? (
@@ -32,4 +32,4 @@ const Affliction = () => {
   );
 };
 
-export default Affliction;
+export default Demonology;

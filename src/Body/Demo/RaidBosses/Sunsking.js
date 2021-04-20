@@ -1,16 +1,16 @@
 import React from "react";
-import aoetalents from "../../../Img/aff/aoetalents.png";
+import shriekwingtalents from "../../../Img/demo/demotalentsraid.png";
 import Divider from "@material-ui/core/Divider";
 import { Grid, Typography, makeStyles } from "@material-ui/core";
-import Focused from "../../../Img/aff/focused.png";
+import Blood from "../../../Img/demo/blood.png";
+import Comando from "../../../Img/demo/comando.png";
 import cabalist from "../../../Img/aff/cabalist.png";
 import ruby from "../../../Img/aff/ruby.png";
-import quantum from "../../../Img/aff/quantum.png";
+import gladiatoremblem from "../../../Img/demo/gladiator.png";
 import gladiator from "../../../Img/aff/gladiator.png";
-import Demonic from "../../../Img/aff/demonic.png";
+import Wilfreds from "../../../Img/demo/wilfreds.png";
 import Diabolic from "../../../Img/aff/diabolic.png";
 import Momentum from "../../../Img/aff/momentum.png";
-import Rolling from "../../../Img/aff/ra.png";
 
 const useStyles = makeStyles((theme) => ({
   tittle: {
@@ -47,45 +47,44 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const CouncilComponent = () => {
+const SunskingComponent = () => {
   const classes = useStyles();
   return (
     <Grid container xs={12} direction="column" style={{ padding: "10px" }}>
       {" "}
-      <Typography className={classes.tittle}>Council of Blood</Typography>
+      <Typography className={classes.tittle}>Sun King's Salvation</Typography>
       <Divider variant="inset" component="hr" />
       <Typography className={classes.subtittle}>Talent Choice:</Typography>
       <img
         width="297px"
         height="46px"
-        src={aoetalents}
+        src={shriekwingtalents}
         style={{ margin: "10px 0px" }}
       />
       <Typography className={classes.subtittle}>Conduits Choice:</Typography>
       <Grid container>
         <a
-          href="https://www.wowhead.com/spell=339500/focused-malignancy"
-          data-wowhead="spell=339500"
+          href="https://www.wowhead.com/spell=339578/borne-of-blood"
+          data-wowhead="spell=339578"
         >
           <img
             width="46px"
             height="46px"
-            src={Focused}
+            src={Blood}
             style={{ margin: "10px 10px 10px 0px" }}
           />
         </a>
         <a
-          href="https://www.wowhead.com/spell=339481/rolling-agony"
-          data-wowhead="spell=339481"
+          href="https://www.wowhead.com/spell=339845/fel-commando"
+          data-wowhead="spell=339845"
         >
           <img
             width="46px"
             height="46px"
-            src={Rolling}
+            src={Comando}
             style={{ margin: "10px 10px 10px 0px" }}
           />
         </a>
-
         <a
           href="https://www.wowhead.com/spell=340562/diabolic-bloodstone"
           data-wowhead="spell=340562"
@@ -112,18 +111,6 @@ const CouncilComponent = () => {
       <Typography className={classes.subtittle}>Trinkets:</Typography>
       <Grid container>
         <a
-          href="https://www.wowhead.com/item=184028/cabalists-hymnal?bonus=6805"
-          data-wowhead="item=184028"
-        >
-          {" "}
-          <img
-            width="46px"
-            height="46px"
-            src={cabalist}
-            style={{ margin: "10px 10px 10px 0px" }}
-          />{" "}
-        </a>
-        <a
           href="https://www.wowhead.com/item=178809/soulletting-ruby?bonus=0:1501"
           data-wowhead="item=178809"
         >
@@ -135,16 +122,29 @@ const CouncilComponent = () => {
           />{" "}
         </a>
         <a
-          href="https://www.wowhead.com/item=179350/inscrutable-quantum-device?bonus=6805:1472"
-          data-wowhead="item=179350"
+          href="https://www.wowhead.com/item=178447/sinful-gladiators-emblem"
+          data-wowhead="item=178447"
         >
           <img
             width="46px"
             height="46px"
-            src={quantum}
+            src={gladiatoremblem}
             style={{ margin: "10px 10px 10px 0px" }}
           />
         </a>
+        <a
+          href="https://www.wowhead.com/item=184028/cabalists-hymnal?bonus=6805"
+          data-wowhead="item=184028"
+        >
+          {" "}
+          <img
+            width="46px"
+            height="46px"
+            src={cabalist}
+            style={{ margin: "10px 10px 10px 0px" }}
+          />{" "}
+        </a>
+
         <a
           href="https://www.wowhead.com/item=175921/sinful-gladiators-badge-of-ferocity"
           data-wowhead="item=175921"
@@ -162,13 +162,13 @@ const CouncilComponent = () => {
       </Typography>
       <Grid>
         <a
-          href="https://www.wowhead.com/spell=337057/relic-of-demonic-synergy"
-          data-wowhead="spell=337057"
+          href="https://www.wowhead.com/spell=337020/wilfreds-sigil-of-superior-summoning"
+          data-wowhead="spell=337020"
         >
           <img
             width="46px"
             height="46px"
-            src={Demonic}
+            src={Wilfreds}
             style={{ margin: "10px 10px 10px 0px" }}
           />
         </a>
@@ -177,4 +177,4 @@ const CouncilComponent = () => {
   );
 };
 
-export default CouncilComponent;
+export default SunskingComponent;

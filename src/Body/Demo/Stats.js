@@ -1,9 +1,9 @@
 import React from "react";
 import Paper from "@material-ui/core/Paper";
 import { Grid, Slide, Typography, makeStyles } from "@material-ui/core";
-import { Menu } from "../../Context/AffMenuContext";
+import { Menu } from "../../Context/DemoMenuContext";
 import Divider from "@material-ui/core/Divider";
-import StatImage from "../../Img/stats.jpg";
+import StatImage from "../../Img/demo/demorightside.jpg";
 
 const useStyles = makeStyles((theme) => ({
   tittle: {
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "6px",
     borderStyle: "solid",
     borderWidth: "2px",
-    borderColor: "#2AB602",
+    borderColor: "#B97AF4",
   },
 }));
 
@@ -64,7 +64,7 @@ const Stats = (props) => {
                 className={classes.tittle}
                 style={{ textAlign: "center" }}
               >
-                Best Stats for Affliction Warlock
+                Best Stats for Demonology Warlock
               </Typography>
             </Grid>
             <Divider variant="inset" component="hr" />
@@ -104,12 +104,12 @@ const Stats = (props) => {
                   </ul>
                   <span
                     style={{
-                      color: "#2AB602",
+                      color: "#B97AF4",
                       marginLeft: "50px",
                       fontWeight: 600,
                     }}
                   >
-                    Intellect{" > "}Spell Power{" > "}Mastery{" > "}Haste{" > "}
+                    Intellect{" > "}Spell Power{" > "}Haste{" > "}Mastery{" = "}
                     Crit{" > "}
                     Versatility
                   </span>

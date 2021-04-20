@@ -1,6 +1,6 @@
 import React, { useContext, useMemo, createContext, useReducer } from "react";
 
-const MenuContext = createContext();
+const AffMenuContext = createContext();
 
 function submitReducer(state, action) {
   switch (action.type) {
@@ -78,7 +78,7 @@ const initialState = {
   raid: false,
 };
 
-export function MenuProvider(props) {
+export function AffMenuProvider(props) {
   const [state, dispatch] = useReducer(submitReducer, initialState);
 
   const value = useMemo(() => {
@@ -88,11 +88,11 @@ export function MenuProvider(props) {
     };
   }, [state]);
 
-  return <MenuContext.Provider value={value} {...props} />;
+  return <AffMenuContext.Provider value={value} {...props} />;
 }
 
 export function Menu() {
-  const context = useContext(MenuContext);
+  const context = useContext(AffMenuContext);
   if (!context) {
     throw new Error("No esta dentro del Proveedor");
   }

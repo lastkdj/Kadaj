@@ -1,6 +1,6 @@
 import React from "react";
 import Paper from "@material-ui/core/Paper";
-import { Menu } from "../../Context/AffMenuContext";
+import { Menu } from "../../Context/DemoMenuContext";
 import { Grid, Slide, Typography, makeStyles } from "@material-ui/core";
 import Divider from "@material-ui/core/Divider";
 import AppBar from "@material-ui/core/AppBar";
@@ -8,9 +8,9 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import PropTypes from "prop-types";
 import Box from "@material-ui/core/Box";
-import TalentsImg from "../../Img/aff/talents.jpg";
-import st from "../../Img/aff/st.png";
-import aoe from "../../Img/aff/aoe.png";
+import TalentsImg from "../../Img/demo/talentright.jpg";
+import st from "../../Img/demo/demotalents.png";
+import aoe from "../../Img/demo/demodungeontalents.png";
 
 const useStyles = makeStyles((theme) => ({
   tittle: {
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "6px",
     borderStyle: "solid",
     borderWidth: "2px",
-    borderColor: "#2AB602",
+    borderColor: "#B97AF4",
   },
 
   infoBox: {
@@ -158,56 +158,7 @@ const Talents = (props) => {
                 <TabPanel value={value} index={0}>
                   <Grid container justify="space-between">
                     <img src={st} />
-                    <Grid direction="column">
-                      <Typography
-                        className={classes.infoBox}
-                        style={{ marginTop: "10px", marginRight: "30px" }}
-                      >
-                        Best Choice
-                      </Typography>
-                      <Typography
-                        className={classes.infoBox}
-                        style={{ marginTop: "50px", marginRight: "30px" }}
-                      >
-                        Best Choice
-                      </Typography>
-                      <Typography
-                        className={classes.infoBox}
-                        style={{ marginTop: "40px", marginRight: "30px" }}
-                      >
-                        Depends on Fight
-                      </Typography>
-                      <Typography
-                        className={classes.infoBox}
-                        style={{ marginTop: "50px", marginRight: "30px" }}
-                      >
-                        Best Choice
-                      </Typography>
-                      <Typography
-                        className={classes.infoBox}
-                        style={{ marginTop: "40px", marginRight: "30px" }}
-                      >
-                        Depends on Fight
-                      </Typography>
-                      <Typography
-                        className={classes.infoBox}
-                        style={{ marginTop: "50px", marginRight: "30px" }}
-                      >
-                        Best Choice
-                      </Typography>
-                      <Typography
-                        className={classes.infoBox}
-                        style={{ marginTop: "50px", marginRight: "30px" }}
-                      >
-                        Best Choice
-                      </Typography>
-                    </Grid>
-                  </Grid>
-                </TabPanel>
-                <TabPanel value={value} index={1}>
-                  <Grid container justify="space-around">
-                    <img src={aoe} />
-                    <Grid direction="column">
+                    <Grid direction="column" style={{ marginRight: "30px" }}>
                       <Typography
                         className={classes.infoBox}
                         style={{ marginTop: "10px" }}
@@ -218,7 +169,7 @@ const Talents = (props) => {
                         className={classes.infoBox}
                         style={{ marginTop: "50px" }}
                       >
-                        Depends on Fight
+                        Best Choice
                       </Typography>
                       <Typography
                         className={classes.infoBox}
@@ -228,9 +179,9 @@ const Talents = (props) => {
                       </Typography>
                       <Typography
                         className={classes.infoBox}
-                        style={{ marginTop: "50px", fontSize: "0.7em" }}
+                        style={{ marginTop: "50px" }}
                       >
-                        Depends on Fight (Vile Taint)
+                        Best Choice
                       </Typography>
                       <Typography
                         className={classes.infoBox}
@@ -240,9 +191,58 @@ const Talents = (props) => {
                       </Typography>
                       <Typography
                         className={classes.infoBox}
-                        style={{ marginTop: "50px", fontSize: "0.7em" }}
+                        style={{ marginTop: "50px" }}
                       >
-                        Depends on Fight (Dark Caller)
+                        Best Choice
+                      </Typography>
+                      <Typography
+                        className={classes.infoBox}
+                        style={{ marginTop: "50px" }}
+                      >
+                        Best Choice
+                      </Typography>
+                    </Grid>
+                  </Grid>
+                </TabPanel>
+                <TabPanel value={value} index={1}>
+                  <Grid container justify="space-between">
+                    <img src={st} />
+                    <Grid direction="column" style={{ marginRight: "30px" }}>
+                      <Typography
+                        className={classes.infoBox}
+                        style={{ marginTop: "10px" }}
+                      >
+                        Best Choice
+                      </Typography>
+                      <Typography
+                        className={classes.infoBox}
+                        style={{ marginTop: "50px" }}
+                      >
+                        Best Choice
+                      </Typography>
+                      <Typography
+                        className={classes.infoBox}
+                        style={{ marginTop: "40px" }}
+                      >
+                        Depends on Fight
+                      </Typography>
+                      <Typography
+                        className={classes.infoBox}
+                        style={{ marginTop: "50px" }}
+                      >
+                        Best Choice
+                      </Typography>
+                      <Typography
+                        className={classes.infoBox}
+                        style={{ marginTop: "40px" }}
+                      >
+                        Depends on Fight
+                      </Typography>
+                      <Typography
+                        className={classes.infoBox}
+                        style={{ marginTop: "50px" }}
+                      >
+                        Best Choice
                       </Typography>
                       <Typography
                         className={classes.infoBox}
@@ -256,19 +256,19 @@ const Talents = (props) => {
                 <TabPanel value={value} index={2}>
                   {" "}
                   <Grid container justify="space-around">
-                    <img src={st} />
+                    <img src={aoe} />
                     <Grid direction="column">
                       <Typography
                         className={classes.infoBox}
-                        style={{ marginTop: "10px" }}
+                        style={{ marginTop: "10px", fontSize: "0.7em" }}
                       >
-                        Best Choice
+                        Using Carnivorous Stalkers
                       </Typography>
                       <Typography
                         className={classes.infoBox}
                         style={{ marginTop: "50px" }}
                       >
-                        Using Rolling Agony
+                        Best Choice
                       </Typography>
                       <Typography
                         className={classes.infoBox}
@@ -278,9 +278,9 @@ const Talents = (props) => {
                       </Typography>
                       <Typography
                         className={classes.infoBox}
-                        style={{ marginTop: "50px" }}
+                        style={{ marginTop: "50px", fontSize: "0.7em" }}
                       >
-                        Using Rolling Agony
+                        Using Carnivorous Stalkers
                       </Typography>
                       <Typography
                         className={classes.infoBox}

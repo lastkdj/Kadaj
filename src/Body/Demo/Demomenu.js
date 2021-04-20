@@ -6,13 +6,13 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import Avatar from "@material-ui/core/Avatar";
-import SoulRot from "../Img/aff/soulrot.png";
-import Demonic from "../Img/aff/demonic.png";
-import Afflogo from "../Img/aff.png";
-import Skull from "../Img/skull.png";
+import SoulRot from "../../Img/aff/soulrot.png";
+import Demonic from "../../Img/aff/demonic.png";
+import Demologo from "../../Img/demo.jpg";
+import Skull from "../../Img/skull.png";
 import LocalHospitalIcon from "@material-ui/icons/LocalHospital";
-import "./guideStyles.css";
-import { Menu } from "../Context/AffMenuContext";
+import "../guideStyles.css";
+import { Menu } from "../../Context/DemoMenuContext";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Affmenu = (props) => {
+const Demomenu = (props) => {
   const { state, dispatch } = Menu();
   const { stats, lego, covenant, talents, raid } = state;
   const classes = useStyles();
@@ -109,14 +109,14 @@ const Affmenu = (props) => {
       >
         <Avatar
           className={classes.large}
-          src={Afflogo}
+          src={Demologo}
           style={{
             boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
             margin: "0px 30px 0px 20px",
           }}
         ></Avatar>
         <Typography className={classes.spec} style={{ textAlign: "center" }}>
-          AFFLICTION
+          DEMONOLOGY
         </Typography>
       </Grid>
       <Grid
@@ -189,7 +189,7 @@ const Affmenu = (props) => {
           >
             <ListItemAvatar>
               <Avatar
-                src={Afflogo}
+                src={Demologo}
                 style={{
                   boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
                 }}
@@ -220,4 +220,4 @@ const Affmenu = (props) => {
   );
 };
 
-export default Affmenu;
+export default Demomenu;

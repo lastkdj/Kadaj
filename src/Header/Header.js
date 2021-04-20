@@ -1,6 +1,6 @@
 import React from "react";
 import "../Body/Styles.css";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import useStyles from "./Styles/Header";
@@ -52,12 +52,7 @@ const Header = () => {
               offset={0}
               duration={1000}
             >
-              <Typography
-                className={classes.navbarLogo}
-                style={{ color: scrolled ? "#2e2e2e" : "white" }}
-              >
-                KADAJ
-              </Typography>
+              <Typography className={classes.navbarLogo}>KADAJ</Typography>
             </Link>
           </Grid>
         </Grid>
@@ -124,13 +119,22 @@ const Header = () => {
               </Link>
             </li>
             <li className={classes.li}>
-              <Typography
-                className={
-                  scrolled ? classes.headerfontSticky : classes.headerfont
-                }
+              <Link
+                activeClass="active"
+                to="Guides"
+                spy={true}
+                smooth={true}
+                offset={-60}
+                duration={1000}
               >
-                Guides
-              </Typography>
+                <Typography
+                  className={
+                    scrolled ? classes.headerfontSticky : classes.headerfont
+                  }
+                >
+                  Guides
+                </Typography>
+              </Link>
             </li>
             <li className={classes.li}>
               <Typography

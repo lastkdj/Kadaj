@@ -1,6 +1,6 @@
 import React from "react";
 import Paper from "@material-ui/core/Paper";
-import { Menu } from "../../Context/AffMenuContext";
+import { Menu } from "../../Context/DemoMenuContext";
 import { Grid, Slide, Typography, makeStyles } from "@material-ui/core";
 import Divider from "@material-ui/core/Divider";
 import Nightfae from "../../Img/aff/nightfae.jpg";
@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "6px",
     borderStyle: "solid",
     borderWidth: "2px",
-    borderColor: "#2AB602",
+    borderColor: "#B97AF4",
   },
 }));
 
@@ -95,7 +95,7 @@ const Covenant = (props) => {
           >
             {" "}
             <Typography className={classes.tittle}>
-              Best Affliction Warlock Covenant
+              Best Demonology Warlock Covenant
             </Typography>
           </Grid>
           <Divider variant="inset" component="hr" />

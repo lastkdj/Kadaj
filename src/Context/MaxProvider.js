@@ -1,8 +1,13 @@
 import React from "react";
-import { MenuProvider } from "./MenuContext";
+import { AffMenuProvider } from "./AffMenuContext";
+import { DemoMenuProvider } from "./DemoMenuContext";
 
 const MaxProvider = (props) => {
-  return <MenuProvider>{props.children}</MenuProvider>;
+  return (
+    <AffMenuProvider>
+      <DemoMenuProvider>{props.children}</DemoMenuProvider>
+    </AffMenuProvider>
+  );
 };
 
 export default MaxProvider;
