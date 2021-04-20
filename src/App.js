@@ -6,6 +6,7 @@ import About from "./Body/About";
 import VideosPOV from "./Body/VideosPOV";
 import Guides from "./Body/Guides";
 import { Grid } from "@material-ui/core";
+import Addons from "./Body/Addons";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About />
       <VideosPOV />
       <Guides />
+      <Addons />
     </Grid>
   );
 }

@@ -139,7 +139,7 @@ const Raid = (props) => {
                 className={classes.tittle}
                 style={{ textAlign: "center" }}
               >
-                Best Demonology Setup per Boss
+                Best Destruction Setup per Boss
               </Typography>
             </Grid>
             <Divider variant="inset" component="hr" />
