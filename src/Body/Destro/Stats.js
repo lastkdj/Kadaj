@@ -1,9 +1,9 @@
 import React from "react";
 import Paper from "@material-ui/core/Paper";
 import { Grid, Slide, Typography, makeStyles } from "@material-ui/core";
-import { Menu } from "../../Context/DemoMenuContext";
+import { Menu } from "../../Context/DestroMenuContext";
 import Divider from "@material-ui/core/Divider";
-import StatImage from "../../Img/demo/demorightside.jpg";
+import StatImage from "../../Img/destro/rightimage.jpg";
 
 const useStyles = makeStyles((theme) => ({
   tittle: {
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "6px",
     borderStyle: "solid",
     borderWidth: "2px",
-    borderColor: "#B97AF4",
+    borderColor: "#E64D00",
   },
 }));
 
@@ -64,7 +64,7 @@ const Stats = (props) => {
                 className={classes.tittle}
                 style={{ textAlign: "center" }}
               >
-                Best Stats for Demonology Warlock
+                Best Stats for Destruction Warlock
               </Typography>
             </Grid>
             <Divider variant="inset" component="hr" />
@@ -78,13 +78,16 @@ const Stats = (props) => {
                     <li>
                       Mastery{" "}
                       <span style={{ color: "#adb0bb", fontSize: "0.9em" }}>
-                        Increases the damage done by your demons by %.{" "}
+                        Your spells deal 8% additional damage, up to X%. Damage
+                        you take is reduced by 4%, up to X%.{" "}
                       </span>
                     </li>
                     <li>
                       Haste{" "}
                       <span style={{ color: "#adb0bb", fontSize: "0.9em" }}>
-                        Increases attack speed and spell casting speed.{" "}
+                        Increases attack speed and spell casting speed. Haste
+                        also decreases the duration of a dot, but increases how
+                        fast a dot will tick on the target.{" "}
                       </span>
                     </li>
                     <li>
@@ -102,13 +105,14 @@ const Stats = (props) => {
                   </ul>
                   <span
                     style={{
-                      color: "#B97AF4",
+                      color: "#E64D00",
                       marginLeft: "50px",
                       fontWeight: 600,
                     }}
                   >
-                    Intellect{" > "}Spell Power{" > "}Haste{" > "}Mastery{" = "}
-                    Crit{" > "}
+                    Intellect{" > "}Spell Power{" > "}Haste{" >= "}Mastery
+                    {" >= "}
+                    Crit{" >> "}
                     Versatility
                   </span>
                 </Typography>
