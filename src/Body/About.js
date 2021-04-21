@@ -120,7 +120,7 @@ const About = () => {
         </Grid>
         <Grid container item xs={6} class="aboutFadetwo fadeOut">
           <img
-            alt="about"
+            alt=""
             src={about}
             style={isMobile ? { width: "100px" } : { width: "400px" }}
           ></img>
@@ -142,7 +142,7 @@ const About = () => {
           >
             <img
               style={isMobile ? { width: "100px" } : null}
-              alt="about"
+              alt=""
               src={Awareness}
             ></img>
           </Grid>
@@ -196,7 +196,7 @@ const About = () => {
           >
             <img
               style={isMobile ? { width: "100px" } : null}
-              alt="about"
+              alt=""
               src={Void}
             ></img>
           </Grid>

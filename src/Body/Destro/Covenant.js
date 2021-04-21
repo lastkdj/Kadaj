@@ -114,7 +114,7 @@ const Covenant = (props) => {
                 >
                   NIGHTFAE
                 </Typography>
-                <img src={nf} width="60px" height="60px" />
+                <img alt="covenant" src={nf} width="60px" height="60px" />
               </Grid>
 
               <Conduits />
@@ -126,13 +126,6 @@ const Covenant = (props) => {
                 >
                   Soulbind
                 </Typography>
-                <Typography
-                  className={classes.subtittle}
-                  style={{ textAlign: "center", color: "rgb(245, 137, 0)" }}
-                >
-                  {" "}
-                  NIYA
-                </Typography>
                 <Grid container item justify="center">
                   <Grid container item xs={12} justify="center">
                     <a
@@ -141,6 +134,7 @@ const Covenant = (props) => {
                       style={{ textDecoration: "none" }}
                     >
                       <img
+                        alt=""
                         src={Soulrot}
                         width="50px"
                         height="50px"
@@ -154,6 +148,7 @@ const Covenant = (props) => {
                       style={{ textDecoration: "none" }}
                     >
                       <img
+                        alt=""
                         src={Flicker}
                         width="50px"
                         height="50px"
@@ -179,7 +174,7 @@ const Covenant = (props) => {
                         className={classes.subtittle}
                         style={{ textAlign: "center" }}
                       >
-                        Single Target
+                        Single Target (NIYA)
                       </Typography>
                     </Grid>
                     <Grid
@@ -193,17 +188,22 @@ const Covenant = (props) => {
                         className={classes.subtittle}
                         style={{ textAlign: "center" }}
                       >
-                        AOE
+                        AOE (KORYAN)
                       </Typography>
                     </Grid>
-                    <img src={Niya} style={{ width: "230px" }} />
-                    <img src={Korayn} style={{ width: "230px" }} />
+                    <img alt="" src={Niya} style={{ width: "230px" }} />
+                    <img alt="" src={Korayn} style={{ width: "230px" }} />
                   </Grid>
                 </Grid>
               </Grid>
             </Grid>
             <Grid container item xs={4} style={{ maxHeight: "400px" }}>
-              <img width="400px" src={Nightfae} className={classes.border} />
+              <img
+                alt=""
+                width="400px"
+                src={Nightfae}
+                className={classes.border}
+              />
             </Grid>
           </Grid>
         </Paper>

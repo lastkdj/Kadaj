@@ -58,6 +58,16 @@ function submitReducer(state, action) {
         ...state,
         raid: !action.value,
         stats: false,
+        lego: false,
+        covenant: false,
+        talents: false,
+      };
+    }
+    case "rotation": {
+      return {
+        ...state,
+        rotation: !action.value,
+        raid: false,
         stats: false,
         lego: false,
         covenant: false,
@@ -76,6 +86,7 @@ const initialState = {
   covenant: false,
   talents: false,
   raid: false,
+  rotation: false,
 };
 
 export function DestroMenuProvider(props) {

@@ -1,5 +1,4 @@
 import React from "react";
-import aoetalents from "../../../Img/aff/aoetalents.png";
 import Divider from "@material-ui/core/Divider";
 import { Grid, Typography, makeStyles } from "@material-ui/core";
 import Focused from "../../../Img/aff/focused.png";
@@ -57,6 +56,7 @@ const GeneralsComponent = () => {
       <Divider variant="inset" component="hr" />
       <Typography className={classes.subtittle}>Talent Choice:</Typography>
       <img
+        alt=""
         width="297px"
         height="46px"
         src={GeneralTalents}
@@ -69,6 +69,7 @@ const GeneralsComponent = () => {
           data-wowhead="spell=339500"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={Focused}
@@ -80,6 +81,7 @@ const GeneralsComponent = () => {
           data-wowhead="spell=339576"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={Cold}
@@ -92,6 +94,7 @@ const GeneralsComponent = () => {
           data-wowhead="spell=340562"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={Diabolic}
@@ -103,6 +106,7 @@ const GeneralsComponent = () => {
           data-wowhead="spell=339411"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={Momentum}
@@ -118,6 +122,7 @@ const GeneralsComponent = () => {
         >
           {" "}
           <img
+            alt=""
             width="46px"
             height="46px"
             src={cabalist}
@@ -129,6 +134,7 @@ const GeneralsComponent = () => {
           data-wowhead="item=178809"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={ruby}
@@ -140,6 +146,7 @@ const GeneralsComponent = () => {
           data-wowhead="item=179350"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={quantum}
@@ -151,6 +158,7 @@ const GeneralsComponent = () => {
           data-wowhead="item=175921"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={gladiator}
@@ -167,6 +175,7 @@ const GeneralsComponent = () => {
           data-wowhead="spell=337057"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={Demonic}

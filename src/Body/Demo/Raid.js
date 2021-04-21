@@ -260,6 +260,7 @@ const Raid = (props) => {
                 style={{ maxHeight: "400px" }}
               >
                 <img
+                  alt=""
                   width="400px"
                   src={
                     value === 0

@@ -256,6 +256,7 @@ const Lego = (props) => {
               </Grid>
               <Grid container item xs={4}>
                 <img
+                  alt=""
                   width="400px"
                   src={Runecarver}
                   className={classes.border}

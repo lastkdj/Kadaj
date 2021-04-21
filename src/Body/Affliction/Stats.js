@@ -126,7 +126,12 @@ const Stats = (props) => {
                 </Typography>
               </Grid>
               <Grid container item xs={4}>
-                <img width="400px" src={StatImage} className={classes.border} />
+                <img
+                  alt=""
+                  width="400px"
+                  src={StatImage}
+                  className={classes.border}
+                />
               </Grid>
             </Grid>
           </Grid>

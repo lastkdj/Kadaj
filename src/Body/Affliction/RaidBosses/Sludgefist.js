@@ -57,6 +57,7 @@ const SludgefistComponent = () => {
       <Divider variant="inset" component="hr" />
       <Typography className={classes.subtittle}>Talent Choice:</Typography>
       <img
+        alt=""
         width="297px"
         height="46px"
         src={shriekwingtalents}
@@ -69,6 +70,7 @@ const SludgefistComponent = () => {
           data-wowhead="spell=339500"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={Focused}
@@ -80,6 +82,7 @@ const SludgefistComponent = () => {
           data-wowhead="spell=339576"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={Cold}
@@ -91,6 +94,7 @@ const SludgefistComponent = () => {
           data-wowhead="spell=340562"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={Diabolic}
@@ -102,6 +106,7 @@ const SludgefistComponent = () => {
           data-wowhead="spell=339411"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={Momentum}
@@ -116,6 +121,7 @@ const SludgefistComponent = () => {
           data-wowhead="item=180117"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={eo}
@@ -127,6 +133,7 @@ const SludgefistComponent = () => {
           data-wowhead="item=175921"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={gladiator}
@@ -140,6 +147,7 @@ const SludgefistComponent = () => {
         >
           {" "}
           <img
+            alt=""
             width="46px"
             height="46px"
             src={cabalist}
@@ -151,6 +159,7 @@ const SludgefistComponent = () => {
           data-wowhead="item=178809"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={ruby}
@@ -162,6 +171,7 @@ const SludgefistComponent = () => {
           data-wowhead="item=179350"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={quantum}
@@ -178,6 +188,7 @@ const SludgefistComponent = () => {
           data-wowhead="spell=337057"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={Demonic}

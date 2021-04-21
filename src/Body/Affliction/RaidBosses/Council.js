@@ -56,6 +56,7 @@ const CouncilComponent = () => {
       <Divider variant="inset" component="hr" />
       <Typography className={classes.subtittle}>Talent Choice:</Typography>
       <img
+        alt=""
         width="297px"
         height="46px"
         src={aoetalents}
@@ -68,6 +69,7 @@ const CouncilComponent = () => {
           data-wowhead="spell=339500"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={Focused}
@@ -79,6 +81,7 @@ const CouncilComponent = () => {
           data-wowhead="spell=339481"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={Rolling}
@@ -91,6 +94,7 @@ const CouncilComponent = () => {
           data-wowhead="spell=340562"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={Diabolic}
@@ -102,6 +106,7 @@ const CouncilComponent = () => {
           data-wowhead="spell=339411"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={Momentum}
@@ -117,6 +122,7 @@ const CouncilComponent = () => {
         >
           {" "}
           <img
+            alt=""
             width="46px"
             height="46px"
             src={cabalist}
@@ -128,6 +134,7 @@ const CouncilComponent = () => {
           data-wowhead="item=178809"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={ruby}
@@ -139,6 +146,7 @@ const CouncilComponent = () => {
           data-wowhead="item=179350"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={quantum}
@@ -150,6 +158,7 @@ const CouncilComponent = () => {
           data-wowhead="item=175921"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={gladiator}
@@ -166,6 +175,7 @@ const CouncilComponent = () => {
           data-wowhead="spell=337057"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={Demonic}

@@ -56,6 +56,7 @@ const LadyComponent = () => {
       <Divider variant="inset" component="hr" />
       <Typography className={classes.subtittle}>Talent Choice:</Typography>
       <img
+        alt=""
         width="297px"
         height="46px"
         src={shriekwingtalents}
@@ -68,6 +69,7 @@ const LadyComponent = () => {
           data-wowhead="spell=339892"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={Ashen}
@@ -79,6 +81,7 @@ const LadyComponent = () => {
           data-wowhead="spell=339896"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={Combusting}
@@ -90,6 +93,7 @@ const LadyComponent = () => {
           data-wowhead="spell=340562"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={Diabolic}
@@ -101,6 +105,7 @@ const LadyComponent = () => {
           data-wowhead="spell=339411"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={Momentum}
@@ -116,6 +121,7 @@ const LadyComponent = () => {
         >
           {" "}
           <img
+            alt=""
             width="46px"
             height="46px"
             src={cabalist}
@@ -128,6 +134,7 @@ const LadyComponent = () => {
           data-wowhead="item=179350"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={quantum}
@@ -139,6 +146,7 @@ const LadyComponent = () => {
           data-wowhead="item=178809"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={ruby}
@@ -150,6 +158,7 @@ const LadyComponent = () => {
           data-wowhead="item=175921"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={gladiator}
@@ -166,6 +175,7 @@ const LadyComponent = () => {
           data-wowhead="spell=337020"
         >
           <img
+            alt=""
             width="46px"
             height="46px"
             src={Cinders}

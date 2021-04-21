@@ -18,6 +18,7 @@ function submitReducer(state, action) {
         covenant: false,
         talents: false,
         raid: false,
+        rotation: false,
       };
     }
     case "lego": {
@@ -28,6 +29,7 @@ function submitReducer(state, action) {
         covenant: false,
         talents: false,
         raid: false,
+        rotation: false,
       };
     }
 
@@ -39,6 +41,7 @@ function submitReducer(state, action) {
         lego: false,
         talents: false,
         raid: false,
+        rotation: false,
       };
     }
 
@@ -50,6 +53,7 @@ function submitReducer(state, action) {
         lego: false,
         covenant: false,
         raid: false,
+        rotation: false,
       };
     }
 
@@ -58,6 +62,18 @@ function submitReducer(state, action) {
         ...state,
         raid: !action.value,
         stats: false,
+        lego: false,
+        covenant: false,
+        talents: false,
+        rotation: false,
+      };
+    }
+
+    case "rotation": {
+      return {
+        ...state,
+        rotation: !action.value,
+        raid: false,
         stats: false,
         lego: false,
         covenant: false,
@@ -76,6 +92,7 @@ const initialState = {
   covenant: false,
   talents: false,
   raid: false,
+  rotation: false,
 };
 
 export function AffMenuProvider(props) {

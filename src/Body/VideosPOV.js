@@ -182,6 +182,11 @@ const VideosPOV = () => {
         backgroundImage: `url(${cn})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
+        borderTopStyle: "solid",
+
+        borderWidth: "1px",
+        marginTop: "3px",
+        boxShadow: "-1px 8px 0px 13px rgba(0,0,0,1)",
       }}
       justify="center"
       id="raid"
@@ -233,7 +238,7 @@ const VideosPOV = () => {
             <img
               onClick={onClickShriekwing}
               className={classes.borderThumbnail}
-              alt="tumb"
+              alt=""
               src={Shriekwing}
               style={{ width: "210px", height: "118px", cursor: "pointer" }}
             />
@@ -242,7 +247,7 @@ const VideosPOV = () => {
             <img
               onClick={onClickHuntsman}
               className={classes.borderThumbnail}
-              alt="tumb"
+              alt=""
               src={Huntsman}
               style={{ width: "210px", height: "118px", cursor: "pointer" }}
             />
@@ -251,7 +256,7 @@ const VideosPOV = () => {
             <img
               onClick={onClickHungering}
               className={classes.borderThumbnail}
-              alt="tumb"
+              alt=""
               src={Hungering}
               style={{ width: "210px", height: "118px", cursor: "pointer" }}
             />
@@ -260,7 +265,7 @@ const VideosPOV = () => {
             <img
               onClick={onClickLady}
               className={classes.borderThumbnail}
-              alt="tumb"
+              alt=""
               src={Lady}
               style={{ width: "210px", height: "118px", cursor: "pointer" }}
             />
@@ -269,7 +274,7 @@ const VideosPOV = () => {
             <img
               onClick={onClickXymox}
               className={classes.borderThumbnail}
-              alt="tumb"
+              alt=""
               src={Xymox}
               style={{ width: "210px", height: "118px", cursor: "pointer" }}
             />
@@ -278,7 +283,7 @@ const VideosPOV = () => {
             <img
               onClick={onClickSunsking}
               className={classes.borderThumbnail}
-              alt="tumb"
+              alt=""
               src={Sunsking}
               style={{ width: "210px", height: "118px", cursor: "pointer" }}
             />{" "}
@@ -287,7 +292,7 @@ const VideosPOV = () => {
             <img
               onClick={onClickCouncil}
               className={classes.borderThumbnail}
-              alt="tumb"
+              alt=""
               src={Council}
               style={{ width: "210px", height: "118px", cursor: "pointer" }}
             />
@@ -296,7 +301,7 @@ const VideosPOV = () => {
             <img
               onClick={onClickSludgefist}
               className={classes.borderThumbnail}
-              alt="tumb"
+              alt=""
               src={Sludgefist}
               style={{ width: "210px", height: "118px", cursor: "pointer" }}
             />
@@ -305,7 +310,7 @@ const VideosPOV = () => {
             <img
               onClick={onClickGenerals}
               className={classes.borderThumbnail}
-              alt="tumb"
+              alt=""
               src={Generals}
               style={{ width: "210px", height: "118px", cursor: "pointer" }}
             />
@@ -314,7 +319,7 @@ const VideosPOV = () => {
             <img
               onClick={onClickDenathrius}
               className={classes.borderThumbnail}
-              alt="tumb"
+              alt=""
               src={Denathrius}
               style={{ width: "210px", height: "118px", cursor: "pointer" }}
             />

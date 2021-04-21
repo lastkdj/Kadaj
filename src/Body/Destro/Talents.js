@@ -39,10 +39,8 @@ const useStyles = makeStyles((theme) => ({
 
   infoBox: {
     fontWeight: 400,
-    color: "white",
     textDecoration: "none",
     fontFamily: "Poppins, sans-serif",
-    fontSize: "0.9em",
     textAlign: "justify",
     color: "#adb0bb",
     fontSize: "0.9em",
@@ -157,7 +155,7 @@ const Talents = (props) => {
                 </AppBar>
                 <TabPanel value={value} index={0}>
                   <Grid container justify="space-between">
-                    <img src={destrostfull} />
+                    <img alt="" src={destrostfull} />
                     <Grid direction="column" style={{ marginRight: "30px" }}>
                       <Typography
                         className={classes.infoBox}
@@ -206,7 +204,7 @@ const Talents = (props) => {
                 </TabPanel>
                 <TabPanel value={value} index={1}>
                   <Grid container justify="space-between">
-                    <img src={destroaoefull} />
+                    <img alt="" src={destroaoefull} />
                     <Grid direction="column" style={{ marginRight: "30px" }}>
                       <Typography
                         className={classes.infoBox}
@@ -256,7 +254,7 @@ const Talents = (props) => {
                 <TabPanel value={value} index={2}>
                   {" "}
                   <Grid container justify="space-around">
-                    <img src={destroaoefull} />
+                    <img alt="" src={destroaoefull} />
                     <Grid direction="column">
                       <Typography
                         className={classes.infoBox}
@@ -306,6 +304,7 @@ const Talents = (props) => {
               </Grid>
               <Grid container item xs={4} style={{ maxHeight: "400px" }}>
                 <img
+                  alt=""
                   width="400px"
                   src={TalentsImg}
                   className={classes.border}

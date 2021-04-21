@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Grid, makeStyles } from "@material-ui/core";
+import React from "react";
+import { Grid } from "@material-ui/core";
 import Demomenu from "./Demomenu";
 import Stats from "./Stats";
 import Lego from "./Lego";
@@ -7,8 +7,6 @@ import Covenant from "./Covenant";
 import Talents from "./Talents";
 import Raid from "./Raid";
 import { Menu } from "../../Context/DemoMenuContext";
-
-const useStyles = makeStyles((theme) => ({}));
 
 const Demonology = () => {
   const { state } = Menu();

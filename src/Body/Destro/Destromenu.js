@@ -13,6 +13,7 @@ import Skull from "../../Img/skull.png";
 import LocalHospitalIcon from "@material-ui/icons/LocalHospital";
 import "../guideStyles.css";
 import { Menu } from "../../Context/DestroMenuContext";
+import RotateRightIcon from "@material-ui/icons/RotateRight";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -201,7 +202,6 @@ const Demomenu = (props) => {
           <ListItem
             button
             onClick={onClickRaid}
-            className={classes.bottomMenu}
             style={raid ? { backgroundColor: "#F58900" } : null}
           >
             <ListItemAvatar>
@@ -213,6 +213,20 @@ const Demomenu = (props) => {
               ></Avatar>
             </ListItemAvatar>
             <ListItemText primary="Raid Setup" />
+          </ListItem>
+          <Divider variant="inset" component="li" />
+          <ListItem button className={classes.bottomMenu}>
+            <ListItemAvatar>
+              <Avatar
+                style={{
+                  boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
+                  backgroundColor: "#750C3A",
+                }}
+              >
+                <RotateRightIcon />
+              </Avatar>
+            </ListItemAvatar>
+            <ListItemText primary="Rotation" />
           </ListItem>
         </List>
       </Grid>

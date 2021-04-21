@@ -58,6 +58,7 @@ const SunskingComponent = () => {
         <Divider variant="inset" component="hr" />
         <Typography className={classes.subtittle}>Talent Choice:</Typography>
         <img
+          alt=""
           width="297px"
           height="46px"
           src={shriekwingtalents}
@@ -70,6 +71,7 @@ const SunskingComponent = () => {
             data-wowhead="spell=339892"
           >
             <img
+              alt=""
               width="46px"
               height="46px"
               src={Ashen}
@@ -81,6 +83,7 @@ const SunskingComponent = () => {
             data-wowhead="spell=339896"
           >
             <img
+              alt=""
               width="46px"
               height="46px"
               src={Combusting}
@@ -92,6 +95,7 @@ const SunskingComponent = () => {
             data-wowhead="spell=340562"
           >
             <img
+              alt="pic"
               width="46px"
               height="46px"
               src={Diabolic}
@@ -103,6 +107,7 @@ const SunskingComponent = () => {
             data-wowhead="spell=339411"
           >
             <img
+              alt=""
               width="46px"
               height="46px"
               src={Momentum}
@@ -118,6 +123,7 @@ const SunskingComponent = () => {
           >
             {" "}
             <img
+              alt=""
               width="46px"
               height="46px"
               src={cabalist}
@@ -130,6 +136,7 @@ const SunskingComponent = () => {
             data-wowhead="item=179350"
           >
             <img
+              alt=""
               width="46px"
               height="46px"
               src={quantum}
@@ -141,6 +148,7 @@ const SunskingComponent = () => {
             data-wowhead="item=178809"
           >
             <img
+              alt=""
               width="46px"
               height="46px"
               src={ruby}
@@ -152,6 +160,7 @@ const SunskingComponent = () => {
             data-wowhead="item=175921"
           >
             <img
+              alt=""
               width="46px"
               height="46px"
               src={gladiator}
@@ -168,6 +177,7 @@ const SunskingComponent = () => {
             data-wowhead="spell=337020"
           >
             <img
+              alt=""
               width="46px"
               height="46px"
               src={Wilfreds}
@@ -183,7 +193,7 @@ const SunskingComponent = () => {
         >
           Koryan
         </Typography>{" "}
-        <img src={Korayn} style={{ width: "300px" }} />
+        <img alt="" src={Korayn} style={{ width: "300px" }} />
       </Grid>
     </Grid>
   );

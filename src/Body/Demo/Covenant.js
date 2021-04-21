@@ -113,7 +113,7 @@ const Covenant = (props) => {
                 >
                   NIGHTFAE
                 </Typography>
-                <img src={nf} width="60px" height="60px" />
+                <img alt="" src={nf} width="60px" height="60px" />
               </Grid>
 
               <Conduits />
@@ -134,13 +134,14 @@ const Covenant = (props) => {
                 </Typography>
                 <Grid container item justify="center">
                   {" "}
-                  <img src={Niya} style={{ width: "fit-content" }} />
+                  <img alt="" src={Niya} style={{ width: "fit-content" }} />
                   <a
                     href="https://www.wowhead.com/spell=325640/soul-rot"
                     data-wowhead="spell=325640"
                     style={{ textDecoration: "none" }}
                   >
                     <img
+                      alt=""
                       src={Soulrot}
                       width="50px"
                       height="50px"
@@ -154,6 +155,7 @@ const Covenant = (props) => {
                     style={{ textDecoration: "none" }}
                   >
                     <img
+                      alt=""
                       src={Flicker}
                       width="50px"
                       height="50px"
@@ -164,7 +166,12 @@ const Covenant = (props) => {
               </Grid>
             </Grid>
             <Grid container item xs={4} style={{ maxHeight: "400px" }}>
-              <img width="400px" src={Nightfae} className={classes.border} />
+              <img
+                alt=""
+                width="400px"
+                src={Nightfae}
+                className={classes.border}
+              />
             </Grid>
           </Grid>
         </Paper>

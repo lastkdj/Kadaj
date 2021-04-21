@@ -1,5 +1,4 @@
 import { makeStyles } from "@material-ui/core/styles";
-import textura from "../../Img/textura.jpg";
 
 const useStyles = makeStyles((theme) => ({
   background: {
