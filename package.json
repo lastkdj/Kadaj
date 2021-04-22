@@ -25,6 +25,7 @@
     "react-scroll": "^1.8.2",
     "react-slick": "^0.28.1",
     "react-spring": "^9.1.1",
+    "react-use": "^17.2.3",
     "web-vitals": "^1.1.1"
   },
   "scripts": {

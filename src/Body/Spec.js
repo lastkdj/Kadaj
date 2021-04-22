@@ -1,7 +1,7 @@
 import { Grid } from "@material-ui/core";
 import "./Styles.css";
 import Paper from "@material-ui/core/Paper";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { makeStyles, Typography } from "@material-ui/core";
 import affImage from "../Img/affimg2.jpg";
 import demoImage from "../Img/demoimg.jpg";
@@ -11,6 +11,7 @@ import demo from "../Img/demo.jpg";
 import destro from "../Img/destro.jpg";
 import logo2 from "../Img/classlogo.png";
 import { Link } from "react-scroll";
+import useHover from "./useHover";
 
 const useStyles = makeStyles((theme) => ({
   spec: {
@@ -27,24 +28,53 @@ const useStyles = makeStyles((theme) => ({
     borderColor: "white",
     backgroundImage: `url(${affImage})`,
     transition: "filter 0.3s ease-in-out",
+    width: "350px",
+    height: "445px",
+    margin: "0 20px",
+    borderRadius: "7px",
+    display: "flex",
+    cursor: "pointer",
+  },
+
+  affGrey: {
+    boxShadow: "2px 7px 24px 12px rgba(0,0,0,0.2)",
+    borderColor: "white",
+    backgroundImage: `url(${affImage})`,
+    transition: "filter 0.3s ease-in-out",
+    width: "350px",
+    height: "445px",
+    margin: "0 20px",
+    borderRadius: "7px",
+    display: "flex",
     filter: "grayscale(100%)",
-    "&:hover": {
-      cursor: "pointer",
-      filter: "grayscale(0%)",
-    },
+    cursor: "pointer",
   },
 
   onHoverdemo: {
     boxShadow: "2px 7px 24px 12px rgba(0,0,0,0.2)",
     borderColor: "white",
     backgroundImage: `url(${demoImage})`,
-
     transition: "filter 0.3s ease-in-out",
+    width: "350px",
+    height: "445px",
+    margin: "0 20px",
+    borderRadius: "7px",
+    display: "flex",
+    cursor: "pointer",
+  },
+
+  demoGrey: {
+    boxShadow: "2px 7px 24px 12px rgba(0,0,0,0.2)",
+    borderColor: "white",
+    backgroundImage: `url(${demoImage})`,
+    transition: "filter 0.3s ease-in-out",
+    width: "350px",
+    height: "445px",
+    margin: "0 20px",
+    borderRadius: "7px",
+    display: "flex",
     filter: "grayscale(100%)",
-    "&:hover": {
-      cursor: "pointer",
-      filter: "grayscale(0%)",
-    },
+    cursor: "pointer",
   },
 
   onHoverdestro: {
@@ -52,11 +82,26 @@ const useStyles = makeStyles((theme) => ({
     borderColor: "white",
     backgroundImage: `url(${destroImage})`,
     transition: "filter 0.3s ease-in-out",
+    width: "350px",
+    height: "445px",
+    margin: "0 20px",
+    borderRadius: "7px",
+    display: "flex",
+    cursor: "pointer",
+  },
+
+  destroGrey: {
+    boxShadow: "2px 7px 24px 12px rgba(0,0,0,0.2)",
+    borderColor: "white",
+    backgroundImage: `url(${destroImage})`,
+    transition: "filter 0.3s ease-in-out",
+    width: "350px",
+    height: "445px",
+    margin: "0 20px",
+    borderRadius: "7px",
+    display: "flex",
     filter: "grayscale(100%)",
-    "&:hover": {
-      cursor: "pointer",
-      filter: "grayscale(0%)",
-    },
+    cursor: "pointer",
   },
 
   override: {
@@ -66,6 +111,9 @@ const useStyles = makeStyles((theme) => ({
 
 const Spec = () => {
   const classes = useStyles();
+  const [affRef, affIsHovered] = useHover();
+  const [demoRef, demoIsHovered] = useHover();
+  const [destroRef, destroIsHovered] = useHover();
 
   useEffect(() => {
     const observerOptions = {
@@ -132,16 +180,17 @@ const Spec = () => {
           offset={-60}
           duration={1500}
         >
-          <Grid class="fadeaff fadeOut">
+          <Grid class="fadeaff fadeOut" ref={affRef}>
             <Paper
-              style={{
-                width: "350px",
-                height: "445px",
-                margin: "0 20px",
-                borderRadius: "7px",
-                display: "flex",
-              }}
-              className={classes.onHoveraff}
+              className={
+                affIsHovered
+                  ? classes.onHoveraff
+                  : demoIsHovered
+                  ? classes.affGrey
+                  : destroIsHovered
+                  ? classes.affGrey
+                  : classes.onHoveraff
+              }
             >
               <Grid
                 container
@@ -178,16 +227,17 @@ const Spec = () => {
           offset={750}
           duration={1500}
         >
-          <Grid class="fadeDemo fadeOut">
+          <Grid class="fadeDemo fadeOut" ref={demoRef}>
             <Paper
-              style={{
-                width: "350px",
-                height: "445px",
-                margin: "0 20px",
-                borderRadius: "7px",
-                display: "flex",
-              }}
-              className={classes.onHoverdemo}
+              className={
+                demoIsHovered
+                  ? classes.onHoverdemo
+                  : affIsHovered
+                  ? classes.demoGrey
+                  : destroIsHovered
+                  ? classes.demoGrey
+                  : classes.onHoverdemo
+              }
             >
               <Grid
                 container
@@ -223,16 +273,17 @@ const Spec = () => {
           offset={1650}
           duration={1500}
         >
-          <Grid class="fadeDestro fadeOut">
+          <Grid ref={destroRef} class="fadeDestro fadeOut">
             <Paper
-              style={{
-                width: "350px",
-                height: "445px",
-                margin: "0 20px",
-                borderRadius: "7px",
-                display: "flex",
-              }}
-              className={classes.onHoverdestro}
+              className={
+                destroIsHovered
+                  ? classes.onHoverdestro
+                  : affIsHovered
+                  ? classes.destroGrey
+                  : demoIsHovered
+                  ? classes.destroGrey
+                  : classes.onHoverdestro
+              }
             >
               <Grid
                 container

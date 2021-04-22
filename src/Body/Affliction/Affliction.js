@@ -14,7 +14,7 @@ const Affliction = () => {
   const { stats, lego, covenant, talents, raid, rotation } = state;
 
   return (
-    <Grid container id="Guides" style={{ height: "704px" }}>
+    <Grid container id="Guides" style={{ height: "704px", overflow: "hidden" }}>
       <Affmenu />
       {stats ? (
         <Stats />

@@ -13,7 +13,11 @@ const Destruction = () => {
   const { stats, lego, covenant, talents, raid } = state;
 
   return (
-    <Grid container id="Guides" style={{ marginTop: "200px", height: "840px" }}>
+    <Grid
+      container
+      id="Guides"
+      style={{ marginTop: "200px", height: "840px", overflow: "hidden" }}
+    >
       <Destromenu />
       {stats ? (
         <Stats />

@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     borderTopStyle: "solid",
     borderTopColor: "rgb(28, 28, 28)",
     borderWidth: "5px",
+    textShadow: "1px 2px #00000040",
   },
 
   tittle: {

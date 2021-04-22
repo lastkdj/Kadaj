@@ -13,7 +13,11 @@ const Demonology = () => {
   const { stats, lego, covenant, talents, raid } = state;
 
   return (
-    <Grid container id="Guides" style={{ marginTop: "150px", height: "704px" }}>
+    <Grid
+      container
+      id="Guides"
+      style={{ marginTop: "150px", height: "704px", overflow: "hidden" }}
+    >
       <Demomenu />
       {stats ? (
         <Stats />
