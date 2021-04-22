@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Grid, makeStyles, Typography } from "@material-ui/core";
 import Asset from "../Img/addonswall3.jpg";
 import UI from "../Img/ui.png";
 import Dialog from "@material-ui/core/Dialog";
 import Zoom from "@material-ui/core/Zoom";
-import TextField from "@material-ui/core/TextField";
+import "./AddonsStyles.css";
+import Tooltip from "@material-ui/core/Tooltip";
+import FileCopyIcon from "@material-ui/icons/FileCopy";
 
 const useStyles = makeStyles((theme) => ({
   spec: {
@@ -97,14 +99,21 @@ const useStyles = makeStyles((theme) => ({
     borderWidth: "2px",
     borderColor: "white",
   },
+
+  li: {
+    listStyle: "none",
+  },
 }));
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Zoom direction="up" ref={ref} {...props} />;
 });
 
+const banish = "#showtooltip Banish/use [mod:shift,@focus] [] Banish";
+
 const Addons = () => {
   const [open, setOpen] = React.useState(false);
+  const [tooltip, setTooltip] = React.useState(false);
 
   const handleOpen = () => {
     setOpen(true);
@@ -116,9 +125,138 @@ const Addons = () => {
 
   const classes = useStyles();
 
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      threshold: 0.7,
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // fade in observed elements that are in view
+          entry.target.classList.replace("fadeOut", "fadeInLeftFast");
+        } else {
+          // fade out observed elements that are not in view
+          return;
+        }
+      });
+    };
+
+    const fadeElmswa = document.querySelectorAll(".wa");
+    const fadeElmsaddons = document.querySelectorAll(".addons");
+    const fadeElmsinterface = document.querySelectorAll(".interface");
+    const fadeElmsmacros = document.querySelectorAll(".macros");
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+    fadeElmswa.forEach((el) => observer.observe(el));
+    fadeElmsaddons.forEach((el) => observer.observe(el));
+    fadeElmsinterface.forEach((el) => observer.observe(el));
+    fadeElmsmacros.forEach((el) => observer.observe(el));
+  }, []);
+
+  const myBanish = () => {
+    /* Get the text field */
+
+    /* Select the text field */
+    var copyText = document.getElementById("myInputBanish");
+
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+    setTooltip(true);
+
+    setTimeout(function () {
+      setTooltip(false);
+    }, 1000);
+    /* Alert the copied text */
+  };
+
+  const mySoulstone = () => {
+    /* Get the text field */
+
+    /* Select the text field */
+    var copyText = document.getElementById("myInputSoulstone");
+
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+    setTooltip(true);
+
+    setTimeout(function () {
+      setTooltip(false);
+    }, 1000);
+    /* Alert the copied text */
+  };
+
+  const myDot = () => {
+    /* Get the text field */
+
+    /* Select the text field */
+    var copyText = document.getElementById("myInputDot");
+
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+    setTooltip(true);
+
+    setTimeout(function () {
+      setTooltip(false);
+    }, 1000);
+    /* Alert the copied text */
+  };
+
+  const myCircle = () => {
+    /* Get the text field */
+
+    /* Select the text field */
+    var copyText = document.getElementById("myInputCircle");
+
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+    setTooltip(true);
+
+    setTimeout(function () {
+      setTooltip(false);
+    }, 1000);
+    /* Alert the copied text */
+  };
+
+  const myInterrupt = () => {
+    /* Get the text field */
+
+    /* Select the text field */
+    var copyText = document.getElementById("myInputInterrupt");
+
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+    setTooltip(true);
+
+    setTimeout(function () {
+      setTooltip(false);
+    }, 1000);
+    /* Alert the copied text */
+  };
+
   return (
     <Grid
       container
+      justify="flex-end"
       className={classes.borderThumbnail}
       style={{ height: "500px", backgroundColor: "teal", padding: "10px" }}
     >
@@ -131,31 +269,36 @@ const Addons = () => {
           Addons - UI
         </Typography>
       </Grid>
-      <Grid item xs={3} style={{ marginLeft: "30px" }}>
-        <Typography className={classes.tittle}> Addons list</Typography>
+      <Grid
+        item
+        xs={3}
+        style={{ marginLeft: "30px", width: "400px" }}
+        class="wa fadeOut"
+      >
+        <Typography className={classes.tittle}> Addons</Typography>
         <ul style={{ color: "white" }}>
           <a
             href="https://docs.google.com/document/d/1eo349uS-_HAA78AQDPl2TrNpvhEzVXp9GGcy52CDAn8/edit?usp=sharing"
             style={{ textDecoration: "none" }}
           >
-            <li>
+            <li className={classes.li}>
               <Typography className={classes.subtittle}>Elvui</Typography>
             </li>
           </a>
-          <li>
+          <li className={classes.li}>
             <Typography className={classes.subtittle}>WeakAuras</Typography>
           </li>
-          <li>
+          <li className={classes.li}>
             <Typography className={classes.subtittle}>Opie</Typography>
           </li>
-          <li>
+          <li className={classes.li}>
             <Typography className={classes.subtittle}>Bigwigs</Typography>
           </li>
           <a
             href="https://pastebin.com/tjcHkQbS"
             style={{ textDecoration: "none" }}
           >
-            <li>
+            <li className={classes.li}>
               <Typography className={classes.subtittle}>Details</Typography>
             </li>
           </a>
@@ -163,7 +306,7 @@ const Addons = () => {
             href="https://pastebin.com/B5Mj1H0L"
             style={{ textDecoration: "none" }}
           >
-            <li>
+            <li className={classes.li}>
               <Typography className={classes.subtittle}>Plater</Typography>
             </li>
           </a>
@@ -174,7 +317,12 @@ const Addons = () => {
           string, you can then import it into the respective addon in game
         </Typography>
       </Grid>
-      <Grid item xs={4} style={{ marginLeft: "30px" }}>
+      <Grid
+        item
+        xs={4}
+        style={{ marginLeft: "30px", width: "400px" }}
+        class="addons fadeOut"
+      >
         <Typography className={classes.tittle}> WeakAuras</Typography>
         <ul style={{ color: "white" }}>
           <li>
@@ -236,8 +384,15 @@ const Addons = () => {
           </a>
         </Typography>
       </Grid>
-      <Grid item xs={3} style={{ marginLeft: "30px" }}>
-        <Typography className={classes.spec}>Interface</Typography>
+      <Grid
+        item
+        xs={3}
+        style={{ marginLeft: "30px" }}
+        class="interface fadeOut"
+      >
+        <Typography className={classes.spec} style={{ textAlign: "center" }}>
+          Interface
+        </Typography>
         <img
           alt="ui"
           width="300px"
@@ -247,7 +402,13 @@ const Addons = () => {
           className={classes.borderui}
           style={{ marginTop: "20px", cursor: "pointer" }}
         />
-
+        <Typography
+          className={classes.info}
+          style={{ marginTop: "20px", textAlign: "center" }}
+        >
+          {" "}
+          Click to enlarge{" "}
+        </Typography>
         <Dialog
           open={open}
           TransitionComponent={Transition}
@@ -267,6 +428,137 @@ const Addons = () => {
             className={classes.borderui}
           />
         </Dialog>
+      </Grid>
+      <Grid
+        item
+        xs={3}
+        style={{ marginLeft: "90px", width: "500px" }}
+        class="macros fadeOut"
+      >
+        <Typography className={classes.tittle} style={{ textAlign: "center" }}>
+          {" "}
+          Macros
+        </Typography>
+        <ul style={{ color: "white" }}>
+          <li className={classes.li}>
+            <Grid container>
+              <Typography
+                style={{ marginRight: "20px" }}
+                className={classes.subtittle}
+              >
+                Banish Focus
+              </Typography>
+
+              <FileCopyIcon
+                onClick={myBanish}
+                style={{ cursor: "pointer", margin: "0px 20px" }}
+              />
+              <input
+                style={{
+                  visibility: "hidden",
+                  backgroundColor: "rgb(28, 28, 28)",
+                  color: "white",
+                  borderRadius: "4px",
+                }}
+                type="text"
+                value="#showtooltip Banish/use [mod:shift,@focus] [] Banish"
+                id="myInputBanish"
+              ></input>
+            </Grid>
+          </li>
+
+          <li className={classes.li}>
+            <Grid container>
+              <Typography className={classes.subtittle}>
+                Soulstone Mouseover
+              </Typography>
+              <FileCopyIcon
+                onClick={mySoulstone}
+                style={{ cursor: "pointer", margin: "0px 20px" }}
+              />
+              <input
+                style={{
+                  visibility: "hidden",
+                  backgroundColor: "rgb(28, 28, 28)",
+                  color: "white",
+                  borderRadius: "4px",
+                }}
+                type="text"
+                value="#showtooltip Soulstone /cast [@mouseover,help] [help] Soulstone"
+                id="myInputSoulstone"
+              ></input>
+            </Grid>
+          </li>
+          <li className={classes.li}>
+            <Grid container>
+              <Typography className={classes.subtittle}>
+                DoT Mouseover
+              </Typography>
+
+              <FileCopyIcon
+                onClick={myDot}
+                style={{ cursor: "pointer", margin: "0px 20px" }}
+              />
+              <input
+                style={{
+                  visibility: "hidden",
+                  backgroundColor: "rgb(28, 28, 28)",
+                  color: "white",
+                  borderRadius: "4px",
+                }}
+                type="text"
+                value="#showtooltip Corruption
+                /use [@mouseover,harm] [harm] Corruption"
+                id="myInputDot"
+              ></input>
+            </Grid>
+          </li>
+          <li className={classes.li}>
+            <Grid container>
+              <Typography className={classes.subtittle}>
+                Demonic Circle
+              </Typography>
+              <FileCopyIcon
+                onClick={myCircle}
+                style={{ cursor: "pointer", margin: "0px 20px" }}
+              />
+              <input
+                style={{
+                  visibility: "hidden",
+                  backgroundColor: "rgb(28, 28, 28)",
+                  color: "white",
+                  borderRadius: "4px",
+                }}
+                type="text"
+                value="#showtooltip /stopcasting /cast Demonic Circle"
+                id="myInputCircle"
+              ></input>
+            </Grid>
+          </li>
+
+          <li className={classes.li}>
+            <Grid container>
+              <Typography className={classes.subtittle}>
+                Interrupt Mouseover
+              </Typography>
+              <FileCopyIcon
+                onClick={myInterrupt}
+                style={{ cursor: "pointer", margin: "0px 20px" }}
+              />
+              <input
+                style={{
+                  visibility: "hidden",
+                  backgroundColor: "rgb(28, 28, 28)",
+                  color: "white",
+                  borderRadius: "4px",
+                }}
+                type="text"
+                value="#showtooltip Banish/use [mod:shift,@focus] [] Banish"
+                id="myInputInterrupt"
+              ></input>
+            </Grid>
+          </li>
+        </ul>
       </Grid>
     </Grid>
   );
