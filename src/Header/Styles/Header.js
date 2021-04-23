@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
     height: "60px",
     alignContent: "center",
     boxShadow: "2px 7px 24px 12px rgba(0,0,0,0.1)",
+    borderColor: "#DADADA",
+    borderBottomStyle: "solid",
+    borderWidth: "3px",
 
     [theme.breakpoints.up("md")]: {},
 

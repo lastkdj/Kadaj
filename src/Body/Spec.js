@@ -9,14 +9,15 @@ import destroImage from "../Img/destroimg.jpg";
 import aff from "../Img/aff.jpg";
 import demo from "../Img/demo.jpg";
 import destro from "../Img/destro.jpg";
-import logo2 from "../Img/classlogo.png";
+import logo2 from "../Img/warlocklogo.png";
 import { Link } from "react-scroll";
 import useHover from "./useHover";
+import Video from "../Img/wallnew.mp4";
 
 const useStyles = makeStyles((theme) => ({
   spec: {
     fontWeight: 600,
-    color: "#2e2e2e",
+    color: "white",
     textDecoration: "none",
     fontFamily: "Poppins, sans-serif",
     fontSize: "2.1em",
@@ -150,7 +151,23 @@ const Spec = () => {
   }, []);
 
   return (
-    <Grid id="Specs">
+    <Grid
+      id="Specs"
+      style={{
+        overflow: "hidden",
+        borderTopStyle: "solid",
+        borderWidth: "3px",
+        borderColor: "#DADADA",
+      }}
+    >
+      <video
+        style={{ position: "absolute", zIndex: "-1", width: " 100%" }}
+        autoPlay
+        loop
+        muted
+      >
+        <source src={Video} type="video/mp4" />
+      </video>
       <Grid
         class="fade fadeOut"
         style={{

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Styles.css";
 import { Grid, makeStyles, Typography } from "@material-ui/core";
-import Asset1 from "../Img/oribosback4.jpg";
+import Asset1 from "../Img/oribosback6.jpg";
 import about from "../Img/kadaj.png";
 import Awareness from "../Img/Awareness.png";
 import Void from "../Img/void.png";
@@ -11,7 +11,10 @@ const useStyles = makeStyles((theme) => ({
   asset1: {
     backgroundImage: `url(${Asset1})`,
     height: "208vh",
-    marginTop: "90px",
+    marginTop: "180px",
+    borderColor: "#DADADA",
+    borderTopStyle: "solid",
+    borderWidth: "3px",
   },
 
   about: {
