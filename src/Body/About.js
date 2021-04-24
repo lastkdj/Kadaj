@@ -9,15 +9,16 @@ import { useMediaQuery } from "react-responsive";
 
 const useStyles = makeStyles((theme) => ({
   asset1: {
-    backgroundImage: `url(${Asset1})`,
     height: "208vh",
     marginTop: "-16px",
     borderColor: "black",
     borderTopStyle: "solid",
     borderWidth: "3px",
+    backgroundPosition: "15% 100%",
 
     [theme.breakpoints.up("md")]: {
       marginTop: "180px",
+      backgroundSize: "cover",
     },
 
     [theme.breakpoints.up("lg")]: {},
@@ -101,11 +102,16 @@ const About = () => {
     fadeElms.forEach((el) => observer.observe(el));
   }, []);
 
-  const isMobile = useMediaQuery({ query: "(max-width: 375px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 412px)" });
 
   const classes = useStyles();
   return (
-    <Grid container className={classes.asset1} id="About">
+    <Grid
+      container
+      className={classes.asset1}
+      id="About"
+      style={{ backgroundImage: `url(${Asset1})` }}
+    >
       <Grid
         container
         item

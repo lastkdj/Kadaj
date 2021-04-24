@@ -170,7 +170,7 @@ const VideosPOV = () => {
     fadeElms.forEach((el) => observer.observe(el));
   }, []);
 
-  const isMobile = useMediaQuery({ query: "(max-width: 375px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 412px)" });
 
   return (
     <Grid
@@ -183,7 +183,6 @@ const VideosPOV = () => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         borderTopStyle: "solid",
-
         borderWidth: "1px",
         marginTop: "3px",
         boxShadow: "-1px 8px 0px 13px rgba(0,0,0,1)",

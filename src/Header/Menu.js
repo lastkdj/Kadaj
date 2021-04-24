@@ -46,7 +46,7 @@ const SimpleMenu = (props) => {
           },
         }}
         PaperProps={{
-          style: { backgroundColor: "rgb(28,28,28)" },
+          style: { backgroundColor: "rgb(28,28,28)", left: "250px" },
         }}
       >
         <Grid container direction="column">

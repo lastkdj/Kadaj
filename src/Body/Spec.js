@@ -311,7 +311,7 @@ const Spec = () => {
     fadeDestro.forEach((el) => observer.observe(el));
   }, []);
 
-  const isMobile = useMediaQuery({ query: "(max-width: 375px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 412px)" });
 
   return (
     <Grid

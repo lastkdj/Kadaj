@@ -109,6 +109,22 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up("xl")]: { margin: "0px 450px" },
   },
+
+  youtube: {
+    display: "none",
+
+    [theme.breakpoints.up("sm")]: {
+      display: "none",
+    },
+
+    [theme.breakpoints.up("md")]: {
+      display: "block",
+    },
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
+  },
 }));
 
 export default useStyles;
