@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Kadaj/static/css/main.7a9147e0.chunk.css",
-    "main.js": "/Kadaj/static/js/main.3ffdcf5e.chunk.js",
-    "main.js.map": "/Kadaj/static/js/main.3ffdcf5e.chunk.js.map",
+    "main.js": "/Kadaj/static/js/main.05c08e21.chunk.js",
+    "main.js.map": "/Kadaj/static/js/main.05c08e21.chunk.js.map",
     "runtime-main.js": "/Kadaj/static/js/runtime-main.823ba526.js",
     "runtime-main.js.map": "/Kadaj/static/js/runtime-main.823ba526.js.map",
     "static/js/2.5025309c.chunk.js": "/Kadaj/static/js/2.5025309c.chunk.js",
@@ -91,6 +91,6 @@
     "static/js/runtime-main.823ba526.js",
     "static/js/2.5025309c.chunk.js",
     "static/css/main.7a9147e0.chunk.css",
-    "static/js/main.3ffdcf5e.chunk.js"
+    "static/js/main.05c08e21.chunk.js"
   ]
 }
