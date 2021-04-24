@@ -224,15 +224,18 @@ const useStyles = makeStyles((theme) => ({
   warlocklogo: {
     marginTop: "20px",
     width: "100px",
+    height: "100px",
     [theme.breakpoints.up("md")]: {
       marginTop: "20px",
       width: "120px",
+      height: "120px",
     },
 
     [theme.breakpoints.up("lg")]: { margin: "0px" },
 
     [theme.breakpoints.up("xl")]: {
       width: "320px",
+      height: "320px",
     },
   },
 
