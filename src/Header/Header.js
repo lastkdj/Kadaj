@@ -33,7 +33,7 @@ const Header = () => {
     window.open("https://www.youtube.com/user/darkkadaj11");
   };
 
-  const isMobile = useMediaQuery({ query: "(max-width: 412px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 414px)" });
 
   return (
     <Grid container className={scrolled ? classes.sticky : classes.background}>

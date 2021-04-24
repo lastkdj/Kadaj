@@ -98,7 +98,7 @@
   animation-name: fadeInRightBig;
 }
 
-@media (max-width: 412px) {
+@media (max-width: 414px) {
   .aboutFade {
     margin: 0px 30px 0px 30px;
     justify-content: center;

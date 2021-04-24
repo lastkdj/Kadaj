@@ -128,7 +128,7 @@ const About = () => {
     fadeElms.forEach((el) => observer.observe(el));
   }, []);
 
-  const isMobile = useMediaQuery({ query: "(max-width: 412px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 414px)" });
 
   const classes = useStyles();
   return (
