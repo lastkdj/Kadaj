@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./Styles.css";
 import { Grid, makeStyles, Typography } from "@material-ui/core";
 import Asset1 from "../Img/oribosback6.jpg";
+import Asset2 from "../Img/newabout.jpg";
 import about from "../Img/kadaj.png";
 import Awareness from "../Img/Awareness.png";
 import Void from "../Img/void.png";
@@ -10,11 +11,10 @@ import { useMediaQuery } from "react-responsive";
 const useStyles = makeStyles((theme) => ({
   asset1: {
     height: "208vh",
-    marginTop: "-16px",
+    marginTop: "-17px",
     borderColor: "black",
     borderTopStyle: "solid",
     borderWidth: "3px",
-    backgroundPosition: "15% 75%",
 
     [theme.breakpoints.up("md")]: {
       backgroundSize: "cover",
@@ -33,9 +33,11 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.8em",
     animation: "fadeInBot ease 1.8s",
     textShadow: "2px 2px #000000",
+    textAlign: "center",
 
     [theme.breakpoints.up("md")]: {
       fontSize: "2.1em",
+      textAlign: "start",
     },
 
     [theme.breakpoints.up("lg")]: {},
@@ -134,7 +136,11 @@ const About = () => {
       container
       className={classes.asset1}
       id="About"
-      style={{ backgroundImage: `url(${Asset1})` }}
+      style={
+        isMobile
+          ? { backgroundImage: `url(${Asset2})`, backgroundPosition: "top" }
+          : { backgroundImage: `url(${Asset1})` }
+      }
     >
       <Grid
         container
@@ -146,14 +152,7 @@ const About = () => {
           height: "650px",
         }}
       >
-        <Grid
-          container
-          item
-          xs={12}
-          md={6}
-          class="aboutFade fadeOut"
-          className={classes.aboutgrid}
-        >
+        <Grid container item xs={12} md={6} class="aboutFade fadeOut">
           <Typography
             className={classes.about}
             style={isMobile ? null : { marginTop: "200px" }}
@@ -169,30 +168,31 @@ const About = () => {
             playstyle, and help in a certain way their posibility of improvement
           </Typography>
         </Grid>
-        <Grid container item xs={6} class="aboutFadetwo fadeOut">
+        <Grid container item xs={12} md={6} class="aboutFadetwo fadeOut">
           <img
             alt=""
             src={about}
-            style={isMobile ? { width: "100px" } : { width: "400px" }}
+            style={isMobile ? { width: "200px" } : { width: "400px" }}
           ></img>
         </Grid>
         <Grid
           container
           item
           xs={12}
-          style={{ marginTop: "130px" }}
+          style={isMobile ? { marginTop: "60px" } : { marginTop: "130px" }}
           justify="center"
         >
           <Grid
             container
             item
-            xs={6}
+            xs={12}
+            md={6}
             justify="flex-end"
             class="aboutFade fadeOut"
-            style={{}}
+            style={isMobile ? { order: 2 } : null}
           >
             <img
-              style={isMobile ? { width: "100px" } : null}
+              style={isMobile ? { width: "300px" } : null}
               alt=""
               src={Awareness}
             ></img>
@@ -201,10 +201,13 @@ const About = () => {
           <Grid
             container
             item
-            xs={6}
+            xs={12}
+            md={6}
             justify="flex-end"
             class="aboutFadetwo fadeOut"
-            style={{ width: "500px", paddingTop: "200px" }}
+            style={
+              isMobile ? { order: 1, width: "500px" } : { paddingTop: "200px" }
+            }
           >
             <Typography className={classes.about}>AWARENESS GUILD</Typography>
             <Typography className={classes.aboutText}>
@@ -220,7 +223,7 @@ const About = () => {
           container
           item
           xs={12}
-          style={{ marginTop: "100px" }}
+          style={isMobile ? { marginTop: "40px" } : { marginTop: "100px" }}
           justify="center"
         >
           <Grid
@@ -229,7 +232,7 @@ const About = () => {
             xs={6}
             justify="flex-end"
             class="aboutFade fadeOut"
-            style={{ width: "500px" }}
+            style={isMobile ? { height: "200px" } : { width: "500px" }}
           >
             <Typography className={classes.about}>THE VOID GUILD</Typography>
             <Typography className={classes.aboutText}>
@@ -244,9 +247,10 @@ const About = () => {
             xs={6}
             justify="flex-end"
             class="aboutFadetwo fadeOut"
+            style={isMobile ? { width: "300px" } : null}
           >
             <img
-              style={isMobile ? { width: "100px" } : null}
+              style={isMobile ? { width: "300px" } : null}
               alt=""
               src={Void}
             ></img>

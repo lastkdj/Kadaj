@@ -103,8 +103,7 @@ const Banner = () => {
       alignItems="center"
       style={!isMobile ? { height: "106vh" } : { height: "60vh" }}
     >
-      <Particles isMobile={isMobile} />
-
+      {isMobile ? null : <Particles isMobile={isMobile} />}
       <Grid container item style={{ backgroundRepeat: "no-repeat" }}>
         <Grid item>
           <img alt="logo" src={logo} className={classes.kadajLogo}></img>

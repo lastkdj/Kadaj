@@ -62,6 +62,7 @@
 .aboutFadetwo {
   transition: opacity 0.7s ease-in;
   height: 500px;
+  width: 500px;
 }
 
 .fadeaff {
@@ -95,4 +96,18 @@
 .fadeInRight {
   animation-duration: 1.3s;
   animation-name: fadeInRightBig;
+}
+
+@media (max-width: 412px) {
+  .aboutFade {
+    margin: 0px 30px 0px 30px;
+    justify-content: center;
+    height: 270px;
+  }
+
+  .aboutFadetwo {
+    margin: 0px 30px 0px 30px;
+    height: 270px;
+    width: 200px;
+  }
 }
