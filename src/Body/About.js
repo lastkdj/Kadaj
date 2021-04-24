@@ -14,16 +14,15 @@ const useStyles = makeStyles((theme) => ({
     borderColor: "black",
     borderTopStyle: "solid",
     borderWidth: "3px",
-    backgroundPosition: "15% 100%",
+    backgroundPosition: "15% 75%",
 
     [theme.breakpoints.up("md")]: {
-      marginTop: "180px",
       backgroundSize: "cover",
     },
 
     [theme.breakpoints.up("lg")]: {},
 
-    [theme.breakpoints.up("xl")]: {},
+    [theme.breakpoints.up("xl")]: { marginTop: "180px" },
   },
 
   about: {
@@ -31,19 +30,44 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     textDecoration: "none",
     fontFamily: "Poppins, sans-serif",
-    fontSize: "2.1em",
+    fontSize: "1.8em",
     animation: "fadeInBot ease 1.8s",
     textShadow: "2px 2px #000000",
+
+    [theme.breakpoints.up("md")]: {
+      fontSize: "2.1em",
+    },
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
   },
 
   aboutText: {
-    fontSize: "16px",
+    fontSize: "0.8em",
     fontWeight: 400,
     lineHeight: "26px",
     color: "white",
     margin: 0,
     textAlign: "justify",
     textShadow: "2px 2px #000000",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: { fontSize: "1em" },
+
+    [theme.breakpoints.up("xl")]: {},
+  },
+
+  aboutgrid: {
+    margin: "0px 30px 0px 30px",
+    justifyContent: "center",
+
+    [theme.breakpoints.up("md")]: { justifyContent: "flex-start" },
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
   },
 }));
 
@@ -122,8 +146,18 @@ const About = () => {
           height: "650px",
         }}
       >
-        <Grid container item xs={6} class="aboutFade fadeOut">
-          <Typography className={classes.about} style={{ marginTop: "200px" }}>
+        <Grid
+          container
+          item
+          xs={12}
+          md={6}
+          class="aboutFade fadeOut"
+          className={classes.aboutgrid}
+        >
+          <Typography
+            className={classes.about}
+            style={isMobile ? null : { marginTop: "200px" }}
+          >
             ABOUT ME
           </Typography>
           <Typography className={classes.aboutText}>

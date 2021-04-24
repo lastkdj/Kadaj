@@ -2,7 +2,6 @@ import React from "react";
 import Particles from "./Particles";
 import logo from "../Img/KadajLogo.png";
 import { makeStyles, Typography, Grid } from "@material-ui/core";
-import Video from "../Img/phone/guldanvideo.mp4";
 import { useMediaQuery } from "react-responsive";
 
 const useStyles = makeStyles((theme) => ({
@@ -105,20 +104,7 @@ const Banner = () => {
       style={!isMobile ? { height: "106vh" } : { height: "60vh" }}
     >
       <Particles isMobile={isMobile} />
-      <video
-        style={{
-          position: "absolute",
-          zIndex: "-1",
-          width: " 100%",
-          top: "0px",
-          filter: "brightness(60%)",
-        }}
-        autoPlay
-        loop
-        muted
-      >
-        <source src={Video} type="video/mp4" />
-      </video>
+
       <Grid container item style={{ backgroundRepeat: "no-repeat" }}>
         <Grid item>
           <img alt="logo" src={logo} className={classes.kadajLogo}></img>

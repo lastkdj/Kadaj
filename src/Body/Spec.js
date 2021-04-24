@@ -29,10 +29,10 @@ const useStyles = makeStyles((theme) => ({
     animation: "fadeInBot ease 1.8s",
 
     [theme.breakpoints.up("md")]: {
-      fontSize: "2.1em",
+      fontSize: "1.8em",
     },
 
-    [theme.breakpoints.up("lg")]: {},
+    [theme.breakpoints.up("lg")]: { fontSize: "2.1em" },
 
     [theme.breakpoints.up("xl")]: {},
   },
@@ -49,15 +49,17 @@ const useStyles = makeStyles((theme) => ({
     cursor: "pointer",
 
     [theme.breakpoints.up("md")]: {
-      width: "250px",
-      height: "345px",
+      width: "230px",
+      height: "290px",
       margin: "0px 20px",
+      backgroundSize: "contain",
     },
 
     [theme.breakpoints.up("lg")]: {
       width: "350px",
       height: "445px",
       margin: "0px 20px",
+      backgroundSize: "cover",
     },
 
     [theme.breakpoints.up("xl")]: {},
@@ -77,15 +79,17 @@ const useStyles = makeStyles((theme) => ({
     cursor: "pointer",
 
     [theme.breakpoints.up("md")]: {
-      width: "250px",
-      height: "345px",
+      width: "230px",
+      height: "290px",
       margin: "0px 20px",
+      backgroundSize: "contain",
     },
 
     [theme.breakpoints.up("lg")]: {
       width: "350px",
       height: "445px",
       margin: "0px 20px",
+      backgroundSize: "cover",
     },
 
     [theme.breakpoints.up("xl")]: {},
@@ -103,15 +107,17 @@ const useStyles = makeStyles((theme) => ({
     cursor: "pointer",
 
     [theme.breakpoints.up("md")]: {
-      width: "250px",
-      height: "345px",
+      width: "230px",
+      height: "290px",
       margin: "0px 20px",
+      backgroundSize: "contain",
     },
 
     [theme.breakpoints.up("lg")]: {
       width: "350px",
       height: "445px",
       margin: "0px 20px",
+      backgroundSize: "cover",
     },
 
     [theme.breakpoints.up("xl")]: {},
@@ -131,15 +137,17 @@ const useStyles = makeStyles((theme) => ({
     cursor: "pointer",
 
     [theme.breakpoints.up("md")]: {
-      width: "250px",
-      height: "345px",
+      width: "230px",
+      height: "290px",
       margin: "0px 20px",
+      backgroundSize: "contain",
     },
 
     [theme.breakpoints.up("lg")]: {
       width: "350px",
       height: "445px",
       margin: "0px 20px",
+      backgroundSize: "cover",
     },
 
     [theme.breakpoints.up("xl")]: {},
@@ -157,15 +165,17 @@ const useStyles = makeStyles((theme) => ({
     cursor: "pointer",
 
     [theme.breakpoints.up("md")]: {
-      width: "250px",
-      height: "345px",
+      width: "230px",
+      height: "290px",
       margin: "0px 20px",
+      backgroundSize: "contain",
     },
 
     [theme.breakpoints.up("lg")]: {
       width: "350px",
       height: "445px",
       margin: "0px 20px",
+      backgroundSize: "cover",
     },
 
     [theme.breakpoints.up("xl")]: {},
@@ -185,15 +195,17 @@ const useStyles = makeStyles((theme) => ({
     cursor: "pointer",
 
     [theme.breakpoints.up("md")]: {
-      width: "250px",
-      height: "345px",
+      width: "230px",
+      height: "290px",
       margin: "0px 20px",
+      backgroundSize: "contain",
     },
 
     [theme.breakpoints.up("lg")]: {
       width: "350px",
       height: "445px",
       margin: "0px 20px",
+      backgroundSize: "cover",
     },
 
     [theme.breakpoints.up("xl")]: {},
@@ -214,7 +226,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100px",
     [theme.breakpoints.up("md")]: {
       marginTop: "20px",
-      width: "220px",
+      width: "120px",
     },
 
     [theme.breakpoints.up("lg")]: { margin: "0px" },
