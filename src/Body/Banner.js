@@ -2,28 +2,48 @@ import React from "react";
 import Particles from "./Particles";
 import logo from "../Img/KadajLogo.png";
 import { makeStyles, Typography, Grid } from "@material-ui/core";
+import Video from "../Img/phone/guldanvideo.mp4";
+import { useMediaQuery } from "react-responsive";
 
 const useStyles = makeStyles((theme) => ({
   kadajLogo: {
-    margin: "0px",
+    display: "none",
 
     [theme.breakpoints.up("md")]: {
+      display: "flex",
       margin: "50px 20px 0px 150px",
+      width: "160px",
     },
 
     [theme.breakpoints.up("lg")]: {},
 
-    [theme.breakpoints.up("xl")]: {},
+    [theme.breakpoints.up("xl")]: {
+      width: "236px",
+    },
   },
 
   firstsectiontext: {
     fontWeight: 500,
     color: "white",
     textDecoration: "none",
-    textShadow: "2px 2px #000000",
     fontFamily: "Poppins, sans-serif",
-    fontSize: "3em",
+    fontSize: "2em",
     animation: "fadeIn ease 1.5s",
+
+    [theme.breakpoints.up("md")]: {
+      fontSize: "2em",
+      textShadow: "1px 1px black",
+    },
+
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "2em",
+      textShadow: "1px 1px black",
+    },
+
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "3em",
+      textShadow: "none",
+    },
   },
 
   firstsectionh2: {
@@ -32,21 +52,37 @@ const useStyles = makeStyles((theme) => ({
     margin: "0%",
     fontWeight: 500,
     textDecoration: "none",
-    textShadow: "2px 2px #000000",
     fontFamily: "Poppins, sans-serif",
     animation: "fadeInBot ease 1.7s",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
   },
 
   firstsectionspan: {
     color: "rgb(90, 240, 30)",
   },
   secondsectionp: {
-    fontSize: "1em",
+    fontSize: "0.8em",
     color: "white",
     textDecoration: "none",
-    textShadow: "2px 2px #000000",
     fontFamily: "Poppins, sans-serif",
     animation: "fadeInBot ease 1.9s",
+
+    [theme.breakpoints.up("md")]: {
+      fontSize: "0.8em",
+    },
+
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "0.8em",
+    },
+
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "1em",
+    },
   },
 
   spec: {
@@ -59,16 +95,43 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Banner = () => {
+  const isMobile = useMediaQuery({ query: "(max-width: 375px)" });
+
   const classes = useStyles();
   return (
-    <Grid container alignItems="center" style={{ height: "106vh" }}>
-      <Particles />
+    <Grid
+      container
+      alignItems="center"
+      style={!isMobile ? { height: "106vh" } : { height: "60vh" }}
+    >
+      <Particles isMobile={isMobile} />
+      <video
+        style={{
+          position: "absolute",
+          zIndex: "-1",
+          width: " 100%",
+          top: "0px",
+          filter: "brightness(60%)",
+        }}
+        autoPlay
+        loop
+        muted
+      >
+        <source src={Video} type="video/mp4" />
+      </video>
       <Grid container item style={{ backgroundRepeat: "no-repeat" }}>
         <Grid item>
           <img alt="logo" src={logo} className={classes.kadajLogo}></img>
         </Grid>
 
-        <Grid item style={{ marginTop: "60px" }}>
+        <Grid
+          item
+          style={
+            !isMobile
+              ? { marginTop: "60px" }
+              : { marginTop: "180px", padding: "20px" }
+          }
+        >
           <Grid item>
             <Typography variant="h1" className={classes.firstsectiontext}>
               <span className={classes.firstsectionspan}>Kadaj</span> Gaming

@@ -11,10 +11,18 @@ const useStyles = makeStyles((theme) => ({
   asset1: {
     backgroundImage: `url(${Asset1})`,
     height: "208vh",
-    marginTop: "180px",
-    borderColor: "#DADADA",
+    marginTop: "-16px",
+    borderColor: "black",
     borderTopStyle: "solid",
     borderWidth: "3px",
+
+    [theme.breakpoints.up("md")]: {
+      marginTop: "180px",
+    },
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
   },
 
   about: {

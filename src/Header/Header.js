@@ -7,6 +7,7 @@ import useStyles from "./Styles/Header";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-scroll";
 import { useMediaQuery } from "react-responsive";
+import SimpleMenu from "./Menu";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -33,29 +34,27 @@ const Header = () => {
   };
 
   const isMobile = useMediaQuery({ query: "(max-width: 375px)" });
+  const isLaptop = useMediaQuery({ query: "(max-width: 720px" });
 
   return (
     <Grid container className={scrolled ? classes.sticky : classes.background}>
-      <Grid
-        container
-        item
-        xs={12}
-        style={!isMobile ? { margin: "0px 450px" } : null}
-      >
-        <Grid container item xs={3} className={classes.menulist}>
-          <Grid container item xs={2}>
-            <Link
-              activeClass="active"
-              to="Home"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={1000}
-            >
-              <Typography className={classes.navbarLogo}>KADAJ</Typography>
-            </Link>
+      <Grid className={classes.header} container item xs={12}>
+        {!isMobile ? (
+          <Grid container item xs={3} className={classes.menulist}>
+            <Grid container item xs={6}>
+              <Link
+                activeClass="active"
+                to="Home"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1000}
+              >
+                <Typography className={classes.navbarLogo}>KADAJ</Typography>
+              </Link>
+            </Grid>
           </Grid>
-        </Grid>
+        ) : null}
         <Grid
           container
           item
@@ -173,7 +172,9 @@ const Header = () => {
                 Youtube
               </Button>
             </Grid>
-          ) : null}
+          ) : (
+            <SimpleMenu scrolled={scrolled} />
+          )}
         </Grid>
       </Grid>
     </Grid>

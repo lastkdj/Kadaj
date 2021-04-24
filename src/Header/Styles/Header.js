@@ -2,12 +2,25 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    padding: "20px 0px",
+    padding: "0px 0px",
     opacity: "0.9",
     transition: "all 0.5s ease-in-out",
     height: "70px",
     position: "absolute",
-    zIndex: "5000",
+    zIndex: "1000",
+
+    [theme.breakpoints.up("md")]: {
+      padding: "20px 0px",
+      opacity: "0.9",
+      transition: "all 0.5s ease-in-out",
+      height: "70px",
+      position: "absolute",
+      zIndex: "1000",
+    },
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
   },
   sticky: {
     display: "flex",
@@ -48,6 +61,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   navbarLogo: {
+    backgroundPosition: "center",
     fontSize: "1.4em",
     fontWeight: 700,
     color: "white",
@@ -80,6 +94,20 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     listStyle: "none",
     cursor: "pointer",
+  },
+
+  header: {
+    margin: "0px 20px",
+
+    [theme.breakpoints.up("md")]: {
+      margin: "0px 50px",
+    },
+
+    [theme.breakpoints.up("lg")]: {
+      margin: "0px 200px",
+    },
+
+    [theme.breakpoints.up("xl")]: { margin: "0px 450px" },
   },
 }));
 

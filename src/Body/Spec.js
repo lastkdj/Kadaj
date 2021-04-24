@@ -1,11 +1,14 @@
 import { Grid } from "@material-ui/core";
 import "./Styles.css";
 import Paper from "@material-ui/core/Paper";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { makeStyles, Typography } from "@material-ui/core";
 import affImage from "../Img/affimg2.jpg";
 import demoImage from "../Img/demoimg.jpg";
 import destroImage from "../Img/destroimg.jpg";
+import affmobile from "../Img/affmobile.jpg";
+import demomobile from "../Img/demomobile.jpg";
+import destromobile from "../Img/destromobile.jpg";
 import aff from "../Img/aff.jpg";
 import demo from "../Img/demo.jpg";
 import destro from "../Img/destro.jpg";
@@ -13,6 +16,8 @@ import logo2 from "../Img/warlocklogo.png";
 import { Link } from "react-scroll";
 import useHover from "./useHover";
 import Video from "../Img/wallnew.mp4";
+import VideoSmall from "../Img/wallnew2.mp4";
+import { useMediaQuery } from "react-responsive";
 
 const useStyles = makeStyles((theme) => ({
   spec: {
@@ -20,93 +25,249 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     textDecoration: "none",
     fontFamily: "Poppins, sans-serif",
-    fontSize: "2.1em",
+    fontSize: "1em",
     animation: "fadeInBot ease 1.8s",
+
+    [theme.breakpoints.up("md")]: {
+      fontSize: "2.1em",
+    },
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
   },
 
   onHoveraff: {
     boxShadow: "2px 7px 24px 12px rgba(0,0,0,0.2)",
     borderColor: "white",
-    backgroundImage: `url(${affImage})`,
     transition: "filter 0.3s ease-in-out",
-    width: "350px",
-    height: "445px",
-    margin: "0 20px",
+    width: "300px",
+    height: "120px",
+    margin: "0px 20px 10px 20px",
     borderRadius: "7px",
     display: "flex",
     cursor: "pointer",
+
+    [theme.breakpoints.up("md")]: {
+      width: "250px",
+      height: "345px",
+      margin: "0px 20px",
+    },
+
+    [theme.breakpoints.up("lg")]: {
+      width: "350px",
+      height: "445px",
+      margin: "0px 20px",
+    },
+
+    [theme.breakpoints.up("xl")]: {},
   },
 
   affGrey: {
     boxShadow: "2px 7px 24px 12px rgba(0,0,0,0.2)",
     borderColor: "white",
-    backgroundImage: `url(${affImage})`,
     transition: "filter 0.3s ease-in-out",
-    width: "350px",
-    height: "445px",
-    margin: "0 20px",
+    width: "300px",
+    height: "120px",
+    margin: "0px 20px 10px 20px",
+    borderRadius: "7px",
     borderRadius: "7px",
     display: "flex",
     filter: "grayscale(100%)",
     cursor: "pointer",
+
+    [theme.breakpoints.up("md")]: {
+      width: "250px",
+      height: "345px",
+      margin: "0px 20px",
+    },
+
+    [theme.breakpoints.up("lg")]: {
+      width: "350px",
+      height: "445px",
+      margin: "0px 20px",
+    },
+
+    [theme.breakpoints.up("xl")]: {},
   },
 
   onHoverdemo: {
     boxShadow: "2px 7px 24px 12px rgba(0,0,0,0.2)",
     borderColor: "white",
-    backgroundImage: `url(${demoImage})`,
     transition: "filter 0.3s ease-in-out",
-    width: "350px",
-    height: "445px",
-    margin: "0 20px",
+    width: "300px",
+    height: "120px",
+    margin: "0px 20px 10px 20px",
     borderRadius: "7px",
     display: "flex",
     cursor: "pointer",
+
+    [theme.breakpoints.up("md")]: {
+      width: "250px",
+      height: "345px",
+      margin: "0px 20px",
+    },
+
+    [theme.breakpoints.up("lg")]: {
+      width: "350px",
+      height: "445px",
+      margin: "0px 20px",
+    },
+
+    [theme.breakpoints.up("xl")]: {},
   },
 
   demoGrey: {
     boxShadow: "2px 7px 24px 12px rgba(0,0,0,0.2)",
     borderColor: "white",
-    backgroundImage: `url(${demoImage})`,
     transition: "filter 0.3s ease-in-out",
-    width: "350px",
-    height: "445px",
-    margin: "0 20px",
+    width: "300px",
+    height: "120px",
+    margin: "0px 20px 10px 20px",
+    borderRadius: "7px",
     borderRadius: "7px",
     display: "flex",
     filter: "grayscale(100%)",
     cursor: "pointer",
+
+    [theme.breakpoints.up("md")]: {
+      width: "250px",
+      height: "345px",
+      margin: "0px 20px",
+    },
+
+    [theme.breakpoints.up("lg")]: {
+      width: "350px",
+      height: "445px",
+      margin: "0px 20px",
+    },
+
+    [theme.breakpoints.up("xl")]: {},
   },
 
   onHoverdestro: {
     boxShadow: "2px 7px 24px 12px rgba(0,0,0,0.2)",
     borderColor: "white",
-    backgroundImage: `url(${destroImage})`,
     transition: "filter 0.3s ease-in-out",
-    width: "350px",
-    height: "445px",
-    margin: "0 20px",
+    width: "300px",
+    height: "120px",
+    margin: "0px 20px 10px 20px",
     borderRadius: "7px",
     display: "flex",
     cursor: "pointer",
+
+    [theme.breakpoints.up("md")]: {
+      width: "250px",
+      height: "345px",
+      margin: "0px 20px",
+    },
+
+    [theme.breakpoints.up("lg")]: {
+      width: "350px",
+      height: "445px",
+      margin: "0px 20px",
+    },
+
+    [theme.breakpoints.up("xl")]: {},
   },
 
   destroGrey: {
     boxShadow: "2px 7px 24px 12px rgba(0,0,0,0.2)",
     borderColor: "white",
-    backgroundImage: `url(${destroImage})`,
     transition: "filter 0.3s ease-in-out",
-    width: "350px",
-    height: "445px",
-    margin: "0 20px",
+    width: "300px",
+    height: "120px",
+    margin: "0px 20px 10px 20px",
+    borderRadius: "7px",
     borderRadius: "7px",
     display: "flex",
     filter: "grayscale(100%)",
     cursor: "pointer",
+
+    [theme.breakpoints.up("md")]: {
+      width: "250px",
+      height: "345px",
+      margin: "0px 20px",
+    },
+
+    [theme.breakpoints.up("lg")]: {
+      width: "350px",
+      height: "445px",
+      margin: "0px 20px",
+    },
+
+    [theme.breakpoints.up("xl")]: {},
   },
 
   override: {
     filter: "grayscale(0%)",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
+  },
+
+  warlocklogo: {
+    marginTop: "20px",
+    width: "100px",
+    [theme.breakpoints.up("md")]: {
+      marginTop: "20px",
+      width: "220px",
+    },
+
+    [theme.breakpoints.up("lg")]: { margin: "0px" },
+
+    [theme.breakpoints.up("xl")]: {
+      width: "320px",
+    },
+  },
+
+  specname: {
+    fontFamily: "Poppins, sans-serif",
+    fontSize: "1em",
+    fontWeight: "600",
+    color: "white",
+    marginBottom: "20px",
+
+    [theme.breakpoints.up("md")]: {
+      fontSize: "1.5em",
+    },
+
+    [theme.breakpoints.up("lg")]: { fontSize: "2em" },
+
+    [theme.breakpoints.up("xl")]: {},
+  },
+
+  speclogo: {
+    border: "solid",
+    borderRadius: "40px",
+    width: "40px",
+    marginLeft: "inherit",
+
+    [theme.breakpoints.up("md")]: {
+      width: "50px",
+      marginLeft: "0px",
+    },
+
+    [theme.breakpoints.up("lg")]: { width: "56px" },
+
+    [theme.breakpoints.up("xl")]: {},
+  },
+
+  card: {
+    alignItems: "flex-start",
+    marginLeft: "10px",
+
+    [theme.breakpoints.up("md")]: {
+      alignItems: "center",
+      marginLeft: "0px",
+    },
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
   },
 }));
 
@@ -150,6 +311,8 @@ const Spec = () => {
     fadeDestro.forEach((el) => observer.observe(el));
   }, []);
 
+  const isMobile = useMediaQuery({ query: "(max-width: 375px)" });
+
   return (
     <Grid
       id="Specs"
@@ -157,7 +320,7 @@ const Spec = () => {
         overflow: "hidden",
         borderTopStyle: "solid",
         borderWidth: "3px",
-        borderColor: "#DADADA",
+        borderColor: "black",
       }}
     >
       <video
@@ -166,7 +329,7 @@ const Spec = () => {
         loop
         muted
       >
-        <source src={Video} type="video/mp4" />
+        <source src={isMobile ? VideoSmall : Video} type="video/mp4" />
       </video>
       <Grid
         class="fade fadeOut"
@@ -175,7 +338,7 @@ const Spec = () => {
           justifyContent: "center",
         }}
       >
-        <img alt="logo2" src={logo2}></img>
+        <img alt="logo2" src={logo2} className={classes.warlocklogo}></img>
       </Grid>
 
       <Grid class="fade fadeOut">
@@ -199,6 +362,9 @@ const Spec = () => {
         >
           <Grid class="fadeaff fadeOut" ref={affRef}>
             <Paper
+              style={{
+                backgroundImage: `url(${isMobile ? affmobile : affImage})`,
+              }}
               className={
                 affIsHovered
                   ? classes.onHoveraff
@@ -209,29 +375,21 @@ const Spec = () => {
                   : classes.onHoveraff
               }
             >
-              <Grid
-                container
-                justify="flex-start"
-                direction="column-reverse"
-                alignItems="center"
-                className={classes.override}
-              >
-                <Typography
-                  style={{
-                    fontFamily: "Poppins, sans-serif",
-                    fontSize: "2em",
-                    fontWeight: "600",
-                    color: "white",
-                    marginBottom: "20px",
-                  }}
+              <Grid container className={classes.override}>
+                <Grid
+                  container
+                  item
+                  xs={12}
+                  alignItems="center"
+                  justify="flex-end"
+                  direction="column"
+                  className={classes.card}
                 >
-                  Affliction
-                </Typography>
-                <img
-                  src={aff}
-                  alt="aff"
-                  style={{ border: "solid", borderRadius: "40px" }}
-                />
+                  <img src={aff} alt="aff" className={classes.speclogo} />
+                  <Typography className={classes.specname}>
+                    Affliction
+                  </Typography>
+                </Grid>{" "}
               </Grid>
             </Paper>
           </Grid>
@@ -255,29 +413,26 @@ const Spec = () => {
                   ? classes.demoGrey
                   : classes.onHoverdemo
               }
+              style={{
+                backgroundImage: `url(${isMobile ? demomobile : demoImage})`,
+              }}
             >
-              <Grid
-                container
-                justify="flex-start"
-                direction="column-reverse"
-                alignItems="center"
-              >
-                <Typography
-                  style={{
-                    fontFamily: "Poppins, sans-serif",
-                    fontSize: "2em",
-                    fontWeight: "600",
-                    color: "white",
-                    marginBottom: "20px",
-                  }}
+              <Grid container className={classes.override}>
+                <Grid
+                  container
+                  item
+                  xs={12}
+                  alignItems="center"
+                  justify="flex-end"
+                  direction="column"
+                  className={classes.card}
                 >
-                  Demonology
-                </Typography>
-                <img
-                  src={demo}
-                  alt="demo"
-                  style={{ border: "solid", borderRadius: "40px" }}
-                />
+                  {" "}
+                  <img src={demo} alt="demo" className={classes.speclogo} />
+                  <Typography className={classes.specname}>
+                    Demonology
+                  </Typography>
+                </Grid>
               </Grid>
             </Paper>
           </Grid>
@@ -301,29 +456,27 @@ const Spec = () => {
                   ? classes.destroGrey
                   : classes.onHoverdestro
               }
+              style={{
+                backgroundImage: `url(${
+                  isMobile ? destromobile : destroImage
+                })`,
+              }}
             >
-              <Grid
-                container
-                justify="flex-start"
-                direction="column-reverse"
-                alignItems="center"
-              >
-                <Typography
-                  style={{
-                    fontFamily: "Poppins, sans-serif",
-                    fontSize: "2em",
-                    fontWeight: "600",
-                    color: "white",
-                    marginBottom: "20px",
-                  }}
+              <Grid container className={classes.override}>
+                <Grid
+                  container
+                  item
+                  xs={12}
+                  alignItems="center"
+                  justify="flex-end"
+                  direction="column"
+                  className={classes.card}
                 >
-                  Destruction
-                </Typography>
-                <img
-                  src={destro}
-                  alt="destro"
-                  style={{ border: "solid", borderRadius: "40px" }}
-                />
+                  <img src={destro} alt="destro" className={classes.speclogo} />
+                  <Typography className={classes.specname}>
+                    Destruction
+                  </Typography>
+                </Grid>
               </Grid>
             </Paper>
           </Grid>

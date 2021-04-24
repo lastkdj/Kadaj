@@ -1,13 +1,13 @@
 import Particles from "react-particles-js";
 
-const particlesComponent = () => {
+const particlesComponent = (props) => {
   return (
     <Particles
       style={{ position: "absolute", top: "0" }}
       params={{
         particles: {
           number: {
-            value: 160,
+            value: props.isMobile ? 20 : 160,
             density: {
               enable: false,
             },
