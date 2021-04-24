@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Kadaj/static/css/main.78818e74.chunk.css",
-    "main.js": "/Kadaj/static/js/main.972de262.chunk.js",
-    "main.js.map": "/Kadaj/static/js/main.972de262.chunk.js.map",
+    "main.css": "/Kadaj/static/css/main.7a9147e0.chunk.css",
+    "main.js": "/Kadaj/static/js/main.3ffdcf5e.chunk.js",
+    "main.js.map": "/Kadaj/static/js/main.3ffdcf5e.chunk.js.map",
     "runtime-main.js": "/Kadaj/static/js/runtime-main.823ba526.js",
     "runtime-main.js.map": "/Kadaj/static/js/runtime-main.823ba526.js.map",
     "static/js/2.5025309c.chunk.js": "/Kadaj/static/js/2.5025309c.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.12ee145b.chunk.js": "/Kadaj/static/js/3.12ee145b.chunk.js",
     "static/js/3.12ee145b.chunk.js.map": "/Kadaj/static/js/3.12ee145b.chunk.js.map",
     "index.html": "/Kadaj/index.html",
-    "static/css/main.78818e74.chunk.css.map": "/Kadaj/static/css/main.78818e74.chunk.css.map",
+    "static/css/main.7a9147e0.chunk.css.map": "/Kadaj/static/css/main.7a9147e0.chunk.css.map",
     "static/js/2.5025309c.chunk.js.LICENSE.txt": "/Kadaj/static/js/2.5025309c.chunk.js.LICENSE.txt",
     "static/media/Awareness.ad8b6ec3.png": "/Kadaj/static/media/Awareness.ad8b6ec3.png",
     "static/media/Castle Nathria Mythic Artificer Xymox.1f2b2ead.jpg": "/Kadaj/static/media/Castle Nathria Mythic Artificer Xymox.1f2b2ead.jpg",
@@ -90,7 +90,7 @@
   "entrypoints": [
     "static/js/runtime-main.823ba526.js",
     "static/js/2.5025309c.chunk.js",
-    "static/css/main.78818e74.chunk.css",
-    "static/js/main.972de262.chunk.js"
+    "static/css/main.7a9147e0.chunk.css",
+    "static/js/main.3ffdcf5e.chunk.js"
   ]
 }
