@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Kadaj/static/css/main.7a9147e0.chunk.css",
-    "main.js": "/Kadaj/static/js/main.05c08e21.chunk.js",
-    "main.js.map": "/Kadaj/static/js/main.05c08e21.chunk.js.map",
+    "main.css": "/Kadaj/static/css/main.35a187bf.chunk.css",
+    "main.js": "/Kadaj/static/js/main.b041a46d.chunk.js",
+    "main.js.map": "/Kadaj/static/js/main.b041a46d.chunk.js.map",
     "runtime-main.js": "/Kadaj/static/js/runtime-main.823ba526.js",
     "runtime-main.js.map": "/Kadaj/static/js/runtime-main.823ba526.js.map",
-    "static/js/2.5025309c.chunk.js": "/Kadaj/static/js/2.5025309c.chunk.js",
-    "static/js/2.5025309c.chunk.js.map": "/Kadaj/static/js/2.5025309c.chunk.js.map",
+    "static/js/2.cb57ac53.chunk.js": "/Kadaj/static/js/2.cb57ac53.chunk.js",
+    "static/js/2.cb57ac53.chunk.js.map": "/Kadaj/static/js/2.cb57ac53.chunk.js.map",
     "static/js/3.12ee145b.chunk.js": "/Kadaj/static/js/3.12ee145b.chunk.js",
     "static/js/3.12ee145b.chunk.js.map": "/Kadaj/static/js/3.12ee145b.chunk.js.map",
     "index.html": "/Kadaj/index.html",
-    "static/css/main.7a9147e0.chunk.css.map": "/Kadaj/static/css/main.7a9147e0.chunk.css.map",
-    "static/js/2.5025309c.chunk.js.LICENSE.txt": "/Kadaj/static/js/2.5025309c.chunk.js.LICENSE.txt",
+    "static/css/main.35a187bf.chunk.css.map": "/Kadaj/static/css/main.35a187bf.chunk.css.map",
+    "static/js/2.cb57ac53.chunk.js.LICENSE.txt": "/Kadaj/static/js/2.cb57ac53.chunk.js.LICENSE.txt",
     "static/media/Awareness.ad8b6ec3.png": "/Kadaj/static/media/Awareness.ad8b6ec3.png",
     "static/media/Castle Nathria Mythic Artificer Xymox.1f2b2ead.jpg": "/Kadaj/static/media/Castle Nathria Mythic Artificer Xymox.1f2b2ead.jpg",
     "static/media/Castle Nathria Mythic Denathrius.4fa5adc6.jpg": "/Kadaj/static/media/Castle Nathria Mythic Denathrius.4fa5adc6.jpg",
@@ -89,8 +89,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.823ba526.js",
-    "static/js/2.5025309c.chunk.js",
-    "static/css/main.7a9147e0.chunk.css",
-    "static/js/main.05c08e21.chunk.js"
+    "static/js/2.cb57ac53.chunk.js",
+    "static/css/main.35a187bf.chunk.css",
+    "static/js/main.b041a46d.chunk.js"
   ]
 }
