@@ -10,7 +10,6 @@ import { useMediaQuery } from "react-responsive";
 
 const useStyles = makeStyles((theme) => ({
   asset1: {
-    height: "208vh",
     marginTop: "-17px",
     borderColor: "black",
     borderTopStyle: "solid",
@@ -32,17 +31,21 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Poppins, sans-serif",
     fontSize: "1.8em",
     animation: "fadeInBot ease 1.8s",
-    textShadow: "2px 2px #000000",
+    textShadow: "1px 1px #000000",
     textAlign: "center",
 
     [theme.breakpoints.up("md")]: {
-      fontSize: "2.1em",
+      fontSize: "1.8em",
+    },
+
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "1.8em",
       textAlign: "start",
     },
 
-    [theme.breakpoints.up("lg")]: {},
-
-    [theme.breakpoints.up("xl")]: {},
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "2.1em",
+    },
   },
 
   aboutText: {
@@ -52,13 +55,13 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     margin: 0,
     textAlign: "justify",
-    textShadow: "2px 2px #000000",
+    textShadow: "1px 1px #000000",
 
     [theme.breakpoints.up("md")]: {},
 
-    [theme.breakpoints.up("lg")]: { fontSize: "1em" },
+    [theme.breakpoints.up("lg")]: {},
 
-    [theme.breakpoints.up("xl")]: {},
+    [theme.breakpoints.up("xl")]: { fontSize: "1em" },
   },
 
   aboutgrid: {
@@ -129,6 +132,7 @@ const About = () => {
   }, []);
 
   const isMobile = useMediaQuery({ query: "(max-width: 414px)" });
+  const isTablet = useMediaQuery({ query: "(max-width: 960px)" });
 
   const classes = useStyles();
   return (
@@ -137,9 +141,13 @@ const About = () => {
       className={classes.asset1}
       id="About"
       style={
-        isMobile
-          ? { backgroundImage: `url(${Asset2})`, backgroundPosition: "top" }
-          : { backgroundImage: `url(${Asset1})` }
+        isTablet
+          ? {
+              backgroundImage: `url(${Asset2})`,
+              height: "1750px",
+              backgroundPosition: "top",
+            }
+          : { backgroundImage: `url(${Asset1})`, height: "1900px" }
       }
     >
       <Grid
@@ -152,10 +160,10 @@ const About = () => {
           height: "650px",
         }}
       >
-        <Grid container item xs={12} md={6} class="aboutFade fadeOut">
+        <Grid container item xs={12} md={12} lg={6} class="aboutFade fadeOut">
           <Typography
             className={classes.about}
-            style={isMobile ? null : { marginTop: "200px" }}
+            style={!isTablet ? { marginTop: "200px" } : null}
           >
             ABOUT ME
           </Typography>
@@ -168,31 +176,48 @@ const About = () => {
             playstyle, and help in a certain way their posibility of improvement
           </Typography>
         </Grid>
-        <Grid container item xs={12} md={6} class="aboutFadetwo fadeOut">
+        <Grid
+          container
+          item
+          xs={12}
+          md={12}
+          lg={6}
+          class="aboutFadetwo fadeOut"
+        >
           <img
             alt=""
             src={about}
-            style={isMobile ? { width: "200px" } : { width: "400px" }}
+            style={isTablet ? { width: "200px" } : { width: "400px" }}
           ></img>
         </Grid>
         <Grid
           container
           item
           xs={12}
-          style={isMobile ? { marginTop: "60px" } : { marginTop: "130px" }}
+          style={isTablet ? { marginTop: "60px" } : { marginTop: "130px" }}
           justify="center"
         >
           <Grid
             container
             item
             xs={12}
-            md={6}
+            md={12}
+            lg={6}
             justify="flex-end"
             class="aboutFade fadeOut"
-            style={isMobile ? { order: 2 } : null}
+            style={
+              isTablet
+                ? {
+                    order: 2,
+                    display: "flex",
+                    justifyContent: "center",
+                    height: "250px",
+                  }
+                : null
+            }
           >
             <img
-              style={isMobile ? { width: "300px" } : null}
+              style={isTablet ? { width: "300px" } : null}
               alt=""
               src={Awareness}
             ></img>
@@ -202,11 +227,14 @@ const About = () => {
             container
             item
             xs={12}
-            md={6}
+            md={12}
+            lg={6}
             justify="flex-end"
             class="aboutFadetwo fadeOut"
             style={
-              isMobile ? { order: 1, width: "500px" } : { paddingTop: "200px" }
+              isTablet
+                ? { order: 1, width: "500px", flexDirection: "column" }
+                : { paddingTop: "200px" }
             }
           >
             <Typography className={classes.about}>AWARENESS GUILD</Typography>
@@ -223,16 +251,18 @@ const About = () => {
           container
           item
           xs={12}
-          style={isMobile ? { marginTop: "40px" } : { marginTop: "100px" }}
+          style={isTablet ? { marginTop: "40px" } : { marginTop: "100px" }}
           justify="center"
         >
           <Grid
             container
             item
-            xs={6}
+            xs={12}
+            md={12}
+            lg={6}
             justify="flex-end"
             class="aboutFade fadeOut"
-            style={isMobile ? { height: "200px" } : { width: "500px" }}
+            style={isTablet ? { height: "200px" } : { width: "500px" }}
           >
             <Typography className={classes.about}>THE VOID GUILD</Typography>
             <Typography className={classes.aboutText}>
@@ -244,13 +274,15 @@ const About = () => {
           <Grid
             container
             item
-            xs={6}
+            xs={12}
+            md={12}
+            lg={6}
             justify="flex-end"
             class="aboutFadetwo fadeOut"
-            style={isMobile ? { width: "300px" } : null}
+            style={isTablet ? { width: "500px" } : null}
           >
             <img
-              style={isMobile ? { width: "300px" } : null}
+              style={isTablet ? { width: "300px" } : null}
               alt=""
               src={Void}
             ></img>

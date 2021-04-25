@@ -56,13 +56,18 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up("lg")]: {
+      width: "280px",
+      height: "370px",
+      margin: "0px 20px",
+      backgroundSize: "cover",
+    },
+
+    [theme.breakpoints.up("xl")]: {
       width: "350px",
       height: "445px",
       margin: "0px 20px",
       backgroundSize: "cover",
     },
-
-    [theme.breakpoints.up("xl")]: {},
   },
 
   affGrey: {
@@ -86,13 +91,18 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up("lg")]: {
+      width: "280px",
+      height: "370px",
+      margin: "0px 20px",
+      backgroundSize: "cover",
+    },
+
+    [theme.breakpoints.up("xl")]: {
       width: "350px",
       height: "445px",
       margin: "0px 20px",
       backgroundSize: "cover",
     },
-
-    [theme.breakpoints.up("xl")]: {},
   },
 
   onHoverdemo: {
@@ -114,13 +124,18 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up("lg")]: {
+      width: "280px",
+      height: "370px",
+      margin: "0px 20px",
+      backgroundSize: "cover",
+    },
+
+    [theme.breakpoints.up("xl")]: {
       width: "350px",
       height: "445px",
       margin: "0px 20px",
       backgroundSize: "cover",
     },
-
-    [theme.breakpoints.up("xl")]: {},
   },
 
   demoGrey: {
@@ -144,13 +159,18 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up("lg")]: {
+      width: "280px",
+      height: "370px",
+      margin: "0px 20px",
+      backgroundSize: "cover",
+    },
+
+    [theme.breakpoints.up("xl")]: {
       width: "350px",
       height: "445px",
       margin: "0px 20px",
       backgroundSize: "cover",
     },
-
-    [theme.breakpoints.up("xl")]: {},
   },
 
   onHoverdestro: {
@@ -172,13 +192,18 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up("lg")]: {
+      width: "280px",
+      height: "370px",
+      margin: "0px 20px",
+      backgroundSize: "cover",
+    },
+
+    [theme.breakpoints.up("xl")]: {
       width: "350px",
       height: "445px",
       margin: "0px 20px",
       backgroundSize: "cover",
     },
-
-    [theme.breakpoints.up("xl")]: {},
   },
 
   destroGrey: {
@@ -202,13 +227,18 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up("lg")]: {
+      width: "280px",
+      height: "370px",
+      margin: "0px 20px",
+      backgroundSize: "cover",
+    },
+
+    [theme.breakpoints.up("xl")]: {
       width: "350px",
       height: "445px",
       margin: "0px 20px",
       backgroundSize: "cover",
     },
-
-    [theme.breakpoints.up("xl")]: {},
   },
 
   override: {
@@ -279,6 +309,17 @@ const useStyles = makeStyles((theme) => ({
       alignItems: "center",
       marginLeft: "0px",
     },
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
+  },
+
+  cardspec: {
+    marginTop: "30px",
+    marginBottom: "30px",
+
+    [theme.breakpoints.up("md")]: {},
 
     [theme.breakpoints.up("lg")]: {},
 
@@ -362,11 +403,7 @@ const Spec = () => {
           <span style={{ fontWeight: "400" }}>Choose your Guide</span>
         </Typography>
       </Grid>
-      <Grid
-        container
-        justify="center"
-        style={{ marginTop: "30px", marginBottom: "30px" }}
-      >
+      <Grid container justify="center" className={classes.cardspec}>
         <Link
           activeClass="active"
           to="Guides"
