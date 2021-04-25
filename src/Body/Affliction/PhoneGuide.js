@@ -2,7 +2,7 @@ import React from "react";
 import Afflogo from "../../Img/aff.png";
 import Avatar from "@material-ui/core/Avatar";
 import { useMediaQuery } from "react-responsive";
-import Appbar from "./Appbar";
+import Accordion from "./Accordion";
 import { Typography, Grid, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
@@ -62,7 +62,7 @@ const PhoneGuide = () => {
           AFFLICTION
         </Typography>
       </Grid>
-      <Appbar />
+      <Accordion />
     </Grid>
   );
 };

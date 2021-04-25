@@ -37,8 +37,8 @@ const Affliction = () => {
 
   return (
     <Grid container xs={12} item id="Guides" className={classes.affliction}>
-      {isTablet ? <PhoneGuide /> : null}
-      <Affmenu />
+      {isTablet ? <PhoneGuide /> : <Affmenu />}
+
       {stats ? (
         <Stats />
       ) : lego ? (
