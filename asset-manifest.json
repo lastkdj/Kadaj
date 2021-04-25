@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Kadaj/static/css/main.7fb939e0.chunk.css",
-    "main.js": "/Kadaj/static/js/main.c1702c93.chunk.js",
-    "main.js.map": "/Kadaj/static/js/main.c1702c93.chunk.js.map",
-    "runtime-main.js": "/Kadaj/static/js/runtime-main.823ba526.js",
-    "runtime-main.js.map": "/Kadaj/static/js/runtime-main.823ba526.js.map",
-    "static/js/2.0ddfbd87.chunk.js": "/Kadaj/static/js/2.0ddfbd87.chunk.js",
-    "static/js/2.0ddfbd87.chunk.js.map": "/Kadaj/static/js/2.0ddfbd87.chunk.js.map",
-    "static/js/3.12ee145b.chunk.js": "/Kadaj/static/js/3.12ee145b.chunk.js",
-    "static/js/3.12ee145b.chunk.js.map": "/Kadaj/static/js/3.12ee145b.chunk.js.map",
+    "main.css": "/Kadaj/static/css/main.9ed26e74.chunk.css",
+    "main.js": "/Kadaj/static/js/main.4bc662cc.chunk.js",
+    "main.js.map": "/Kadaj/static/js/main.4bc662cc.chunk.js.map",
+    "runtime-main.js": "/Kadaj/static/js/runtime-main.c45dca5e.js",
+    "runtime-main.js.map": "/Kadaj/static/js/runtime-main.c45dca5e.js.map",
+    "static/js/2.66d9a760.chunk.js": "/Kadaj/static/js/2.66d9a760.chunk.js",
+    "static/js/2.66d9a760.chunk.js.map": "/Kadaj/static/js/2.66d9a760.chunk.js.map",
+    "static/js/3.a888a847.chunk.js": "/Kadaj/static/js/3.a888a847.chunk.js",
+    "static/js/3.a888a847.chunk.js.map": "/Kadaj/static/js/3.a888a847.chunk.js.map",
     "index.html": "/Kadaj/index.html",
-    "static/css/main.7fb939e0.chunk.css.map": "/Kadaj/static/css/main.7fb939e0.chunk.css.map",
-    "static/js/2.0ddfbd87.chunk.js.LICENSE.txt": "/Kadaj/static/js/2.0ddfbd87.chunk.js.LICENSE.txt",
+    "static/css/main.9ed26e74.chunk.css.map": "/Kadaj/static/css/main.9ed26e74.chunk.css.map",
+    "static/js/2.66d9a760.chunk.js.LICENSE.txt": "/Kadaj/static/js/2.66d9a760.chunk.js.LICENSE.txt",
     "static/media/Awareness.ad8b6ec3.png": "/Kadaj/static/media/Awareness.ad8b6ec3.png",
     "static/media/Castle Nathria Mythic Artificer Xymox.1f2b2ead.jpg": "/Kadaj/static/media/Castle Nathria Mythic Artificer Xymox.1f2b2ead.jpg",
     "static/media/Castle Nathria Mythic Denathrius.4fa5adc6.jpg": "/Kadaj/static/media/Castle Nathria Mythic Denathrius.4fa5adc6.jpg",
@@ -100,9 +100,9 @@
     "static/media/xymox.f6fa56b1.jpg": "/Kadaj/static/media/xymox.f6fa56b1.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.823ba526.js",
-    "static/js/2.0ddfbd87.chunk.js",
-    "static/css/main.7fb939e0.chunk.css",
-    "static/js/main.c1702c93.chunk.js"
+    "static/js/runtime-main.c45dca5e.js",
+    "static/js/2.66d9a760.chunk.js",
+    "static/css/main.9ed26e74.chunk.css",
+    "static/js/main.4bc662cc.chunk.js"
   ]
 }
