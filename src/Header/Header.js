@@ -8,6 +8,9 @@ import Button from "@material-ui/core/Button";
 import { Link } from "react-scroll";
 import { useMediaQuery } from "react-responsive";
 import SimpleMenu from "./Menu";
+import aff from "../Img/aff.jpg";
+import demo from "../Img/demo.jpg";
+import destro from "../Img/destro.jpg";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -33,7 +36,7 @@ const Header = () => {
     window.open("https://www.youtube.com/user/darkkadaj11");
   };
 
-  const isMobile = useMediaQuery({ query: "(max-width: 414px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 959px)" });
 
   return (
     <Grid container className={scrolled ? classes.sticky : classes.background}>
@@ -61,6 +64,24 @@ const Header = () => {
           md={9}
           style={{ justifyContent: "flex-end" }}
         >
+          {isMobile ? (
+            scrolled ? (
+              <Grid container item xs={10} style={{ paddingTop: "15px" }}>
+                <Grid item>
+                  {" "}
+                  <img src={aff} alt="aff" className={classes.speclogo} />
+                </Grid>
+                <Grid item>
+                  {" "}
+                  <img src={demo} alt="aff" className={classes.speclogo} />
+                </Grid>
+                <Grid item>
+                  {" "}
+                  <img src={destro} alt="aff" className={classes.speclogo} />
+                </Grid>
+              </Grid>
+            ) : null
+          ) : null}
           <ul className={classes.ul}>
             <li className={classes.li}>
               <Link
@@ -172,7 +193,9 @@ const Header = () => {
               </Button>
             </Grid>
           ) : (
-            <SimpleMenu scrolled={scrolled} />
+            <Grid item xs={2}>
+              <SimpleMenu scrolled={scrolled} />
+            </Grid>
           )}
         </Grid>
       </Grid>

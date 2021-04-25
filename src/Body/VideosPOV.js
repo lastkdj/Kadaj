@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Grid, makeStyles, Typography } from "@material-ui/core";
-import cn from "../Img/cn.jpg";
+import cn from "../Img/wowback.jpg";
+import cnraid from "../Img/cn.jpg";
 import Shriekwing from "../Img/cn/Castle Nathria Mythic Shriekwing.jpg";
 import Huntsman from "../Img/cn/Castle Nathria Mythic Huntsman Altimor.jpg";
 import Hungering from "../Img/cn/Castle Nathria Mythic Hungering Destroyer.jpg";
@@ -13,6 +14,7 @@ import Generals from "../Img/cn/Castle Nathria Mythic Stone Legion Generals.jpg"
 import Denathrius from "../Img/cn/Castle Nathria Mythic Denathrius.jpg";
 import "./cnStyles.css";
 import { useMediaQuery } from "react-responsive";
+import BossesSheets from "./BossesSheets";
 
 const useStyles = makeStyles((theme) => ({
   spec: {
@@ -20,9 +22,18 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     textDecoration: "none",
     fontFamily: "Poppins, sans-serif",
-    fontSize: "2.1em",
+    fontSize: "1em",
     animation: "fadeInBot ease 1.8s",
-    marginTop: "70px",
+    marginTop: "50px",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "2.1em",
+      marginTop: "70px",
+    },
+
+    [theme.breakpoints.up("xl")]: {},
   },
 
   borderThumbnail: {
@@ -31,6 +42,31 @@ const useStyles = makeStyles((theme) => ({
     borderWidth: "2px",
     borderColor: "rgb(254, 179, 0)",
     margin: "0 10px 0 10px",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
+  },
+
+  nathriagrid: {
+    height: "900px",
+    backgroundImage: `url(${cn})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    borderTopStyle: "solid",
+    borderWidth: "1px",
+    marginTop: "3px",
+    boxShadow: "-1px 8px 0px 13px rgba(0,0,0,1)",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {
+      backgroundImage: `url(${cnraid})`,
+    },
+
+    [theme.breakpoints.up("xl")]: {},
   },
 }));
 
@@ -170,23 +206,14 @@ const VideosPOV = () => {
     fadeElms.forEach((el) => observer.observe(el));
   }, []);
 
-  const isMobile = useMediaQuery({ query: "(max-width: 414px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 960px)" });
 
   return (
     <Grid
       container
       item
       xs={12}
-      style={{
-        height: "90vh",
-        backgroundImage: `url(${cn})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        borderTopStyle: "solid",
-        borderWidth: "1px",
-        marginTop: "3px",
-        boxShadow: "-1px 8px 0px 13px rgba(0,0,0,1)",
-      }}
+      className={classes.nathriagrid}
       justify="center"
       id="raid"
     >
@@ -197,8 +224,8 @@ const VideosPOV = () => {
         </Typography>
       </Grid>
 
-      <Grid container item xs={12}>
-        {!isMobile ? (
+      {!isMobile ? (
+        <Grid container item xs={12}>
           <Grid
             container
             item
@@ -222,109 +249,130 @@ const VideosPOV = () => {
               allowFullScreen
             ></iframe>
           </Grid>
-        ) : null}
 
-        <Grid
-          container
-          item
-          xs={6}
-          direction="row"
-          justify="flex-start"
-          alignItems="flex-start"
-          style={{ paddingRight: "10px", paddingBottom: "90px" }}
-        >
-          <Grid class="cnFade1 fadeOut">
-            <img
-              onClick={onClickShriekwing}
-              className={classes.borderThumbnail}
-              alt=""
-              src={Shriekwing}
-              style={{ width: "210px", height: "118px", cursor: "pointer" }}
-            />
-          </Grid>
-          <Grid class="cnFade2 fadeOut">
-            <img
-              onClick={onClickHuntsman}
-              className={classes.borderThumbnail}
-              alt=""
-              src={Huntsman}
-              style={{ width: "210px", height: "118px", cursor: "pointer" }}
-            />
-          </Grid>
-          <Grid class="cnFade3 fadeOut">
-            <img
-              onClick={onClickHungering}
-              className={classes.borderThumbnail}
-              alt=""
-              src={Hungering}
-              style={{ width: "210px", height: "118px", cursor: "pointer" }}
-            />
-          </Grid>
-          <Grid class="cnFade4 fadeOut">
-            <img
-              onClick={onClickLady}
-              className={classes.borderThumbnail}
-              alt=""
-              src={Lady}
-              style={{ width: "210px", height: "118px", cursor: "pointer" }}
-            />
-          </Grid>
-          <Grid class="cnFade5 fadeOut">
-            <img
-              onClick={onClickXymox}
-              className={classes.borderThumbnail}
-              alt=""
-              src={Xymox}
-              style={{ width: "210px", height: "118px", cursor: "pointer" }}
-            />
-          </Grid>
-          <Grid class="cnFade6 fadeOut">
-            <img
-              onClick={onClickSunsking}
-              className={classes.borderThumbnail}
-              alt=""
-              src={Sunsking}
-              style={{ width: "210px", height: "118px", cursor: "pointer" }}
-            />{" "}
-          </Grid>
-          <Grid class="cnFade7 fadeOut">
-            <img
-              onClick={onClickCouncil}
-              className={classes.borderThumbnail}
-              alt=""
-              src={Council}
-              style={{ width: "210px", height: "118px", cursor: "pointer" }}
-            />
-          </Grid>
-          <Grid class="cnFade8 fadeOut">
-            <img
-              onClick={onClickSludgefist}
-              className={classes.borderThumbnail}
-              alt=""
-              src={Sludgefist}
-              style={{ width: "210px", height: "118px", cursor: "pointer" }}
-            />
-          </Grid>
-          <Grid class="cnFade9 fadeOut">
-            <img
-              onClick={onClickGenerals}
-              className={classes.borderThumbnail}
-              alt=""
-              src={Generals}
-              style={{ width: "210px", height: "118px", cursor: "pointer" }}
-            />
-          </Grid>
-          <Grid class="cnFade10 fadeOut">
-            <img
-              onClick={onClickDenathrius}
-              className={classes.borderThumbnail}
-              alt=""
-              src={Denathrius}
-              style={{ width: "210px", height: "118px", cursor: "pointer" }}
-            />
+          <Grid
+            container
+            item
+            xs={6}
+            direction="row"
+            justify="flex-start"
+            alignItems="flex-start"
+            style={{
+              paddingRight: "10px",
+              paddingBottom: "90px",
+              overflow: "hidden",
+            }}
+          >
+            <Grid class="cnFade1 fadeOut">
+              <img
+                onClick={onClickShriekwing}
+                className={classes.borderThumbnail}
+                alt=""
+                src={Shriekwing}
+                style={{ width: "210px", height: "118px", cursor: "pointer" }}
+              />
+            </Grid>
+            <Grid class="cnFade2 fadeOut">
+              <img
+                onClick={onClickHuntsman}
+                className={classes.borderThumbnail}
+                alt=""
+                src={Huntsman}
+                style={{ width: "210px", height: "118px", cursor: "pointer" }}
+              />
+            </Grid>
+            <Grid class="cnFade3 fadeOut">
+              <img
+                onClick={onClickHungering}
+                className={classes.borderThumbnail}
+                alt=""
+                src={Hungering}
+                style={{ width: "210px", height: "118px", cursor: "pointer" }}
+              />
+            </Grid>
+            <Grid class="cnFade4 fadeOut">
+              <img
+                onClick={onClickLady}
+                className={classes.borderThumbnail}
+                alt=""
+                src={Lady}
+                style={{ width: "210px", height: "118px", cursor: "pointer" }}
+              />
+            </Grid>
+            <Grid class="cnFade5 fadeOut">
+              <img
+                onClick={onClickXymox}
+                className={classes.borderThumbnail}
+                alt=""
+                src={Xymox}
+                style={{ width: "210px", height: "118px", cursor: "pointer" }}
+              />
+            </Grid>
+            <Grid class="cnFade6 fadeOut">
+              <img
+                onClick={onClickSunsking}
+                className={classes.borderThumbnail}
+                alt=""
+                src={Sunsking}
+                style={{ width: "210px", height: "118px", cursor: "pointer" }}
+              />{" "}
+            </Grid>
+            <Grid class="cnFade7 fadeOut">
+              <img
+                onClick={onClickCouncil}
+                className={classes.borderThumbnail}
+                alt=""
+                src={Council}
+                style={{ width: "210px", height: "118px", cursor: "pointer" }}
+              />
+            </Grid>
+            <Grid class="cnFade8 fadeOut">
+              <img
+                onClick={onClickSludgefist}
+                className={classes.borderThumbnail}
+                alt=""
+                src={Sludgefist}
+                style={{ width: "210px", height: "118px", cursor: "pointer" }}
+              />
+            </Grid>
+            <Grid class="cnFade9 fadeOut">
+              <img
+                onClick={onClickGenerals}
+                className={classes.borderThumbnail}
+                alt=""
+                src={Generals}
+                style={{ width: "210px", height: "118px", cursor: "pointer" }}
+              />
+            </Grid>
+            <Grid class="cnFade10 fadeOut">
+              <img
+                onClick={onClickDenathrius}
+                className={classes.borderThumbnail}
+                alt=""
+                src={Denathrius}
+                style={{ width: "210px", height: "118px", cursor: "pointer" }}
+              />
+            </Grid>
           </Grid>
         </Grid>
-      </Grid>
+      ) : (
+        <Grid container item xs={12} style={{ padding: "10px" }}>
+          {BossesSheets.map((b) => (
+            <Grid
+              item
+              xs={12}
+              style={{
+                backgroundImage: `url(${b})`,
+                backgroundRepeat: "no-repeat",
+                width: "100%",
+                height: "70px",
+                boxShadow: "inset 0 0 0 1px #504137",
+                marginBottom: "2px",
+              }}
+            ></Grid>
+          ))}
+        </Grid>
+      )}
     </Grid>
   );
 };

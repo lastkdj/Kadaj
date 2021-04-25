@@ -74,6 +74,19 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up("xl")]: {},
   },
+
+  awareness: {
+    marginTop: "60px",
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {
+      marginTop: "80px",
+    },
+
+    [theme.breakpoints.up("xl")]: {
+      marginTop: "130px",
+    },
+  },
 }));
 
 const About = () => {
@@ -194,8 +207,8 @@ const About = () => {
           container
           item
           xs={12}
-          style={isTablet ? { marginTop: "60px" } : { marginTop: "130px" }}
           justify="center"
+          className={classes.awareness}
         >
           <Grid
             container
@@ -212,6 +225,7 @@ const About = () => {
                     display: "flex",
                     justifyContent: "center",
                     height: "250px",
+                    marginTop: "40px",
                   }
                 : null
             }

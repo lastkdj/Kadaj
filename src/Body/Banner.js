@@ -94,7 +94,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Banner = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 414px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 960px)" });
 
   const classes = useStyles();
   return (

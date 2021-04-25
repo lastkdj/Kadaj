@@ -107,7 +107,7 @@ const useStyles = makeStyles((theme) => ({
       margin: "0px 200px",
     },
 
-    [theme.breakpoints.up("xl")]: { margin: "0px 450px" },
+    [theme.breakpoints.up("xl")]: { margin: "0px 400px" },
   },
 
   youtube: {
@@ -122,6 +122,21 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
+  },
+
+  speclogo: {
+    borderRadius: "40px",
+    width: "40px",
+    margin: "0px 10px",
+
+    [theme.breakpoints.up("md")]: {
+      width: "50px",
+      marginLeft: "0px",
+    },
+
+    [theme.breakpoints.up("lg")]: { width: "40px" },
 
     [theme.breakpoints.up("xl")]: {},
   },
