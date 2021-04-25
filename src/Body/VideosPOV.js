@@ -39,18 +39,28 @@ const useStyles = makeStyles((theme) => ({
   borderThumbnail: {
     borderRadius: "6px",
     borderStyle: "solid",
-    borderWidth: "2px",
+    borderWidth: "1px",
     borderColor: "rgb(254, 179, 0)",
     margin: "0 10px 0 10px",
+    width: "210px",
+    height: "118px",
+    cursor: "pointer",
 
     [theme.breakpoints.up("md")]: {},
 
-    [theme.breakpoints.up("lg")]: {},
+    [theme.breakpoints.up("lg")]: {
+      width: "130px",
+      height: "70px",
+    },
 
-    [theme.breakpoints.up("xl")]: {},
+    [theme.breakpoints.up("xl")]: {
+      width: "210px",
+      height: "118px",
+    },
   },
 
   nathriagrid: {
+    overflow: "hidden",
     height: "900px",
     backgroundImage: `url(${cn})`,
     backgroundSize: "cover",
@@ -58,15 +68,61 @@ const useStyles = makeStyles((theme) => ({
     borderTopStyle: "solid",
     borderWidth: "1px",
     marginTop: "3px",
-    boxShadow: "-1px 8px 0px 13px rgba(0,0,0,1)",
+    boxShadow: "inset 0 0 0 1px #504137",
 
     [theme.breakpoints.up("md")]: {},
 
     [theme.breakpoints.up("lg")]: {
       backgroundImage: `url(${cnraid})`,
+      height: "600px",
     },
 
-    [theme.breakpoints.up("xl")]: {},
+    [theme.breakpoints.up("xl")]: {
+      height: "900px",
+    },
+  },
+
+  iframe: {
+    borderRadius: "6px",
+    borderStyle: "solid",
+    borderWidth: "1px",
+    borderColor: "rgb(254, 179, 0)",
+    width: "560px",
+    height: "330px",
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {
+      width: "760px",
+      height: "430px",
+    },
+  },
+
+  thumbnailframe: {
+    overflow: "hidden",
+    paddingBottom: "50px",
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {
+      paddingRight: "10px",
+      paddingBottom: "90px",
+      overflow: "hidden",
+    },
+  },
+
+  videoplayer: {
+    padding: "30px",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {
+      padding: "0px",
+    },
   },
 }));
 
@@ -217,7 +273,7 @@ const VideosPOV = () => {
       justify="center"
       id="raid"
     >
-      <Grid item xs={12} class="fade fadeOut">
+      <Grid item xs={12} sm={12} md={12} lg={12} class="fade fadeOut">
         <Typography className={classes.spec} style={{ textAlign: "center" }}>
           <span style={{ color: "rgb(254, 179, 0)" }}>Mythic</span> Castle
           Nathria, <span style={{ fontWeight: "400" }}>Warlock POV</span>
@@ -225,28 +281,15 @@ const VideosPOV = () => {
       </Grid>
 
       {!isMobile ? (
-        <Grid container item xs={12}>
-          <Grid
-            container
-            item
-            xs={6}
-            style={{ paddingLeft: "80px" }}
-            class="cnPlayer fadeOut"
-          >
+        <Grid container item xs={12} className={classes.videoplayer}>
+          <Grid container item xs={6} class="cnPlayer fadeOut">
             {" "}
             <iframe
-              style={{
-                borderRadius: "6px",
-                borderStyle: "solid",
-                borderWidth: "3px",
-                borderColor: "rgb(254, 179, 0)",
-              }}
-              width="760"
-              height="430"
               src={url}
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              className={classes.iframe}
             ></iframe>
           </Grid>
 
@@ -257,11 +300,7 @@ const VideosPOV = () => {
             direction="row"
             justify="flex-start"
             alignItems="flex-start"
-            style={{
-              paddingRight: "10px",
-              paddingBottom: "90px",
-              overflow: "hidden",
-            }}
+            className={classes.thumbnailframe}
           >
             <Grid class="cnFade1 fadeOut">
               <img
@@ -269,7 +308,6 @@ const VideosPOV = () => {
                 className={classes.borderThumbnail}
                 alt=""
                 src={Shriekwing}
-                style={{ width: "210px", height: "118px", cursor: "pointer" }}
               />
             </Grid>
             <Grid class="cnFade2 fadeOut">
@@ -278,7 +316,6 @@ const VideosPOV = () => {
                 className={classes.borderThumbnail}
                 alt=""
                 src={Huntsman}
-                style={{ width: "210px", height: "118px", cursor: "pointer" }}
               />
             </Grid>
             <Grid class="cnFade3 fadeOut">
@@ -287,7 +324,6 @@ const VideosPOV = () => {
                 className={classes.borderThumbnail}
                 alt=""
                 src={Hungering}
-                style={{ width: "210px", height: "118px", cursor: "pointer" }}
               />
             </Grid>
             <Grid class="cnFade4 fadeOut">
@@ -296,7 +332,6 @@ const VideosPOV = () => {
                 className={classes.borderThumbnail}
                 alt=""
                 src={Lady}
-                style={{ width: "210px", height: "118px", cursor: "pointer" }}
               />
             </Grid>
             <Grid class="cnFade5 fadeOut">
@@ -305,7 +340,6 @@ const VideosPOV = () => {
                 className={classes.borderThumbnail}
                 alt=""
                 src={Xymox}
-                style={{ width: "210px", height: "118px", cursor: "pointer" }}
               />
             </Grid>
             <Grid class="cnFade6 fadeOut">
@@ -314,7 +348,6 @@ const VideosPOV = () => {
                 className={classes.borderThumbnail}
                 alt=""
                 src={Sunsking}
-                style={{ width: "210px", height: "118px", cursor: "pointer" }}
               />{" "}
             </Grid>
             <Grid class="cnFade7 fadeOut">
@@ -323,7 +356,6 @@ const VideosPOV = () => {
                 className={classes.borderThumbnail}
                 alt=""
                 src={Council}
-                style={{ width: "210px", height: "118px", cursor: "pointer" }}
               />
             </Grid>
             <Grid class="cnFade8 fadeOut">
@@ -332,7 +364,7 @@ const VideosPOV = () => {
                 className={classes.borderThumbnail}
                 alt=""
                 src={Sludgefist}
-                style={{ width: "210px", height: "118px", cursor: "pointer" }}
+                style={{}}
               />
             </Grid>
             <Grid class="cnFade9 fadeOut">
@@ -341,7 +373,6 @@ const VideosPOV = () => {
                 className={classes.borderThumbnail}
                 alt=""
                 src={Generals}
-                style={{ width: "210px", height: "118px", cursor: "pointer" }}
               />
             </Grid>
             <Grid class="cnFade10 fadeOut">
@@ -350,15 +381,15 @@ const VideosPOV = () => {
                 className={classes.borderThumbnail}
                 alt=""
                 src={Denathrius}
-                style={{ width: "210px", height: "118px", cursor: "pointer" }}
               />
             </Grid>
           </Grid>
         </Grid>
       ) : (
-        <Grid container item xs={12} style={{ padding: "10px" }}>
+        <Grid container item xs={12} sm={5} md={5} style={{ padding: "10px" }}>
           {BossesSheets.map((b) => (
             <Grid
+              class="cnFade1 fadeOut"
               item
               xs={12}
               style={{

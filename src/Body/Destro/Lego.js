@@ -9,6 +9,7 @@ import Avatar from "@material-ui/core/Avatar";
 import Demonic from "../../Img/aff/demonic.png";
 import Wilfreds from "../../Img/demo/wilfreds.png";
 import Cinders from "../../Img/destro/cinders.png";
+import wowBack from "../../Img/wowback.jpg";
 
 const useStyles = makeStyles((theme) => ({
   tittle: {
@@ -41,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
     borderStyle: "solid",
     borderWidth: "2px",
     borderColor: "#E64D00",
+    backgroundImage: `url(${wowBack})`,
   },
 }));
 

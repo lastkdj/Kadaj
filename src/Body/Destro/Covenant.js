@@ -10,6 +10,7 @@ import Niya from "../../Img/aff/niya.png";
 import Korayn from "../../Img/destro/korayn.png";
 import Soulrot from "../../Img/aff/soulrot.png";
 import Flicker from "../../Img/aff/flicker.png";
+import wowBack from "../../Img/wowback.jpg";
 
 const useStyles = makeStyles((theme) => ({
   tittle: {
@@ -59,6 +60,7 @@ const useStyles = makeStyles((theme) => ({
     borderStyle: "solid",
     borderWidth: "2px",
     borderColor: "#E64D00",
+    backgroundImage: `url(${wowBack})`,
   },
 }));
 

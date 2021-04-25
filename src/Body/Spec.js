@@ -323,7 +323,17 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up("lg")]: {},
 
-    [theme.breakpoints.up("xl")]: {},
+    [theme.breakpoints.up("xl")]: {
+      marginBottom: "200px",
+    },
+  },
+
+  specgrid: {
+    overflow: "hidden",
+    borderTopStyle: "solid",
+    borderWidth: "3px",
+    borderColor: "black",
+    boxShadow: "inset 0 0 0 1px #504137",
   },
 }));
 
@@ -368,16 +378,13 @@ const Spec = () => {
   }, []);
 
   const isMobile = useMediaQuery({ query: "(max-width: 959px)" });
+  const isBelow360 = useMediaQuery({ query: "(max-width: 360px)" });
 
   return (
     <Grid
       id="Specs"
-      style={{
-        overflow: "hidden",
-        borderTopStyle: "solid",
-        borderWidth: "3px",
-        borderColor: "black",
-      }}
+      className={classes.specgrid}
+      style={isBelow360 ? { height: "577px" } : null}
     >
       <video
         style={{ position: "absolute", zIndex: "-1", width: " 100%" }}

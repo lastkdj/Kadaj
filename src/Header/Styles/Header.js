@@ -1,4 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
+import wowBack from "../../Img/wowback.jpg";
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -26,16 +27,14 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     padding: "20px 0px",
     backgroundColor: "rgb(28, 28, 28)",
+    backgroundImage: `url(${wowBack})`,
     position: "fixed",
     top: "0",
     zIndex: "5000",
     transition: "all 0.3s ease-in-out",
     height: "60px",
     alignContent: "center",
-    boxShadow: "2px 7px 24px 12px rgba(0,0,0,0.1)",
-    borderColor: "#DADADA",
-    borderBottomStyle: "solid",
-    borderWidth: "3px",
+    boxShadow: "inset 0 0 0 1px #504137",
 
     [theme.breakpoints.up("md")]: {},
 
@@ -50,6 +49,11 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     fontFamily: "Poppins, sans-serif",
     justifyContent: "center",
+    transition: "0.3s",
+
+    "&:hover": {
+      color: "#F58900",
+    },
   },
 
   headerfontSticky: {
@@ -58,6 +62,11 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     fontFamily: "Poppins, sans-serif",
     justifyContent: "center",
+    transition: "0.3s",
+
+    "&:hover": {
+      color: "#F58900",
+    },
   },
 
   navbarLogo: {
@@ -121,9 +130,23 @@ const useStyles = makeStyles((theme) => ({
       display: "block",
     },
 
-    [theme.breakpoints.up("lg")]: {},
+    [theme.breakpoints.up("lg")]: {
+      backgroundColor: "#CF0404",
+      borderRadius: "9px",
 
-    [theme.breakpoints.up("xl")]: {},
+      "&:hover": {
+        backgroundColor: "#CF0404",
+      },
+    },
+
+    [theme.breakpoints.up("xl")]: {
+      backgroundColor: "#CF0404",
+      borderRadius: "9px",
+
+      "&:hover": {
+        backgroundColor: "#CF0404",
+      },
+    },
   },
 
   speclogo: {

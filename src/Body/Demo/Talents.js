@@ -11,6 +11,7 @@ import Box from "@material-ui/core/Box";
 import TalentsImg from "../../Img/demo/talentright.jpg";
 import st from "../../Img/demo/demotalents.png";
 import aoe from "../../Img/demo/demodungeontalents.png";
+import wowBack from "../../Img/wowback.jpg";
 
 const useStyles = makeStyles((theme) => ({
   tittle: {
@@ -35,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
     borderStyle: "solid",
     borderWidth: "2px",
     borderColor: "#B97AF4",
+    backgroundImage: `url(${wowBack})`,
   },
 
   infoBox: {

@@ -9,6 +9,7 @@ import Avatar from "@material-ui/core/Avatar";
 import Demonic from "../../Img/aff/demonic.png";
 import Wrath from "../../Img/aff/wrath.png";
 import Sacrolash from "../../Img/aff/sacrolash.png";
+import wowBack from "../../Img/wowback.jpg";
 
 const useStyles = makeStyles((theme) => ({
   tittle: {
@@ -41,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
     borderStyle: "solid",
     borderWidth: "2px",
     borderColor: "#2AB602",
+    backgroundImage: `url(${wowBack})`,
   },
 }));
 

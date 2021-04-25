@@ -10,18 +10,23 @@ import { useMediaQuery } from "react-responsive";
 
 const useStyles = makeStyles((theme) => ({
   asset1: {
-    marginTop: "-17px",
+    overflow: "hidden",
     borderColor: "black",
     borderTopStyle: "solid",
     borderWidth: "3px",
+    boxShadow: "inset 0 0 0 1px #504137",
+    backgroundSize: "cover",
+    backgroundImage: `url(${Asset2})`,
+    height: "1750px",
+    backgroundPosition: "top",
+    [theme.breakpoints.up("md")]: {},
 
-    [theme.breakpoints.up("md")]: {
-      backgroundSize: "cover",
+    [theme.breakpoints.up("lg")]: {
+      backgroundImage: `url(${Asset1})`,
+      height: "1900px",
     },
 
-    [theme.breakpoints.up("lg")]: {},
-
-    [theme.breakpoints.up("xl")]: { marginTop: "180px" },
+    [theme.breakpoints.up("xl")]: { marginTop: "0px" },
   },
 
   about: {
@@ -144,25 +149,12 @@ const About = () => {
     fadeElms.forEach((el) => observer.observe(el));
   }, []);
 
-  const isMobile = useMediaQuery({ query: "(max-width: 414px)" });
   const isTablet = useMediaQuery({ query: "(max-width: 960px)" });
+  const isBelow360 = useMediaQuery({ query: "(max-width: 360px)" });
 
   const classes = useStyles();
   return (
-    <Grid
-      container
-      className={classes.asset1}
-      id="About"
-      style={
-        isTablet
-          ? {
-              backgroundImage: `url(${Asset2})`,
-              height: "1750px",
-              backgroundPosition: "top",
-            }
-          : { backgroundImage: `url(${Asset1})`, height: "1900px" }
-      }
-    >
+    <Grid container className={classes.asset1} id="About">
       <Grid
         container
         item

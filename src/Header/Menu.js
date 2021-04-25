@@ -6,6 +6,7 @@ import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import Button from "@material-ui/core/Button";
 import Divider from "@material-ui/core/Divider";
+import wowBack from "../Img/wowback.jpg";
 
 const SimpleMenu = (props) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -40,7 +41,7 @@ const SimpleMenu = (props) => {
         style={props.scrolled ? { top: "70px" } : null}
         MenuListProps={{
           style: {
-            backgroundColor: "rgb(28,28,28)",
+            backgroundImage: `url(${wowBack})`,
             color: "white",
             padding: "0px",
           },
@@ -56,7 +57,10 @@ const SimpleMenu = (props) => {
               Specs{" "}
             </Grid>
           </MenuItem>
-          <Divider component="li" light={true} />
+          <Divider
+            component="li"
+            style={{ boxShadow: "inset 0 0 0 1px #504137" }}
+          />
 
           <MenuItem onClick={handleClose}>
             {" "}
@@ -64,7 +68,10 @@ const SimpleMenu = (props) => {
               About{" "}
             </Grid>
           </MenuItem>
-          <Divider component="li" />
+          <Divider
+            component="li"
+            style={{ boxShadow: "inset 0 0 0 1px #504137" }}
+          />
 
           <MenuItem onClick={handleClose}>
             {" "}
@@ -72,7 +79,10 @@ const SimpleMenu = (props) => {
               Raid{" "}
             </Grid>
           </MenuItem>
-          <Divider component="li" />
+          <Divider
+            component="li"
+            style={{ boxShadow: "inset 0 0 0 1px #504137" }}
+          />
 
           <MenuItem onClick={handleClose}>
             {" "}
@@ -80,7 +90,10 @@ const SimpleMenu = (props) => {
               Guides{" "}
             </Grid>
           </MenuItem>
-          <Divider component="li" />
+          <Divider
+            component="li"
+            style={{ boxShadow: "inset 0 0 0 1px #504137" }}
+          />
 
           <MenuItem onClick={handleClose}>
             {" "}

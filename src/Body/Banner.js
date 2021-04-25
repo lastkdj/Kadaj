@@ -91,6 +91,18 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Poppins, sans-serif",
     fontSize: "3em",
   },
+
+  banner: {
+    height: "60vh",
+    boxShadow: "inset 0 0 0 1px #504137",
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {
+      height: "106vh",
+    },
+  },
 }));
 
 const Banner = () => {
@@ -98,11 +110,7 @@ const Banner = () => {
 
   const classes = useStyles();
   return (
-    <Grid
-      container
-      alignItems="center"
-      style={!isMobile ? { height: "106vh" } : { height: "60vh" }}
-    >
+    <Grid container alignItems="center" className={classes.banner}>
       {isMobile ? null : <Particles isMobile={isMobile} />}
       <Grid container item style={{ backgroundRepeat: "no-repeat" }}>
         <Grid item>

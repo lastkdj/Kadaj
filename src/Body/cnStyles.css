@@ -1,8 +1,16 @@
 .cnPlayer {
   transition: opacity 0.7s ease-in;
   margin-right: 100px;
+  padding-left: 80px;
 }
 
+@media (min-width: 961px) and (max-width: 1919px) {
+  .cnPlayer {
+    transition: opacity 0.7s ease-in;
+    margin-right: 0px;
+    padding-left: 0px;
+  }
+}
 .cnFade1 {
   transition: opacity 0.7s ease-in;
   transition-delay: 0.2s;

@@ -28,6 +28,7 @@ import CouncilComponent from "./RaidBosses/Council";
 import SludgefistComponent from "./RaidBosses/Sludgefist";
 import GeneralsComponent from "./RaidBosses/Generals";
 import DenathriusComponent from "./RaidBosses/Denathrius";
+import wowBack from "../../Img/wowback.jpg";
 
 const useStyles = makeStyles((theme) => ({
   tittle: {
@@ -59,7 +60,8 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "6px",
     borderStyle: "solid",
     borderWidth: "2px",
-    borderColor: "#B97AF4",
+    borderColor: "#E64D00",
+    backgroundImage: `url(${wowBack})`,
   },
 
   bossframe: {

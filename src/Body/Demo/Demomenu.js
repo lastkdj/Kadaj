@@ -14,12 +14,14 @@ import LocalHospitalIcon from "@material-ui/icons/LocalHospital";
 import "../guideStyles.css";
 import { Menu } from "../../Context/DemoMenuContext";
 import RotateRightIcon from "@material-ui/icons/RotateRight";
+import wowBack from "../../Img/wowback.jpg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
     maxWidth: 200,
-    backgroundColor: "#60338A",
+    backgroundImage: `url(${wowBack})`,
+    boxShadow: "inset 0 0 0 1px #504137",
     color: "white",
     borderRadius: "9px",
   },
@@ -152,7 +154,10 @@ const Demomenu = (props) => {
             </ListItemAvatar>
             <Typography style={{ fontSize: "1em" }}> Stats</Typography>
           </ListItem>
-          <Divider variant="inset" component="li" />
+          <Divider
+            style={{ boxShadow: "inset 0 0 0 1px #504137" }}
+            component="li"
+          />
           <ListItem
             button
             onClick={onClickLego}
@@ -166,7 +171,10 @@ const Demomenu = (props) => {
             </ListItemAvatar>
             <Typography style={{ fontSize: "1em" }}> Legendaries</Typography>
           </ListItem>
-          <Divider variant="inset" component="li" />
+          <Divider
+            style={{ boxShadow: "inset 0 0 0 1px #504137" }}
+            component="li"
+          />
           <ListItem
             button
             onClick={onClickCovenant}
@@ -182,7 +190,10 @@ const Demomenu = (props) => {
             </ListItemAvatar>
             <Typography style={{ fontSize: "1em" }}>Covenant</Typography>
           </ListItem>
-          <Divider variant="inset" component="li" />
+          <Divider
+            style={{ boxShadow: "inset 0 0 0 1px #504137" }}
+            component="li"
+          />
           <ListItem
             button
             onClick={onClickTalents}
@@ -198,7 +209,10 @@ const Demomenu = (props) => {
             </ListItemAvatar>
             <ListItemText primary="Talents" />
           </ListItem>
-          <Divider variant="inset" component="li" />
+          <Divider
+            style={{ boxShadow: "inset 0 0 0 1px #504137" }}
+            component="li"
+          />
           <ListItem
             button
             onClick={onClickRaid}
@@ -214,7 +228,10 @@ const Demomenu = (props) => {
             </ListItemAvatar>
             <ListItemText primary="Raid Setup" />
           </ListItem>
-          <Divider variant="inset" component="li" />
+          <Divider
+            style={{ boxShadow: "inset 0 0 0 1px #504137" }}
+            component="li"
+          />
           <ListItem button className={classes.bottomMenu}>
             <ListItemAvatar>
               <Avatar

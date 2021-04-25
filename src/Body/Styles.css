@@ -51,6 +51,7 @@
 
 .fade {
   transition: opacity 0.7s ease-in;
+  width: 100%;
 }
 
 .aboutFade {
@@ -107,7 +108,6 @@
 
   .aboutFadetwo {
     margin: 0px 30px 0px 30px;
-
     width: 200px;
     display: flex;
     justify-content: center;

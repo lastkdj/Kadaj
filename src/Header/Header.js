@@ -181,13 +181,7 @@ const Header = () => {
                 variant="contained"
                 color="primary"
                 onClick={onClick}
-                style={{
-                  backgroundColor: "#CF0404",
-                  borderRadius: "9px",
-                  "&:hover": {
-                    backgroundColor: "#6461B9",
-                  },
-                }}
+                className={classes.youtube}
               >
                 Youtube
               </Button>

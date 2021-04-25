@@ -14,12 +14,15 @@ import LocalHospitalIcon from "@material-ui/icons/LocalHospital";
 import "../guideStyles.css";
 import { Menu } from "../../Context/AffMenuContext";
 import RotateRightIcon from "@material-ui/icons/RotateRight";
+import wowBack from "../../Img/wowback.jpg";
+import { useMediaQuery } from "react-responsive";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
     maxWidth: 200,
-    backgroundColor: "#60338A",
+    backgroundImage: `url(${wowBack})`,
+    boxShadow: "inset 0 0 0 1px #504137",
     color: "white",
     borderRadius: "9px",
   },
@@ -34,8 +37,17 @@ const useStyles = makeStyles((theme) => ({
   },
 
   large: {
-    width: theme.spacing(10),
-    height: theme.spacing(10),
+    width: theme.spacing(9),
+    height: theme.spacing(9),
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {
+      width: theme.spacing(10),
+      height: theme.spacing(10),
+    },
+
+    [theme.breakpoints.up("xl")]: {},
   },
 
   topMenu: {
@@ -44,6 +56,25 @@ const useStyles = makeStyles((theme) => ({
 
   bottomMenu: {
     borderRadius: "0px 0px 9px 9px",
+  },
+
+  spectittle: {
+    height: "100px",
+    marginTop: "30px",
+    flexDirection: "column",
+    alignItems: "center",
+    padding: "20px",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {
+      flexDirection: "row",
+      marginLeft: "30px",
+      marginTop: "70px",
+      padding: "0px",
+    },
+
+    [theme.breakpoints.up("xl")]: {},
   },
 }));
 
@@ -103,34 +134,31 @@ const Affmenu = (props) => {
     dispatch({ type: "rotation", value: rotation });
   };
 
+  const isTablet = useMediaQuery({ query: "(max-width: 960px)" });
+
   return (
-    <Grid xs={3}>
-      {" "}
-      <Grid
-        container
-        item
-        xs={12}
-        style={{ height: "100px", marginTop: "70px", marginLeft: "30px" }}
-      >
-        <Avatar
-          className={classes.large}
-          src={Afflogo}
-          style={{
-            boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
-            margin: "0px 30px 0px 20px",
-          }}
-        ></Avatar>
-        <Typography className={classes.spec} style={{ textAlign: "center" }}>
-          AFFLICTION
-        </Typography>
-      </Grid>
+    <Grid container item xs={3}>
+      {!isTablet ? (
+        <Grid container item xs={12} className={classes.spectittle}>
+          <Avatar
+            className={classes.large}
+            src={Afflogo}
+            style={{
+              boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
+              margin: "0px 30px 0px 20px",
+            }}
+          ></Avatar>
+          <Typography className={classes.spec} style={{ textAlign: "center" }}>
+            AFFLICTION
+          </Typography>
+        </Grid>
+      ) : null}
       <Grid
         class="menu fadeOut"
         container
         item
         xs={12}
         style={{
-          marginTop: "50px",
           marginLeft: "30px",
           borderRadius: "5px",
           maxHeight: 360,
@@ -156,7 +184,10 @@ const Affmenu = (props) => {
             </ListItemAvatar>
             <Typography style={{ fontSize: "1em" }}> Stats</Typography>
           </ListItem>
-          <Divider variant="inset" component="li" />
+          <Divider
+            component="li"
+            style={{ boxShadow: "inset 0 0 0 1px #504137" }}
+          />
           <ListItem
             button
             onClick={onClickLego}
@@ -170,7 +201,10 @@ const Affmenu = (props) => {
             </ListItemAvatar>
             <Typography style={{ fontSize: "1em" }}> Legendaries</Typography>
           </ListItem>
-          <Divider variant="inset" component="li" />
+          <Divider
+            style={{ boxShadow: "inset 0 0 0 1px #504137" }}
+            component="li"
+          />
           <ListItem
             button
             onClick={onClickCovenant}
@@ -186,7 +220,10 @@ const Affmenu = (props) => {
             </ListItemAvatar>
             <Typography style={{ fontSize: "1em" }}>Covenant</Typography>
           </ListItem>
-          <Divider variant="inset" component="li" />
+          <Divider
+            style={{ boxShadow: "inset 0 0 0 1px #504137" }}
+            component="li"
+          />
           <ListItem
             button
             onClick={onClickTalents}
@@ -202,7 +239,10 @@ const Affmenu = (props) => {
             </ListItemAvatar>
             <ListItemText primary="Talents" />
           </ListItem>
-          <Divider variant="inset" component="li" />
+          <Divider
+            style={{ boxShadow: "inset 0 0 0 1px #504137" }}
+            component="li"
+          />
           <ListItem
             button
             onClick={onClickRaid}
@@ -218,7 +258,10 @@ const Affmenu = (props) => {
             </ListItemAvatar>
             <ListItemText primary="Raid Setup" />
           </ListItem>
-          <Divider variant="inset" component="li" />
+          <Divider
+            style={{ boxShadow: "inset 0 0 0 1px #504137" }}
+            component="li"
+          />
           <ListItem button className={classes.bottomMenu}>
             <ListItemAvatar>
               <Avatar

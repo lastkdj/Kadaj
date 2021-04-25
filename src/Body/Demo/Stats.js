@@ -4,6 +4,7 @@ import { Grid, Slide, Typography, makeStyles } from "@material-ui/core";
 import { Menu } from "../../Context/DemoMenuContext";
 import Divider from "@material-ui/core/Divider";
 import StatImage from "../../Img/demo/demorightside.jpg";
+import wowBack from "../../Img/wowback.jpg";
 
 const useStyles = makeStyles((theme) => ({
   tittle: {
@@ -28,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
     borderStyle: "solid",
     borderWidth: "2px",
     borderColor: "#B97AF4",
+    backgroundImage: `url(${wowBack})`,
   },
 }));
 
