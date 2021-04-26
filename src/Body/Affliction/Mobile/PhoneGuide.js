@@ -2,40 +2,8 @@ import React from "react";
 import Afflogo from "../../../Img/aff.png";
 import Avatar from "@material-ui/core/Avatar";
 import Accordion from "./Accordion";
-import { Typography, Grid, makeStyles } from "@material-ui/core";
-
-const useStyles = makeStyles((theme) => ({
-  spec: {
-    fontWeight: 600,
-    color: "white",
-    textDecoration: "none",
-    fontFamily: "Poppins, sans-serif",
-    fontSize: "1.8em",
-    marginTop: "20px",
-
-    [theme.breakpoints.up("md")]: {},
-
-    [theme.breakpoints.up("lg")]: {
-      fontSize: "2.1em",
-    },
-
-    [theme.breakpoints.up("xl")]: {},
-  },
-
-  large: {
-    width: theme.spacing(8),
-    height: theme.spacing(8),
-
-    [theme.breakpoints.up("md")]: {},
-
-    [theme.breakpoints.up("lg")]: {
-      width: theme.spacing(10),
-      height: theme.spacing(10),
-    },
-
-    [theme.breakpoints.up("xl")]: {},
-  },
-}));
+import { Typography, Grid } from "@material-ui/core";
+import useStyles from "./MobileStyles";
 
 const PhoneGuide = () => {
   const classes = useStyles();

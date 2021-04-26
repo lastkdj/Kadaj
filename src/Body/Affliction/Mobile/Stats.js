@@ -1,44 +1,15 @@
 import React from "react";
-import { Grid, Typography, makeStyles } from "@material-ui/core";
-import { Menu } from "../../../Context/AffMenuContext";
+import { Grid, Typography } from "@material-ui/core";
 import Divider from "@material-ui/core/Divider";
 import StatImage from "../../../Img/stats.jpg";
-import wowBack from "../../../Img/wowback.jpg";
-
-const useStyles = makeStyles((theme) => ({
-  tittle: {
-    fontWeight: 600,
-    color: "white",
-    textDecoration: "none",
-    fontFamily: "Poppins, sans-serif",
-    fontSize: "2.1em",
-  },
-
-  info: {
-    fontWeight: 400,
-    color: "white",
-    textDecoration: "none",
-    fontFamily: "Poppins, sans-serif",
-    fontSize: "1em",
-    textAlign: "justify",
-  },
-
-  border: {
-    borderRadius: "6px",
-    borderStyle: "solid",
-    borderWidth: "2px",
-    borderColor: "#2AB602",
-    backgroundImage: `url(${wowBack})`,
-  },
-}));
+import useStyles from "./MobileStyles";
 
 const Stats = () => {
   const classes = useStyles();
-  const { state } = Menu();
-  const { stats } = state;
+
   return (
-    <Grid container style={{ padding: "10px 10px 10px 15px" }}>
-      <Grid container xs={12}>
+    <Grid container>
+      <Grid container xs={12} justify="center">
         {" "}
         <Typography className={classes.tittle} style={{ textAlign: "center" }}>
           Best Stats for Affliction Warlock
@@ -46,21 +17,27 @@ const Stats = () => {
       </Grid>
       <Divider variant="inset" component="hr" />
       <Grid container item xs={12} justify="space-around">
-        <Grid container item xs={7}>
+        <Grid container item xs={12}>
           {" "}
-          <Typography className={classes.info}>
-            <ul>
+          <Typography className={classes.infotypo}>
+            <ul
+              style={{
+                paddingLeft: "0px",
+                listStyleType: "none",
+                color: "white",
+              }}
+            >
               <li>Intellect</li>
               <li>Spell Power</li>
               <li>
                 Mastery{" "}
-                <span style={{ color: "#adb0bb", fontSize: "0.9em" }}>
+                <span className={classes.statstext}>
                   Increases the damage done by your dots.{" "}
                 </span>
               </li>
               <li>
                 Haste{" "}
-                <span style={{ color: "#adb0bb", fontSize: "0.9em" }}>
+                <span className={classes.statstext}>
                   Increases attack speed and spell casting speed. Haste also
                   decreases the duration of a dot, but increases how fast a dot
                   will tick on the target.{" "}
@@ -68,13 +45,13 @@ const Stats = () => {
               </li>
               <li>
                 Crit :{" "}
-                <span style={{ color: "#adb0bb", fontSize: "0.9em" }}>
+                <span className={classes.statstext}>
                   Chance for extra effectiveness on attacks and heals.{" "}
                 </span>
               </li>
               <li>
                 Versatility{" "}
-                <span style={{ color: "#adb0bb", fontSize: "0.9em" }}>
+                <span className={classes.statstext}>
                   Increases damage and reduces damage taken by half.{" "}
                 </span>
               </li>
@@ -82,7 +59,6 @@ const Stats = () => {
             <span
               style={{
                 color: "#2AB602",
-                marginLeft: "50px",
                 fontWeight: 600,
               }}
             >
@@ -91,7 +67,12 @@ const Stats = () => {
               Versatility
             </span>
           </Typography>
-          <Typography className={classes.info}>
+          <Typography
+            className={classes.infotypo}
+            style={{
+              marginTop: "10px",
+            }}
+          >
             The above suggestion is only generic and exact values will change
             based on your gear available. In order to best know your best stats,
             we recommend you to sim your own character using many tools
@@ -101,14 +82,14 @@ const Stats = () => {
             that in our in-depth guide to Raidbots.
           </Typography>
         </Grid>
-        <Grid container item xs={4}>
+        {/* <Grid container item xs={4}>
           <img
             alt=""
             width="400px"
             src={StatImage}
             className={classes.border}
           />
-        </Grid>
+        </Grid> */}
       </Grid>
     </Grid>
   );

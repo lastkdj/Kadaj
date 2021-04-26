@@ -14,7 +14,6 @@ import { useMediaQuery } from "react-responsive";
 
 const useStyles = makeStyles((theme) => ({
   affliction: {
-    height: "704px",
     overflow: "hidden",
     justifyContent: "center",
 
@@ -22,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up("lg")]: {
       justifyContent: "flex-start",
+      height: "704px",
     },
 
     [theme.breakpoints.up("xl")]: {},

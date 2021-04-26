@@ -15,10 +15,10 @@ import Afflogo from "../../../Img/aff.png";
 import Skull from "../../../Img/skull.png";
 import "../../guideStyles.css";
 import Stats from "./Stats";
+import Lego from "./Lego";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: "100%",
     justifyContent: "center",
   },
   heading: {
@@ -123,11 +123,7 @@ export default function ControlledAccordions() {
           </Grid>
         </AccordionSummary>
         <AccordionDetails className={classes.accordiondetails}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
-          {/* <Stats /> */}
+          <Stats />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -155,11 +151,7 @@ export default function ControlledAccordions() {
           </Grid>
         </AccordionSummary>
         <AccordionDetails className={classes.accordiondetails}>
-          <Typography>
-            Donec placerat, lectus sed mattis semper, neque lectus feugiat
-            lectus, varius pulvinar diam eros in elit. Pellentesque convallis
-            laoreet laoreet.
-          </Typography>
+          <Lego />
         </AccordionDetails>
       </Accordion>
       <Accordion
