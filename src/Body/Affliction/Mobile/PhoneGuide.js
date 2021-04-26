@@ -1,7 +1,6 @@
 import React from "react";
-import Afflogo from "../../Img/aff.png";
+import Afflogo from "../../../Img/aff.png";
 import Avatar from "@material-ui/core/Avatar";
-import { useMediaQuery } from "react-responsive";
 import Accordion from "./Accordion";
 import { Typography, Grid, makeStyles } from "@material-ui/core";
 

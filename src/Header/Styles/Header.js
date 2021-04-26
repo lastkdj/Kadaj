@@ -139,14 +139,7 @@ const useStyles = makeStyles((theme) => ({
       },
     },
 
-    [theme.breakpoints.up("xl")]: {
-      backgroundColor: "#CF0404",
-      borderRadius: "9px",
-
-      "&:hover": {
-        backgroundColor: "#CF0404",
-      },
-    },
+    [theme.breakpoints.up("xl")]: {},
   },
 
   speclogo: {

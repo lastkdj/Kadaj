@@ -9,7 +9,7 @@ import Raid from "./Raid";
 import Rotation from "./Rotation";
 import { Menu } from "../../Context/AffMenuContext";
 import { makeStyles } from "@material-ui/core";
-import PhoneGuide from "./PhoneGuide";
+import PhoneGuide from "./Mobile/PhoneGuide";
 import { useMediaQuery } from "react-responsive";
 
 const useStyles = makeStyles((theme) => ({

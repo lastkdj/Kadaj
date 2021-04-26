@@ -8,12 +8,12 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Grid } from "@material-ui/core";
 import Avatar from "@material-ui/core/Avatar";
 import LocalHospitalIcon from "@material-ui/icons/LocalHospital";
-import wow from "../../Img/wowback.jpg";
-import SoulRot from "../../Img/aff/soulrot.png";
-import Demonic from "../../Img/aff/demonic.png";
-import Afflogo from "../../Img/aff.png";
-import Skull from "../../Img/skull.png";
-import "../guideStyles.css";
+import wow from "../../../Img/wowback.jpg";
+import SoulRot from "../../../Img/aff/soulrot.png";
+import Demonic from "../../../Img/aff/demonic.png";
+import Afflogo from "../../../Img/demo/demo.jpg";
+import Skull from "../../../Img/skull.png";
+import "../../guideStyles.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
