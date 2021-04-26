@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Kadaj/static/css/main.9ed26e74.chunk.css",
-    "main.js": "/Kadaj/static/js/main.40e76932.chunk.js",
-    "main.js.map": "/Kadaj/static/js/main.40e76932.chunk.js.map",
+    "main.js": "/Kadaj/static/js/main.a3f224cd.chunk.js",
+    "main.js.map": "/Kadaj/static/js/main.a3f224cd.chunk.js.map",
     "runtime-main.js": "/Kadaj/static/js/runtime-main.c45dca5e.js",
     "runtime-main.js.map": "/Kadaj/static/js/runtime-main.c45dca5e.js.map",
-    "static/js/2.ccb338a5.chunk.js": "/Kadaj/static/js/2.ccb338a5.chunk.js",
-    "static/js/2.ccb338a5.chunk.js.map": "/Kadaj/static/js/2.ccb338a5.chunk.js.map",
+    "static/js/2.c0b495f0.chunk.js": "/Kadaj/static/js/2.c0b495f0.chunk.js",
+    "static/js/2.c0b495f0.chunk.js.map": "/Kadaj/static/js/2.c0b495f0.chunk.js.map",
     "static/js/3.a888a847.chunk.js": "/Kadaj/static/js/3.a888a847.chunk.js",
     "static/js/3.a888a847.chunk.js.map": "/Kadaj/static/js/3.a888a847.chunk.js.map",
     "index.html": "/Kadaj/index.html",
     "static/css/main.9ed26e74.chunk.css.map": "/Kadaj/static/css/main.9ed26e74.chunk.css.map",
-    "static/js/2.ccb338a5.chunk.js.LICENSE.txt": "/Kadaj/static/js/2.ccb338a5.chunk.js.LICENSE.txt",
+    "static/js/2.c0b495f0.chunk.js.LICENSE.txt": "/Kadaj/static/js/2.c0b495f0.chunk.js.LICENSE.txt",
     "static/media/Awareness.ad8b6ec3.png": "/Kadaj/static/media/Awareness.ad8b6ec3.png",
     "static/media/Castle Nathria Mythic Artificer Xymox.1f2b2ead.jpg": "/Kadaj/static/media/Castle Nathria Mythic Artificer Xymox.1f2b2ead.jpg",
     "static/media/Castle Nathria Mythic Denathrius.4fa5adc6.jpg": "/Kadaj/static/media/Castle Nathria Mythic Denathrius.4fa5adc6.jpg",
@@ -101,8 +101,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c45dca5e.js",
-    "static/js/2.ccb338a5.chunk.js",
+    "static/js/2.c0b495f0.chunk.js",
     "static/css/main.9ed26e74.chunk.css",
-    "static/js/main.40e76932.chunk.js"
+    "static/js/main.a3f224cd.chunk.js"
   ]
 }
