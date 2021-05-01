@@ -70,18 +70,24 @@ const Banner = () => {
     <Grid container alignItems="flex-end" className={classes.banner}>
       <Particles isMobile={isMobile} />
       <Grid xs={12} container justify="center">
-        <Avatar sizes="large" className={classes.large}>
-          {" "}
-          <img src={twitch} alt="" className={classes.small} />
-        </Avatar>
-        <Avatar className={classes.large}>
-          {" "}
-          <img src={youtube} alt="" className={classes.small} />
-        </Avatar>
-        <Avatar className={classes.large}>
-          {" "}
-          <img src={fb} alt="" className={classes.fb} />
-        </Avatar>
+        <a href="https://www.twitch.tv/kadajgaming">
+          <Avatar sizes="large" className={classes.large}>
+            {" "}
+            <img src={twitch} alt="" className={classes.small} />
+          </Avatar>
+        </a>
+        <a href="https://www.youtube.com/user/darkkadaj11">
+          <Avatar className={classes.large}>
+            {" "}
+            <img src={youtube} alt="" className={classes.small} />
+          </Avatar>
+        </a>
+        <a href="https://www.facebook.com/KadajGaming/">
+          <Avatar className={classes.large}>
+            {" "}
+            <img src={fb} alt="" className={classes.fb} />
+          </Avatar>
+        </a>
       </Grid>
     </Grid>
   );
