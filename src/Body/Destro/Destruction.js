@@ -13,7 +13,6 @@ import PhoneGuide from "./Mobile/PhoneGuide";
 
 const useStyles = makeStyles((theme) => ({
   affliction: {
-    height: "704px",
     overflow: "hidden",
     justifyContent: "center",
 
@@ -21,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up("lg")]: {
       justifyContent: "flex-start",
+      height: "920px",
     },
 
     [theme.breakpoints.up("xl")]: {},
@@ -37,8 +37,10 @@ const Destruction = () => {
   return (
     <Grid
       container
-      id="Guides"
-      style={{ marginTop: "200px", height: "840px", overflow: "hidden" }}
+      id="destroGuide"
+      container
+      xs={12}
+      item
       className={classes.affliction}
     >
       {" "}

@@ -64,6 +64,25 @@ const useStyles = makeStyles((theme) => ({
     borderWidth: "2px",
     borderColor: "#2AB602",
   },
+
+  tabwidth: {
+    minWidth: "0px",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: { minWidth: "0px" },
+
+    [theme.breakpoints.up("xl")]: { minWidth: "150px" },
+  },
+
+  conduittext: {
+    color: "adb0bb",
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: { fontSize: "0.6em" },
+
+    [theme.breakpoints.up("xl")]: { fontSize: "0.8em" },
+  },
 }));
 
 function TabPanel(props) {
@@ -135,9 +154,13 @@ const Conduits = () => {
             },
           }}
         >
-          <Tab label="Potency" {...a11yProps(0)} />
-          <Tab label="Endurance" {...a11yProps(1)} />
-          <Tab label="Finesse" {...a11yProps(2)} />
+          <Tab label="Potency" {...a11yProps(0)} className={classes.tabwidth} />
+          <Tab
+            label="Endurance"
+            {...a11yProps(1)}
+            className={classes.tabwidth}
+          />
+          <Tab label="Finesse" {...a11yProps(2)} className={classes.tabwidth} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
@@ -174,7 +197,7 @@ const Conduits = () => {
           </a>
           <Typography className={classes.infoBox}>
             <ul>
-              <li style={{ color: "#adb0bb", fontSize: "0.8em" }}>
+              <li className={classes.conduittext}>
                 Is the best overall conduit available for single target smooths
                 out the flow of Demonic Core generation and gives you more
                 overall charges for movement when needed.
@@ -209,7 +232,7 @@ const Conduits = () => {
           </a>
           <Typography className={classes.infoBox}>
             <ul>
-              <li style={{ color: "#adb0bb", fontSize: "0.8em" }}>
+              <li className={classes.conduittext}>
                 is the second most consistent conduit, especially if you are
                 playing with{" "}
                 <a
@@ -267,7 +290,7 @@ const Conduits = () => {
           </a>
           <Typography className={classes.infoBox}>
             <ul>
-              <li style={{ color: "#adb0bb", fontSize: "0.8em" }}>
+              <li className={classes.conduittext}>
                 is still an alright option if you have nothing else but is
                 outshined by the other three conduits in this list.
               </li>

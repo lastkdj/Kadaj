@@ -1,8 +1,6 @@
 import React from "react";
-import Paper from "@material-ui/core/Paper";
 import { Grid, Typography } from "@material-ui/core";
 import Divider from "@material-ui/core/Divider";
-import Runecarver from "../../../Img/aff/runecarver.jpg";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import Avatar from "@material-ui/core/Avatar";
 import Demonic from "../../../Img/aff/demonic.png";
@@ -41,25 +39,25 @@ const Lego = (props) => {
             Best Affliction Warlock Legendary for Raiding and Mythic +
           </Typography>
           <Grid>
-            <a
+            {/* <a
               href="https://www.wowhead.com/spell=337057/relic-of-demonic-synergy"
               data-wowhead="spell=337057"
               className={classes.linkwowhead}
-            >
-              <Avatar
-                variant="rounded"
-                src={Demonic}
-                style={{
-                  boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
-                }}
-              ></Avatar>
+            > */}
+            <Avatar
+              variant="rounded"
+              src={Demonic}
+              style={{
+                boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
+              }}
+            ></Avatar>
 
-              <Grid container style={{ marginTop: "10px" }}>
-                <Typography style={{ paddingTop: "10px" }}>
-                  Relic of Demonic Synergy{" "}
-                </Typography>
-              </Grid>
-            </a>
+            <Grid container style={{ marginTop: "10px" }}>
+              <Typography style={{ padding: "10px" }}>
+                Relic of Demonic Synergy{" "}
+              </Typography>
+            </Grid>
+            {/* </a> */}
             <Typography className={classes.infotypo} style={{ color: "white" }}>
               <ul>
                 <li>
@@ -100,30 +98,30 @@ const Lego = (props) => {
               >
                 Alternative for Mythic+
               </Typography>
-              <a
+              {/* <a
                 href="https://www.wowhead.com/spell=337128/wrath-of-consumption"
                 data-wowhead="spell=337128"
                 className={classes.linkwowhead}
-              >
-                <Grid container style={{ marginTop: "30px" }}>
-                  <ListItemAvatar>
-                    <Avatar
-                      variant="rounded"
-                      src={Wrath}
-                      style={{
-                        boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
-                      }}
-                    ></Avatar>
-                  </ListItemAvatar>
-                  <Typography
-                    className={classes.subtittle}
-                    style={{ color: "orange", paddingTop: "10px" }}
-                    variant="h2"
-                  >
-                    Wrath of Consumption{" "}
-                  </Typography>
-                </Grid>
-              </a>
+              > */}
+              <Grid container style={{ marginTop: "30px" }}>
+                <ListItemAvatar>
+                  <Avatar
+                    variant="rounded"
+                    src={Wrath}
+                    style={{
+                      boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
+                    }}
+                  ></Avatar>
+                </ListItemAvatar>
+                <Typography
+                  className={classes.subtittle}
+                  style={{ color: "orange", paddingTop: "10px" }}
+                  variant="h2"
+                >
+                  Wrath of Consumption{" "}
+                </Typography>
+              </Grid>
+              {/* </a> */}
               <Typography
                 className={classes.infotypo}
                 style={{ color: "white", textAlign: "start" }}
@@ -166,30 +164,30 @@ const Lego = (props) => {
               >
                 Alternative for Raiding & Mythic+
               </Typography>
-              <a
+              {/* <a
                 href="https://www.wowhead.com/spell=337111/sacrolashs-dark-strike"
                 data-wowhead="spell=337111"
                 className={classes.linkwowhead}
-              >
-                <Grid container style={{ marginTop: "30px" }}>
-                  <ListItemAvatar>
-                    <Avatar
-                      variant="rounded"
-                      src={Sacrolash}
-                      style={{
-                        boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
-                      }}
-                    ></Avatar>
-                  </ListItemAvatar>
-                  <Typography
-                    className={classes.subtittle}
-                    style={{ color: "orange", paddingTop: "10px" }}
-                    variant="h2"
-                  >
-                    Sacrolash's Dark Strike{" "}
-                  </Typography>
-                </Grid>
-              </a>
+              > */}
+              <Grid container style={{ marginTop: "30px" }}>
+                <ListItemAvatar>
+                  <Avatar
+                    variant="rounded"
+                    src={Sacrolash}
+                    style={{
+                      boxShadow: " 10px 10px 13px 1px rgba(0,0,0,0.17)",
+                    }}
+                  ></Avatar>
+                </ListItemAvatar>
+                <Typography
+                  className={classes.subtittle}
+                  style={{ color: "orange", paddingTop: "10px" }}
+                  variant="h2"
+                >
+                  Sacrolash's Dark Strike{" "}
+                </Typography>
+              </Grid>
+              {/* </a> */}
               <Typography
                 className={classes.infotypo}
                 style={{ color: "white", textAlign: "start" }}

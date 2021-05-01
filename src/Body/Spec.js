@@ -413,7 +413,7 @@ const Spec = () => {
       <Grid container justify="center" className={classes.cardspec}>
         <Link
           activeClass="active"
-          to="Guides"
+          to="affGuide"
           spy={true}
           smooth={true}
           offset={-60}
@@ -455,10 +455,10 @@ const Spec = () => {
         </Link>
         <Link
           activeClass="active"
-          to="Guides"
+          to="demoGuide"
           spy={true}
           smooth={true}
-          offset={750}
+          offset={0}
           duration={1500}
         >
           <Grid class="fadeDemo fadeOut" ref={demoRef}>
@@ -498,10 +498,10 @@ const Spec = () => {
         </Link>
         <Link
           activeClass="active"
-          to="Guides"
+          to="destroGuide"
           spy={true}
           smooth={true}
-          offset={1650}
+          offset={0}
           duration={1500}
         >
           <Grid ref={destroRef} class="fadeDestro fadeOut">

@@ -13,7 +13,6 @@ import PhoneGuide from "./Mobile/PhoneGuide";
 
 const useStyles = makeStyles((theme) => ({
   affliction: {
-    height: "704px",
     overflow: "hidden",
     justifyContent: "center",
 
@@ -21,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up("lg")]: {
       justifyContent: "flex-start",
+      height: "900px",
     },
 
     [theme.breakpoints.up("xl")]: {},
@@ -35,12 +35,7 @@ const Demonology = () => {
   const isTablet = useMediaQuery({ query: "(max-width: 960px)" });
 
   return (
-    <Grid
-      container
-      id="Guides"
-      style={{ marginTop: "150px", height: "704px", overflow: "hidden" }}
-      className={classes.affliction}
-    >
+    <Grid container xs={12} item id="demoGuide" className={classes.affliction}>
       {isTablet ? <PhoneGuide /> : <Demomenu />}
 
       {stats ? (

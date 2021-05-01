@@ -128,16 +128,15 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up("md")]: {
       display: "block",
-    },
-
-    [theme.breakpoints.up("lg")]: {
       backgroundColor: "#CF0404",
-      borderRadius: "9px",
+      color: "#fff",
 
       "&:hover": {
         backgroundColor: "#CF0404",
       },
     },
+
+    [theme.breakpoints.up("lg")]: {},
 
     [theme.breakpoints.up("xl")]: {},
   },

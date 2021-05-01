@@ -19,7 +19,15 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     textDecoration: "none",
     fontFamily: "Poppins, sans-serif",
-    fontSize: "2.1em",
+    fontSize: "1.5em",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "2.1em",
+    },
   },
 
   info: {
@@ -29,6 +37,14 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Poppins, sans-serif",
     fontSize: "1em",
     textAlign: "justify",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: { fontSize: "0.8em" },
+
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "1em",
+    },
   },
 
   border: {
@@ -37,15 +53,121 @@ const useStyles = makeStyles((theme) => ({
     borderWidth: "2px",
     borderColor: "#E64D00",
     backgroundImage: `url(${wowBack})`,
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
+  },
+
+  statsimg: {
+    borderRadius: "6px",
+    borderStyle: "solid",
+    borderWidth: "2px",
+    borderColor: "#E64D00",
+    backgroundImage: `url(${wowBack})`,
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {
+      width: "300px",
+      height: "400px",
+    },
+
+    [theme.breakpoints.up("xl")]: {
+      width: "400px",
+      height: "536px",
+    },
+  },
+
+  paperborder: {
+    maxWidth: "100%",
+    height: "auto",
+    backgroundColor: "#1c1c1c",
+    borderRadius: "6px",
+    borderStyle: "solid",
+    borderWidth: "2px",
+    borderColor: "#E64D00",
+    backgroundImage: `url(${wowBack})`,
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {
+      height: "650px",
+    },
+  },
+
+  menuItemSheet: {
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: { marginTop: "80px" },
+
+    [theme.breakpoints.up("xl")]: { marginTop: "50px" },
+  },
+
+  subtittle: {
+    fontWeight: 600,
+    color: "white",
+    textDecoration: "none",
+    fontFamily: "Poppins, sans-serif",
+    fontSize: "1.2em",
+  },
+
+  boxText: {
+    fontWeight: 400,
+    color: "white",
+    textDecoration: "none",
+    fontFamily: "Poppins, sans-serif",
+    fontSize: "0.9em",
   },
 
   infoBox: {
     fontWeight: 400,
+    color: "white",
     textDecoration: "none",
     fontFamily: "Poppins, sans-serif",
-    textAlign: "justify",
-    color: "#adb0bb",
     fontSize: "0.9em",
+    textAlign: "justify",
+    display: "none",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {
+      display: "block",
+    },
+  },
+
+  covenantskills: {
+    borderRadius: "6px",
+    borderStyle: "solid",
+    borderWidth: "2px",
+    borderColor: "#2AB602",
+    width: "40px",
+    height: "40px",
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {
+      width: "50px",
+      height: "50px",
+    },
+  },
+
+  talentsimg: {
+    width: "inherit",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {
+      width: "auto",
+    },
   },
 }));
 
@@ -103,16 +225,8 @@ const Talents = (props) => {
       mountOnEnter
       unmountOnExit
     >
-      <Grid item xs={9} style={{ marginTop: "50px" }}>
-        <Paper
-          elevation={3}
-          style={{
-            maxWidth: "100%",
-            height: "650px",
-            backgroundColor: "#1c1c1c",
-          }}
-          className={classes.border}
-        >
+      <Grid item xs={9} className={classes.menuItemSheet}>
+        <Paper elevation={3} className={classes.paperborder}>
           <Grid container style={{ padding: "10px 10px 10px 15px" }}>
             <Grid container xs={12}>
               {" "}
@@ -157,7 +271,11 @@ const Talents = (props) => {
                 </AppBar>
                 <TabPanel value={value} index={0}>
                   <Grid container justify="space-between">
-                    <img alt="" src={destrostfull} />
+                    <img
+                      alt=""
+                      src={destrostfull}
+                      className={classes.talentsimg}
+                    />
                     <Grid direction="column" style={{ marginRight: "30px" }}>
                       <Typography
                         className={classes.infoBox}
@@ -206,7 +324,11 @@ const Talents = (props) => {
                 </TabPanel>
                 <TabPanel value={value} index={1}>
                   <Grid container justify="space-between">
-                    <img alt="" src={destroaoefull} />
+                    <img
+                      alt=""
+                      src={destroaoefull}
+                      className={classes.talentsimg}
+                    />
                     <Grid direction="column" style={{ marginRight: "30px" }}>
                       <Typography
                         className={classes.infoBox}
@@ -256,7 +378,11 @@ const Talents = (props) => {
                 <TabPanel value={value} index={2}>
                   {" "}
                   <Grid container justify="space-around">
-                    <img alt="" src={destroaoefull} />
+                    <img
+                      alt=""
+                      src={destroaoefull}
+                      className={classes.talentsimg}
+                    />
                     <Grid direction="column">
                       <Typography
                         className={classes.infoBox}
@@ -305,12 +431,7 @@ const Talents = (props) => {
                 </TabPanel>
               </Grid>
               <Grid container item xs={4} style={{ maxHeight: "400px" }}>
-                <img
-                  alt=""
-                  width="400px"
-                  src={TalentsImg}
-                  className={classes.border}
-                />
+                <img alt="" src={TalentsImg} className={classes.statsimg} />
               </Grid>
             </Grid>
           </Grid>

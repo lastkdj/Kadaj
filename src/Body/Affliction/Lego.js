@@ -17,15 +17,15 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     textDecoration: "none",
     fontFamily: "Poppins, sans-serif",
-    fontSize: "2.1em",
-  },
+    fontSize: "1.5em",
 
-  subtittle: {
-    fontWeight: 600,
-    color: "white",
-    textDecoration: "none",
-    fontFamily: "Poppins, sans-serif",
-    fontSize: "1.2em",
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "2.1em",
+    },
   },
 
   info: {
@@ -35,6 +35,14 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Poppins, sans-serif",
     fontSize: "1em",
     textAlign: "justify",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: { fontSize: "0.8em" },
+
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "1em",
+    },
   },
 
   border: {
@@ -43,6 +51,74 @@ const useStyles = makeStyles((theme) => ({
     borderWidth: "2px",
     borderColor: "#2AB602",
     backgroundImage: `url(${wowBack})`,
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
+  },
+
+  statsimg: {
+    borderRadius: "6px",
+    borderStyle: "solid",
+    borderWidth: "2px",
+    borderColor: "#2AB602",
+    backgroundImage: `url(${wowBack})`,
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {
+      width: "300px",
+      height: "400px",
+    },
+
+    [theme.breakpoints.up("xl")]: {
+      width: "400px",
+      height: "536px",
+    },
+  },
+
+  paperborder: {
+    maxWidth: "100%",
+    height: "auto",
+    backgroundColor: "#1c1c1c",
+    borderRadius: "6px",
+    borderStyle: "solid",
+    borderWidth: "2px",
+    borderColor: "#2AB602",
+    backgroundImage: `url(${wowBack})`,
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {
+      height: "650px",
+    },
+  },
+
+  menuItemSheet: {
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: { marginTop: "130px" },
+
+    [theme.breakpoints.up("xl")]: {
+      marginTop: "50px",
+    },
+  },
+
+  subtittle: {
+    fontWeight: 600,
+    color: "white",
+    textDecoration: "none",
+    fontFamily: "Poppins, sans-serif",
+    fontSize: "1em",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: { fontSize: "1.2em" },
   },
 }));
 
@@ -63,16 +139,8 @@ const Lego = (props) => {
       mountOnEnter
       unmountOnExit
     >
-      <Grid item xs={9} style={{ marginTop: "50px" }}>
-        <Paper
-          elevation={3}
-          style={{
-            maxWidth: "100%",
-            height: "650px",
-            backgroundColor: "#1c1c1c",
-          }}
-          className={classes.border}
-        >
+      <Grid item xs={9} className={classes.menuItemSheet}>
+        <Paper elevation={3} className={classes.paperborder}>
           <Grid container style={{ padding: "10px 10px 10px 15px" }}>
             <Grid container xs={12}>
               {" "}
@@ -262,12 +330,8 @@ const Lego = (props) => {
                   </Grid>
                 </Grid>
               </Grid>
-              <Grid container item xs={4}>
-                <img
-                  width="400px"
-                  src={Runecarver}
-                  className={classes.border}
-                />
+              <Grid container item xs={4} style={{ alignItems: "center" }}>
+                <img src={Runecarver} className={classes.statsimg} />
               </Grid>
             </Grid>
           </Grid>

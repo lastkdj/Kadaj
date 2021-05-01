@@ -67,18 +67,45 @@ const Header = () => {
           {isMobile ? (
             scrolled ? (
               <Grid container item xs={10} style={{ paddingTop: "15px" }}>
-                <Grid item>
-                  {" "}
-                  <img src={aff} alt="aff" className={classes.speclogo} />
-                </Grid>
-                <Grid item>
-                  {" "}
-                  <img src={demo} alt="aff" className={classes.speclogo} />
-                </Grid>
-                <Grid item>
-                  {" "}
-                  <img src={destro} alt="aff" className={classes.speclogo} />
-                </Grid>
+                <Link
+                  activeClass="active"
+                  to="affGuide"
+                  spy={true}
+                  smooth={true}
+                  offset={-60}
+                  duration={1500}
+                >
+                  <Grid item>
+                    {" "}
+                    <img src={aff} alt="aff" className={classes.speclogo} />
+                  </Grid>
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="demoGuide"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={1500}
+                >
+                  <Grid item>
+                    {" "}
+                    <img src={demo} alt="aff" className={classes.speclogo} />
+                  </Grid>
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="destroGuide"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={1500}
+                >
+                  <Grid item>
+                    {" "}
+                    <img src={destro} alt="aff" className={classes.speclogo} />
+                  </Grid>
+                </Link>
               </Grid>
             ) : null
           ) : null}
@@ -156,13 +183,22 @@ const Header = () => {
               </Link>
             </li>
             <li className={classes.li}>
-              <Typography
-                className={
-                  scrolled ? classes.headerfontSticky : classes.headerfont
-                }
+              <Link
+                activeClass="active"
+                to="Addons"
+                spy={true}
+                smooth={true}
+                offset={-60}
+                duration={1000}
               >
-                Other
-              </Typography>
+                <Typography
+                  className={
+                    scrolled ? classes.headerfontSticky : classes.headerfont
+                  }
+                >
+                  Addons
+                </Typography>{" "}
+              </Link>
             </li>
             <li className={classes.li}>
               <Typography
@@ -179,9 +215,10 @@ const Header = () => {
               <Button
                 stlye={{ margin: "0px 20px" }}
                 variant="contained"
-                color="primary"
                 onClick={onClick}
-                className={classes.youtube}
+                classes={{
+                  contained: classes.youtube, // class name, e.g. `classes-nesting-root-x`
+                }}
               >
                 Youtube
               </Button>

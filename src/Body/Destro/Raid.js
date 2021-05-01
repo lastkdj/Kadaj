@@ -36,7 +36,74 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     textDecoration: "none",
     fontFamily: "Poppins, sans-serif",
-    fontSize: "2.1em",
+    fontSize: "1.5em",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "2.1em",
+    },
+  },
+
+  border: {
+    borderRadius: "6px",
+    borderStyle: "solid",
+    borderWidth: "2px",
+    borderColor: "#E64D00",
+    backgroundImage: `url(${wowBack})`,
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
+  },
+
+  info: {
+    fontWeight: 400,
+    color: "white",
+    textDecoration: "none",
+    fontFamily: "Poppins, sans-serif",
+    fontSize: "1em",
+    textAlign: "justify",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: { fontSize: "0.8em" },
+
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "1em",
+    },
+  },
+
+  paperborder: {
+    maxWidth: "100%",
+    height: "auto",
+    backgroundColor: "#1c1c1c",
+    borderRadius: "6px",
+    borderStyle: "solid",
+    borderWidth: "2px",
+    borderColor: "#E64D00",
+    backgroundImage: `url(${wowBack})`,
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {
+      height: "650px",
+    },
+  },
+
+  menuItemSheet: {
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: { marginTop: "80px" },
+
+    [theme.breakpoints.up("xl")]: {
+      marginTop: "50px",
+    },
   },
 
   subtittle: {
@@ -47,26 +114,67 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.2em",
   },
 
-  info: {
+  boxText: {
     fontWeight: 400,
     color: "white",
     textDecoration: "none",
     fontFamily: "Poppins, sans-serif",
-    fontSize: "1em",
+    fontSize: "0.9em",
+  },
+
+  infoBox: {
+    fontWeight: 400,
+    color: "white",
+    textDecoration: "none",
+    fontFamily: "Poppins, sans-serif",
+    fontSize: "0.9em",
     textAlign: "justify",
   },
 
-  border: {
+  covenantskills: {
     borderRadius: "6px",
     borderStyle: "solid",
     borderWidth: "2px",
-    borderColor: "#E64D00",
-    backgroundImage: `url(${wowBack})`,
+    borderColor: "#2AB602",
+    width: "40px",
+    height: "40px",
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {
+      width: "50px",
+      height: "50px",
+    },
   },
 
   bossframe: {
     width: "700px",
     height: "485px",
+  },
+
+  bossimg: {
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {
+      width: "360px",
+    },
+
+    [theme.breakpoints.up("xl")]: {
+      width: "400px",
+    },
+  },
+
+  appbar: {
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {
+      width: "400px",
+    },
+
+    [theme.breakpoints.up("xl")]: {
+      width: "auto",
+    },
   },
 }));
 
@@ -124,16 +232,8 @@ const Raid = (props) => {
       mountOnEnter
       unmountOnExit
     >
-      <Grid item xs={9} style={{ marginTop: "50px" }}>
-        <Paper
-          elevation={3}
-          style={{
-            maxWidth: "100%",
-            height: "650px",
-            backgroundColor: "#1c1c1c",
-          }}
-          className={classes.border}
-        >
+      <Grid item xs={9} className={classes.menuItemSheet}>
+        <Paper elevation={3} className={classes.paperborder}>
           <Grid container style={{ padding: "10px 10px 10px 15px" }}>
             <Grid container xs={12}>
               {" "}
@@ -151,12 +251,12 @@ const Raid = (props) => {
               xs={12}
               style={{
                 marginTop: "20px",
-                justifyContent: "space-between",
-                paddingLeft: "20px",
+                justifyContent: "space-around",
               }}
             >
               <Grid
                 item
+                xs={6}
                 style={{
                   display: "flex",
                   flexDirection: "row",
@@ -194,76 +294,70 @@ const Raid = (props) => {
                     <Tab label="Denathrius" {...a11yProps(9)} />
                   </Tabs>
                 </AppBar>
-                <TabPanel value={value} index={0}>
+                <TabPanel value={value} index={0} className={classes.appbar}>
                   <Grid className={classes.bossframe}>
                     <ShriekwingComponent />
                   </Grid>
                 </TabPanel>
-                <TabPanel value={value} index={1}>
+                <TabPanel value={value} index={1} className={classes.appbar}>
                   {" "}
                   <Grid className={classes.bossframe}>
                     <HuntsmanComponent />
                   </Grid>
                 </TabPanel>
-                <TabPanel value={value} index={2}>
+                <TabPanel value={value} index={2} className={classes.appbar}>
                   {" "}
                   <Grid className={classes.bossframe}>
                     <HungeringComponent />
                   </Grid>
                 </TabPanel>
-                <TabPanel value={value} index={3}>
+                <TabPanel value={value} index={3} className={classes.appbar}>
                   {" "}
                   <Grid className={classes.bossframe}>
                     <LadyComponent />
                   </Grid>
                 </TabPanel>
-                <TabPanel value={value} index={4}>
+                <TabPanel value={value} index={4} className={classes.appbar}>
                   {" "}
                   <Grid className={classes.bossframe}>
                     <XymoxComponent />
                   </Grid>
                 </TabPanel>
-                <TabPanel value={value} index={5}>
+                <TabPanel value={value} index={5} className={classes.appbar}>
                   {" "}
                   <Grid className={classes.bossframe}>
                     <SunskingComponent />
                   </Grid>
                 </TabPanel>
-                <TabPanel value={value} index={6}>
+                <TabPanel value={value} index={6} className={classes.appbar}>
                   {" "}
                   <Grid className={classes.bossframe}>
                     <CouncilComponent />
                   </Grid>
                 </TabPanel>
-                <TabPanel value={value} index={7}>
+                <TabPanel value={value} index={7} className={classes.appbar}>
                   {" "}
                   <Grid className={classes.bossframe}>
                     <SludgefistComponent />
                   </Grid>
                 </TabPanel>
-                <TabPanel value={value} index={8}>
+                <TabPanel value={value} index={8} className={classes.appbar}>
                   {" "}
                   <Grid className={classes.bossframe}>
                     <GeneralsComponent />
                   </Grid>
                 </TabPanel>
-                <TabPanel value={value} index={9}>
+                <TabPanel value={value} index={9} className={classes.appbar}>
                   {" "}
                   <Grid className={classes.bossframe}>
                     <DenathriusComponent />
                   </Grid>
                 </TabPanel>
               </Grid>
-              <Grid
-                container
-                item
-                justify="center"
-                xs={4}
-                style={{ maxHeight: "400px" }}
-              >
+              <Grid container item justify="center" xs={4}>
                 <img
                   alt=""
-                  width="400px"
+                  className={classes.bossimg}
                   src={
                     value === 0
                       ? Shriekwing
@@ -287,7 +381,6 @@ const Raid = (props) => {
                       ? Denathrius
                       : null
                   }
-                  className={classes.border}
                 />
               </Grid>
             </Grid>

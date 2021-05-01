@@ -1,5 +1,5 @@
 import React from "react";
-import shriekwingtalents from "../../../Img/destro/destrost.png";
+import shriekwingtalents from "../../../Img/destro/destroaoe.png";
 import Divider from "@material-ui/core/Divider";
 import { Grid, Typography, makeStyles } from "@material-ui/core";
 import Ashen from "../../../Img/destro/ashen.png";

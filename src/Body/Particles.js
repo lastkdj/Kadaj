@@ -3,7 +3,11 @@ import Particles from "react-particles-js";
 const particlesComponent = (props) => {
   return (
     <Particles
-      style={{ position: "absolute", top: "0" }}
+      style={
+        props.isMobile
+          ? { position: "absolute", top: "0", height: "60%" }
+          : { position: "absolute", top: "0" }
+      }
       params={{
         particles: {
           number: {

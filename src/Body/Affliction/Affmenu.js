@@ -161,7 +161,8 @@ const Affmenu = (props) => {
         style={{
           marginLeft: "30px",
           borderRadius: "5px",
-          maxHeight: 360,
+          maxHeight: 260,
+          marginBottom: "250px",
         }}
       >
         <List className={classes.root} disablePadding={true}>

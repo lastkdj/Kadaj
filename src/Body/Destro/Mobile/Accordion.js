@@ -11,13 +11,17 @@ import LocalHospitalIcon from "@material-ui/icons/LocalHospital";
 import wow from "../../../Img/wowback.jpg";
 import SoulRot from "../../../Img/aff/soulrot.png";
 import Demonic from "../../../Img/aff/demonic.png";
-import Afflogo from "../../../Img/destro.jpg";
+import Afflogo from "../../../Img/aff.png";
 import Skull from "../../../Img/skull.png";
 import "../../guideStyles.css";
+import Stats from "./Stats";
+import Lego from "./Lego";
+import Covenant from "./Covenant";
+import Talents from "./Talents";
+import Raid from "./Raid";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: "100%",
     justifyContent: "center",
   },
   heading: {
@@ -122,10 +126,7 @@ export default function ControlledAccordions() {
           </Grid>
         </AccordionSummary>
         <AccordionDetails className={classes.accordiondetails}>
-          <Typography>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-            Aliquam eget maximus est, id dignissim quam.
-          </Typography>
+          <Stats />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -153,11 +154,7 @@ export default function ControlledAccordions() {
           </Grid>
         </AccordionSummary>
         <AccordionDetails className={classes.accordiondetails}>
-          <Typography>
-            Donec placerat, lectus sed mattis semper, neque lectus feugiat
-            lectus, varius pulvinar diam eros in elit. Pellentesque convallis
-            laoreet laoreet.
-          </Typography>
+          <Lego />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -183,10 +180,7 @@ export default function ControlledAccordions() {
           </Grid>
         </AccordionSummary>
         <AccordionDetails className={classes.accordiondetails}>
-          <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
-            sit amet egestas eros, vitae egestas augue. Duis vel est augue.
-          </Typography>
+          <Covenant />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -212,10 +206,7 @@ export default function ControlledAccordions() {
           </Grid>
         </AccordionSummary>
         <AccordionDetails className={classes.accordiondetails}>
-          <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
-            sit amet egestas eros, vitae egestas augue. Duis vel est augue.
-          </Typography>
+          <Talents />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -243,10 +234,7 @@ export default function ControlledAccordions() {
           </Grid>
         </AccordionSummary>
         <AccordionDetails className={classes.accordiondetails}>
-          <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
-            sit amet egestas eros, vitae egestas augue. Duis vel est augue.
-          </Typography>
+          <Raid />
         </AccordionDetails>
       </Accordion>
     </Grid>

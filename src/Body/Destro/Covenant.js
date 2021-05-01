@@ -18,7 +18,94 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     textDecoration: "none",
     fontFamily: "Poppins, sans-serif",
-    fontSize: "2.1em",
+    fontSize: "1.5em",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "2.1em",
+    },
+  },
+
+  info: {
+    fontWeight: 400,
+    color: "white",
+    textDecoration: "none",
+    fontFamily: "Poppins, sans-serif",
+    fontSize: "1em",
+    textAlign: "justify",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: { fontSize: "0.8em" },
+
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "1em",
+    },
+  },
+
+  border: {
+    borderRadius: "6px",
+    borderStyle: "solid",
+    borderWidth: "2px",
+    borderColor: "#2AB602",
+    backgroundImage: `url(${wowBack})`,
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
+  },
+
+  statsimg: {
+    borderRadius: "6px",
+    borderStyle: "solid",
+    borderWidth: "2px",
+    borderColor: "#E64D00",
+    backgroundImage: `url(${wowBack})`,
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {
+      width: "300px",
+      height: "400px",
+    },
+
+    [theme.breakpoints.up("xl")]: {
+      width: "400px",
+      height: "536px",
+    },
+  },
+
+  paperborder: {
+    maxWidth: "100%",
+    height: "auto",
+    backgroundColor: "#1c1c1c",
+    borderRadius: "6px",
+    borderStyle: "solid",
+    borderWidth: "2px",
+    borderColor: "#E64D00",
+    backgroundImage: `url(${wowBack})`,
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {
+      height: "650px",
+    },
+  },
+
+  menuItemSheet: {
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: { marginTop: "80px" },
+
+    [theme.breakpoints.up("xl")]: {
+      marginTop: "50px",
+    },
   },
 
   subtittle: {
@@ -37,15 +124,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "0.9em",
   },
 
-  info: {
-    fontWeight: 400,
-    color: "white",
-    textDecoration: "none",
-    fontFamily: "Poppins, sans-serif",
-    fontSize: "1em",
-    textAlign: "justify",
-  },
-
   infoBox: {
     fontWeight: 400,
     color: "white",
@@ -55,12 +133,21 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "justify",
   },
 
-  border: {
+  covenantskills: {
     borderRadius: "6px",
     borderStyle: "solid",
     borderWidth: "2px",
-    borderColor: "#E64D00",
-    backgroundImage: `url(${wowBack})`,
+    borderColor: "#2AB602",
+    width: "40px",
+    height: "40px",
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {
+      width: "50px",
+      height: "50px",
+    },
   },
 }));
 
@@ -80,16 +167,8 @@ const Covenant = (props) => {
       mountOnEnter
       unmountOnExit
     >
-      <Grid item xs={9} style={{ marginTop: "50px" }}>
-        <Paper
-          elevation={3}
-          style={{
-            maxWidth: "100%",
-            height: "650px",
-            backgroundColor: "#1c1c1c",
-          }}
-          className={classes.border}
-        >
+      <Grid item xs={9} className={classes.menuItemSheet}>
+        <Paper elevation={3} className={classes.paperborder}>
           <Grid
             container
             item
@@ -141,7 +220,7 @@ const Covenant = (props) => {
                         width="50px"
                         height="50px"
                         style={{ marginRight: "10px" }}
-                        className={classes.border}
+                        className={classes.covenantskills}
                       />
                     </a>
                     <a
@@ -154,7 +233,7 @@ const Covenant = (props) => {
                         src={Flicker}
                         width="50px"
                         height="50px"
-                        className={classes.border}
+                        className={classes.covenantskills}
                       />
                     </a>{" "}
                   </Grid>
@@ -165,47 +244,48 @@ const Covenant = (props) => {
                     justify="center"
                     style={{ marginTop: "50px" }}
                   >
-                    <Grid
-                      container
-                      item
-                      xs={6}
-                      style={{ justifyContent: "center", color: "white" }}
-                    >
-                      {" "}
-                      <Typography
-                        className={classes.subtittle}
-                        style={{ textAlign: "center" }}
+                    <Grid container xs={12}>
+                      <Grid
+                        container
+                        item
+                        xs={6}
+                        style={{ justifyContent: "center", color: "white" }}
                       >
-                        Single Target (NIYA)
-                      </Typography>
-                    </Grid>
-                    <Grid
-                      container
-                      item
-                      xs={6}
-                      style={{ justifyContent: "center" }}
-                    >
-                      {" "}
-                      <Typography
-                        className={classes.subtittle}
-                        style={{ textAlign: "center" }}
+                        {" "}
+                        <Typography
+                          className={classes.subtittle}
+                          style={{ textAlign: "center" }}
+                        >
+                          Single Target (NIYA)
+                        </Typography>
+                      </Grid>
+                      <Grid
+                        container
+                        item
+                        xs={6}
+                        style={{ justifyContent: "center" }}
                       >
-                        AOE (KORYAN)
-                      </Typography>
+                        {" "}
+                        <Typography
+                          className={classes.subtittle}
+                          style={{ textAlign: "center" }}
+                        >
+                          AOE (KORYAN)
+                        </Typography>
+                      </Grid>
                     </Grid>
-                    <img alt="" src={Niya} style={{ width: "230px" }} />
-                    <img alt="" src={Korayn} style={{ width: "230px" }} />
+                    <Grid container lg={6}>
+                      <img alt="" src={Niya} style={{ width: "250px" }} />
+                    </Grid>
+                    <Grid container lg={6}>
+                      <img alt="" src={Korayn} style={{ width: "250px" }} />
+                    </Grid>
                   </Grid>
                 </Grid>
               </Grid>
             </Grid>
-            <Grid container item xs={4} style={{ maxHeight: "400px" }}>
-              <img
-                alt=""
-                width="400px"
-                src={Nightfae}
-                className={classes.border}
-              />
+            <Grid container item xs={4} style={{ alignItems: "center" }}>
+              <img alt="" src={Nightfae} className={classes.statsimg} />
             </Grid>
           </Grid>
         </Paper>

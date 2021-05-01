@@ -18,7 +18,15 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     textDecoration: "none",
     fontFamily: "Poppins, sans-serif",
-    fontSize: "1.5em",
+    fontSize: "1em",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "1.5em",
+    },
+
+    [theme.breakpoints.up("xl")]: {},
   },
 
   subtittle: {

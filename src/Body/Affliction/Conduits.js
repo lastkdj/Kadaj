@@ -4,7 +4,7 @@ import Avatar from "@material-ui/core/Avatar";
 import Focused from "../../Img/aff/focused.png";
 import Cold from "../../Img/aff/cold.png";
 import ra from "../../Img/aff/ra.png";
-import { Grid, Typography, makeStyles } from "@material-ui/core";
+import { Grid, Typography, makeStyles, withWidth } from "@material-ui/core";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
@@ -63,6 +63,16 @@ const useStyles = makeStyles((theme) => ({
     borderStyle: "solid",
     borderWidth: "2px",
     borderColor: "#2AB602",
+  },
+
+  tabwidth: {
+    minWidth: "0px",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: { minWidth: "0px" },
+
+    [theme.breakpoints.up("xl")]: { minWidth: "150px" },
   },
 }));
 
@@ -135,9 +145,13 @@ const Conduits = () => {
             },
           }}
         >
-          <Tab label="Potency" {...a11yProps(0)} />
-          <Tab label="Endurance" {...a11yProps(1)} />
-          <Tab label="Finesse" {...a11yProps(2)} />
+          <Tab label="Potency" {...a11yProps(0)} className={classes.tabwidth} />
+          <Tab
+            label="Endurance"
+            {...a11yProps(1)}
+            className={classes.tabwidth}
+          />
+          <Tab label="Finesse" {...a11yProps(2)} className={classes.tabwidth} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>

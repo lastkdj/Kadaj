@@ -7,6 +7,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Button from "@material-ui/core/Button";
 import Divider from "@material-ui/core/Divider";
 import wowBack from "../Img/wowback.jpg";
+import { Link } from "react-scroll";
 
 const SimpleMenu = (props) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -51,50 +52,102 @@ const SimpleMenu = (props) => {
         }}
       >
         <Grid container direction="column">
-          <MenuItem onClick={handleClose}>
-            {" "}
-            <Grid container justify="center" item>
-              Specs{" "}
-            </Grid>
-          </MenuItem>
+          <Link
+            activeClass="active"
+            to="Specs"
+            spy={true}
+            smooth={true}
+            offset={-40}
+            duration={1000}
+          >
+            <MenuItem onClick={handleClose}>
+              {" "}
+              <Grid container justify="center" item>
+                Specs{" "}
+              </Grid>
+            </MenuItem>
+          </Link>
+          <Divider
+            component="li"
+            style={{ boxShadow: "inset 0 0 0 1px #504137" }}
+          />
+          <Link
+            activeClass="active"
+            to="About"
+            spy={true}
+            smooth={true}
+            offset={-40}
+            duration={1000}
+          >
+            <MenuItem onClick={handleClose}>
+              {" "}
+              <Grid container justify="center" item>
+                About{" "}
+              </Grid>
+            </MenuItem>
+          </Link>
+          <Divider
+            component="li"
+            style={{ boxShadow: "inset 0 0 0 1px #504137" }}
+          />
+          <Link
+            activeClass="active"
+            to="raid"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={1000}
+          >
+            <MenuItem onClick={handleClose}>
+              {" "}
+              <Grid container justify="center" item>
+                Raid{" "}
+              </Grid>
+            </MenuItem>
+          </Link>
+          <Divider
+            component="li"
+            style={{ boxShadow: "inset 0 0 0 1px #504137" }}
+          />
+          <Link
+            activeClass="active"
+            to="Guides"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={1000}
+          >
+            <MenuItem onClick={handleClose}>
+              {" "}
+              <Grid container justify="center" item>
+                Guides{" "}
+              </Grid>
+            </MenuItem>
+          </Link>
           <Divider
             component="li"
             style={{ boxShadow: "inset 0 0 0 1px #504137" }}
           />
 
-          <MenuItem onClick={handleClose}>
-            {" "}
-            <Grid container justify="center" item>
-              About{" "}
-            </Grid>
-          </MenuItem>
+          <Link
+            activeClass="active"
+            to="Addons"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={1000}
+          >
+            <MenuItem onClick={handleClose}>
+              {" "}
+              <Grid container justify="center" item>
+                Addons{" "}
+              </Grid>
+            </MenuItem>
+          </Link>
           <Divider
             component="li"
             style={{ boxShadow: "inset 0 0 0 1px #504137" }}
           />
-
-          <MenuItem onClick={handleClose}>
-            {" "}
-            <Grid container justify="center" item>
-              Raid{" "}
-            </Grid>
-          </MenuItem>
-          <Divider
-            component="li"
-            style={{ boxShadow: "inset 0 0 0 1px #504137" }}
-          />
-
-          <MenuItem onClick={handleClose}>
-            {" "}
-            <Grid container justify="center" item>
-              Guides{" "}
-            </Grid>
-          </MenuItem>
-          <Divider
-            component="li"
-            style={{ boxShadow: "inset 0 0 0 1px #504137" }}
-          />
-
           <MenuItem onClick={handleClose}>
             {" "}
             <Grid container justify="center" item>

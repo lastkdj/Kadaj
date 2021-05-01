@@ -64,6 +64,25 @@ const useStyles = makeStyles((theme) => ({
     borderWidth: "2px",
     borderColor: "#2AB602",
   },
+
+  tabwidth: {
+    minWidth: "0px",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: { minWidth: "0px" },
+
+    [theme.breakpoints.up("xl")]: { minWidth: "150px" },
+  },
+
+  conduittext: {
+    color: "adb0bb",
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: { fontSize: "0.6em" },
+
+    [theme.breakpoints.up("xl")]: { fontSize: "0.8em" },
+  },
 }));
 
 function TabPanel(props) {
@@ -135,9 +154,13 @@ const Conduits = () => {
             },
           }}
         >
-          <Tab label="Potency" {...a11yProps(0)} />
-          <Tab label="Endurance" {...a11yProps(1)} />
-          <Tab label="Finesse" {...a11yProps(2)} />
+          <Tab label="Potency" {...a11yProps(0)} className={classes.tabwidth} />
+          <Tab
+            label="Endurance"
+            {...a11yProps(1)}
+            className={classes.tabwidth}
+          />
+          <Tab label="Finesse" {...a11yProps(2)} className={classes.tabwidth} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
@@ -145,7 +168,7 @@ const Conduits = () => {
           className={classes.boxText}
           style={{ textAlign: "center", paddingTop: "10px" }}
         >
-          Best Raiding and M+ Potency Conduits for Demonology Warlocks
+          Best Raiding and M+ Potency Conduits for Destruction Warlocks
         </Typography>
         <Grid style={{ marginLeft: "20px", marginTop: "20px" }}>
           <a
@@ -174,7 +197,7 @@ const Conduits = () => {
           </a>
           <Typography className={classes.infoBox}>
             <ul>
-              <li style={{ color: "#adb0bb", fontSize: "0.7em" }}>
+              <li className={classes.conduittext}>
                 Strong bonus. Primarily a flat % increase to your Incinerate and
                 Chaos Bolt as your target should always be affected by Immolate
               </li>
@@ -208,7 +231,7 @@ const Conduits = () => {
           </a>
           <Typography className={classes.infoBox}>
             <ul>
-              <li style={{ color: "#adb0bb", fontSize: "0.7em" }}>
+              <li className={classes.conduittext}>
                 Decent damage boost to your Immolate dot, but this can be hard
                 to play optimally. You want to drop as many Conflagrate into a
                 long duration Immolate to increase its damage for the longest
@@ -244,7 +267,7 @@ const Conduits = () => {
           </a>
           <Typography className={classes.infoBox}>
             <ul>
-              <li style={{ color: "#adb0bb", fontSize: "0.7em" }}>
+              <li className={classes.conduittext}>
                 This conduit's values are increased significantly when paired
                 with Rain of Chaos, as you will stack it to 15 stacks faster.
                 This also means tuning this Conduit is hard. Doesn't perform

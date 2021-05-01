@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Grid, makeStyles, Typography } from "@material-ui/core";
-import Asset from "../Img/addonswall3.jpg";
+import bolvar from "../Img/nazmir.jpg";
 import UI from "../Img/ui.png";
 import Dialog from "@material-ui/core/Dialog";
 import Zoom from "@material-ui/core/Zoom";
@@ -14,18 +14,37 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     textDecoration: "none",
     fontFamily: "Poppins, sans-serif",
-    fontSize: "2.1em",
+    fontSize: "1.1em",
     animation: "fadeInBot ease 1.8s",
+    marginTop: "50px",
+    marginBottom: "50px",
+    textAlign: "center",
+    marginTop: "20px",
+    textAlign: "center",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: { fontSize: "1.5em" },
+
+    [theme.breakpoints.up("xl")]: { marginTop: "70px", fontSize: "2.1em" },
   },
 
   borderThumbnail: {
-    backgroundImage: `url(${Asset})`,
     backgroundPosition: "center",
+    backgroundImage: `url(${bolvar})`,
     backgroundSize: "cover",
     borderTopStyle: "solid",
     borderTopColor: "rgb(28, 28, 28)",
-    borderWidth: "5px",
     textShadow: "1px 2px #00000040",
+    boxShadow: "inset 0 0 0 1px #504137",
+    backgroundColor: "teal",
+    padding: "10px",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
   },
 
   tittle: {
@@ -33,14 +52,30 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     textDecoration: "none",
     fontFamily: "Poppins, sans-serif",
-    fontSize: "2.1em",
+    fontSize: "1.1em",
+    textAlign: "center",
+    margin: "20px 0px",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
   },
   subtittle: {
     fontWeight: 600,
     color: "white",
     textDecoration: "none",
     fontFamily: "Poppins, sans-serif",
-    fontSize: "1.2em",
+    fontSize: "1em",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "1.2em",
+    },
   },
 
   subtittletwo: {
@@ -99,10 +134,25 @@ const useStyles = makeStyles((theme) => ({
     borderStyle: "solid",
     borderWidth: "2px",
     borderColor: "white",
+
+    cursor: "pointer",
   },
 
   li: {
     listStyle: "none",
+  },
+
+  addonitems: {
+    flexDirection: "cloumn",
+    justifyContent: "center",
+
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {
+      flexDirection: "row",
+    },
+
+    [theme.breakpoints.up("xl")]: {},
   },
 }));
 
@@ -255,311 +305,248 @@ const Addons = () => {
   };
 
   return (
-    <Grid
-      container
-      justify="flex-end"
-      className={classes.borderThumbnail}
-      style={{ height: "500px", backgroundColor: "teal", padding: "10px" }}
-    >
+    <Grid container className={classes.borderThumbnail} id="Addons">
       {" "}
       <Grid item xs={12}>
-        <Typography
-          className={classes.spec}
-          style={{ textAlign: "center", marginTop: "20px" }}
+        <Typography className={classes.spec}>Addons - UI</Typography>
+      </Grid>
+      <Grid item container xs={12} className={classes.addonitems}>
+        <Grid
+          item
+          xs={12}
+          lg={3}
+          style={{ padding: "10px" }}
+          class="wa fadeOut"
         >
-          Addons - UI
-        </Typography>
-      </Grid>
-      <Grid
-        item
-        xs={3}
-        style={{ marginLeft: "30px", width: "400px" }}
-        class="wa fadeOut"
-      >
-        <Typography className={classes.tittle}> Addons</Typography>
-        <ul style={{ color: "white" }}>
-          <a
-            href="https://docs.google.com/document/d/1eo349uS-_HAA78AQDPl2TrNpvhEzVXp9GGcy52CDAn8/edit?usp=sharing"
-            style={{ textDecoration: "none" }}
-          >
+          <Typography className={classes.tittle}> Addons</Typography>
+
+          <ul>
+            <a
+              href="https://docs.google.com/document/d/1eo349uS-_HAA78AQDPl2TrNpvhEzVXp9GGcy52CDAn8/edit?usp=sharing"
+              style={{ textDecoration: "none" }}
+            >
+              <li className={classes.li}>
+                <Typography className={classes.subtittle}>Elvui</Typography>
+              </li>
+            </a>
             <li className={classes.li}>
-              <Typography className={classes.subtittle}>Elvui</Typography>
+              <Typography className={classes.subtittle}>WeakAuras</Typography>
             </li>
-          </a>
-          <li className={classes.li}>
-            <Typography className={classes.subtittle}>WeakAuras</Typography>
-          </li>
-          <li className={classes.li}>
-            <Typography className={classes.subtittle}>Opie</Typography>
-          </li>
-          <li className={classes.li}>
-            <Typography className={classes.subtittle}>Bigwigs</Typography>
-          </li>
-          <a
-            href="https://pastebin.com/tjcHkQbS"
-            style={{ textDecoration: "none" }}
-          >
             <li className={classes.li}>
-              <Typography className={classes.subtittle}>Details</Typography>
+              <Typography className={classes.subtittle}>Opie</Typography>
             </li>
-          </a>
-          <a
-            href="https://pastebin.com/B5Mj1H0L"
-            style={{ textDecoration: "none" }}
-          >
             <li className={classes.li}>
-              <Typography className={classes.subtittle}>Plater</Typography>
+              <Typography className={classes.subtittle}>Bigwigs</Typography>
             </li>
-          </a>
-        </ul>
-        <Typography className={classes.info}>
-          {" "}
-          To replicate my profile, just click on the addon you need and copy the
-          string, you can then import it into the respective addon in game
-        </Typography>
-      </Grid>
-      <Grid
-        item
-        xs={4}
-        style={{ marginLeft: "30px", width: "400px" }}
-        class="addons fadeOut"
-      >
-        <Typography className={classes.tittle}> WeakAuras</Typography>
-        <ul style={{ color: "white" }}>
-          <li>
+            <a
+              href="https://pastebin.com/tjcHkQbS"
+              style={{ textDecoration: "none" }}
+            >
+              <li className={classes.li}>
+                <Typography className={classes.subtittle}>Details</Typography>
+              </li>
+            </a>
+            <a
+              href="https://pastebin.com/B5Mj1H0L"
+              style={{ textDecoration: "none" }}
+            >
+              <li className={classes.li}>
+                <Typography className={classes.subtittle}>Plater</Typography>
+              </li>
+            </a>
+          </ul>
+          <Typography className={classes.info}>
             {" "}
-            <Typography className={classes.subtittletwo}>
-              Luxthos Warlock Set
-            </Typography>
-          </li>
-          <li>
+            To replicate my profile, just click on the addon you need and copy
+            the string, you can then import it into the respective addon in game
+          </Typography>
+        </Grid>
+        <Grid item xs={12} lg={3} class="addons fadeOut">
+          <Typography className={classes.tittle}> WeakAuras</Typography>
+          <ul style={{ color: "white" }}>
+            <li className={classes.li}>
+              {" "}
+              <Typography className={classes.subtittletwo}>
+                Luxthos Warlock Set
+              </Typography>
+            </li>
+            <li className={classes.li}>
+              {" "}
+              <Typography className={classes.subtittletwo}>
+                Soulstone Reminder
+              </Typography>
+            </li>
+            <li className={classes.li}>
+              {" "}
+              <Typography className={classes.subtittletwo}>
+                Demonic Consumtion
+              </Typography>
+            </li>
+            <li className={classes.li}>
+              {" "}
+              <Typography className={classes.subtittletwo}>
+                Quantum Device
+              </Typography>
+            </li>
+            <li className={classes.li}>
+              {" "}
+              <Typography className={classes.subtittletwo}>
+                Shadowlands Trinkets
+              </Typography>
+            </li>
+            <li className={classes.li}>
+              {" "}
+              <Typography className={classes.subtittletwo}>
+                Castle Nathria
+              </Typography>
+            </li>
+            <li className={classes.li}>
+              {" "}
+              <Typography className={classes.subtittletwo}>
+                Spiteful Fixate
+              </Typography>
+            </li>
+          </ul>
+          <Typography className={classes.info} style={{ padding: "10px" }}>
             {" "}
-            <Typography className={classes.subtittletwo}>
-              Soulstone Reminder
+            You can find all these Weakauras{" "}
+            <a
+              href="https://wago.io/"
+              style={{
+                textDecoration: "none",
+                color: "chartreuse",
+                fontWeight: 400,
+              }}
+            >
+              {" "}
+              here
+            </a>
+          </Typography>
+        </Grid>
+        <Grid
+          container
+          justify="center"
+          item
+          xs={12}
+          lg={3}
+          class="interface fadeOut"
+        >
+          <Grid xs={12}>
+            <Typography className={classes.tittle}>Interface</Typography>
+          </Grid>
+          <Grid container justify="center" xs={12}>
+            <img
+              alt="ui"
+              width="300px"
+              height="150px"
+              src={UI}
+              onClick={handleOpen}
+              className={classes.borderui}
+            />
+          </Grid>
+          <Grid xs={12}>
+            <Typography
+              className={classes.info}
+              style={{ marginTop: "10px", textAlign: "center" }}
+            >
+              {" "}
+              Click to enlarge{" "}
             </Typography>
-          </li>
-          <li>
-            {" "}
-            <Typography className={classes.subtittletwo}>
-              Demonic Consumtion
-            </Typography>
-          </li>
-          <li>
-            {" "}
-            <Typography className={classes.subtittletwo}>
-              Quantum Device
-            </Typography>
-          </li>
-          <li>
-            {" "}
-            <Typography className={classes.subtittletwo}>
-              Shadowlands Trinkets
-            </Typography>
-          </li>
-          <li>
-            {" "}
-            <Typography className={classes.subtittletwo}>
-              Castle Nathria
-            </Typography>
-          </li>
-          <li>
-            {" "}
-            <Typography className={classes.subtittletwo}>
-              Spiteful Fixate
-            </Typography>
-          </li>
-        </ul>
-        <Typography className={classes.info}>
-          {" "}
-          You can find all these Weakauras{" "}
-          <a
-            href="https://wago.io/"
-            style={{
-              textDecoration: "none",
-              color: "chartreuse",
-              fontWeight: 400,
+          </Grid>
+
+          <Dialog
+            open={open}
+            TransitionComponent={Transition}
+            keepMounted
+            onClose={handleClose}
+            aria-labelledby="alert-dialog-slide-title"
+            aria-describedby="alert-dialog-slide-description"
+            PaperProps={{
+              classes: { root: classes.root },
             }}
           >
+            <img
+              alt="ui"
+              width="1280px"
+              height="720px"
+              src={UI}
+              className={classes.borderui}
+            />
+          </Dialog>
+        </Grid>
+        <Grid item xs={12} lg={3} class="macros fadeOut">
+          <Typography
+            className={classes.tittle}
+            style={{ textAlign: "center" }}
+          >
             {" "}
-            here
-          </a>
-        </Typography>
-      </Grid>
-      <Grid
-        item
-        xs={3}
-        style={{ marginLeft: "30px" }}
-        class="interface fadeOut"
-      >
-        <Typography className={classes.spec} style={{ textAlign: "center" }}>
-          Interface
-        </Typography>
-        <img
-          alt="ui"
-          width="300px"
-          height="150px"
-          src={UI}
-          onClick={handleOpen}
-          className={classes.borderui}
-          style={{ marginTop: "20px", cursor: "pointer" }}
-        />
-        <Typography
-          className={classes.info}
-          style={{ marginTop: "20px", textAlign: "center" }}
-        >
-          {" "}
-          Click to enlarge{" "}
-        </Typography>
-        <Dialog
-          open={open}
-          TransitionComponent={Transition}
-          keepMounted
-          onClose={handleClose}
-          aria-labelledby="alert-dialog-slide-title"
-          aria-describedby="alert-dialog-slide-description"
-          PaperProps={{
-            classes: { root: classes.root },
-          }}
-        >
-          <img
-            alt="ui"
-            width="1280px"
-            height="720px"
-            src={UI}
-            className={classes.borderui}
-          />
-        </Dialog>
-      </Grid>
-      <Grid
-        item
-        xs={3}
-        style={{ marginLeft: "90px", width: "500px" }}
-        class="macros fadeOut"
-      >
-        <Typography className={classes.tittle} style={{ textAlign: "center" }}>
-          {" "}
-          Macros
-        </Typography>
-        <ul style={{ color: "white" }}>
-          <li className={classes.li}>
-            <Grid container>
-              <Typography
-                style={{ marginRight: "20px" }}
-                className={classes.subtittle}
-              >
-                Banish Focus
-              </Typography>
+            Macros
+          </Typography>
+          <ul style={{ color: "white" }}>
+            <li className={classes.li}>
+              <Grid container>
+                <Typography
+                  style={{ marginRight: "20px" }}
+                  className={classes.subtittle}
+                >
+                  Banish Focus
+                </Typography>
 
-              <FileCopyIcon
-                onClick={myBanish}
-                style={{ cursor: "pointer", margin: "0px 20px" }}
-              />
-              <input
-                style={{
-                  visibility: "hidden",
-                  backgroundColor: "rgb(28, 28, 28)",
-                  color: "white",
-                  borderRadius: "4px",
-                }}
-                type="text"
-                value="#showtooltip Banish/use [mod:shift,@focus] [] Banish"
-                id="myInputBanish"
-              ></input>
-            </Grid>
-          </li>
+                <FileCopyIcon
+                  onClick={myBanish}
+                  style={{ cursor: "pointer", margin: "0px 20px" }}
+                />
+              </Grid>
+            </li>
 
-          <li className={classes.li}>
-            <Grid container>
-              <Typography className={classes.subtittle}>
-                Soulstone Mouseover
-              </Typography>
-              <FileCopyIcon
-                onClick={mySoulstone}
-                style={{ cursor: "pointer", margin: "0px 20px" }}
-              />
-              <input
-                style={{
-                  visibility: "hidden",
-                  backgroundColor: "rgb(28, 28, 28)",
-                  color: "white",
-                  borderRadius: "4px",
-                }}
-                type="text"
-                value="#showtooltip Soulstone /cast [@mouseover,help] [help] Soulstone"
-                id="myInputSoulstone"
-              ></input>
-            </Grid>
-          </li>
-          <li className={classes.li}>
-            <Grid container>
-              <Typography className={classes.subtittle}>
-                DoT Mouseover
-              </Typography>
+            <li className={classes.li}>
+              <Grid container>
+                <Typography className={classes.subtittle}>
+                  Soulstone Mouseover
+                </Typography>
+                <FileCopyIcon
+                  onClick={mySoulstone}
+                  style={{ cursor: "pointer", margin: "0px 20px" }}
+                />
+              </Grid>
+            </li>
+            <li className={classes.li}>
+              <Grid container>
+                <Typography className={classes.subtittle}>
+                  DoT Mouseover
+                </Typography>
 
-              <FileCopyIcon
-                onClick={myDot}
-                style={{ cursor: "pointer", margin: "0px 20px" }}
-              />
-              <input
-                style={{
-                  visibility: "hidden",
-                  backgroundColor: "rgb(28, 28, 28)",
-                  color: "white",
-                  borderRadius: "4px",
-                }}
-                type="text"
-                value="#showtooltip Corruption
-                /use [@mouseover,harm] [harm] Corruption"
-                id="myInputDot"
-              ></input>
-            </Grid>
-          </li>
-          <li className={classes.li}>
-            <Grid container>
-              <Typography className={classes.subtittle}>
-                Demonic Circle
-              </Typography>
-              <FileCopyIcon
-                onClick={myCircle}
-                style={{ cursor: "pointer", margin: "0px 20px" }}
-              />
-              <input
-                style={{
-                  visibility: "hidden",
-                  backgroundColor: "rgb(28, 28, 28)",
-                  color: "white",
-                  borderRadius: "4px",
-                }}
-                type="text"
-                value="#showtooltip /stopcasting /cast Demonic Circle"
-                id="myInputCircle"
-              ></input>
-            </Grid>
-          </li>
+                <FileCopyIcon
+                  onClick={myDot}
+                  style={{ cursor: "pointer", margin: "0px 20px" }}
+                />
+              </Grid>
+            </li>
+            <li className={classes.li}>
+              <Grid container>
+                <Typography className={classes.subtittle}>
+                  Demonic Circle
+                </Typography>
+                <FileCopyIcon
+                  onClick={myCircle}
+                  style={{ cursor: "pointer", margin: "0px 20px" }}
+                />
+              </Grid>
+            </li>
 
-          <li className={classes.li}>
-            <Grid container>
-              <Typography className={classes.subtittle}>
-                Interrupt Mouseover
-              </Typography>
-              <FileCopyIcon
-                onClick={myInterrupt}
-                style={{ cursor: "pointer", margin: "0px 20px" }}
-              />
-              <input
-                style={{
-                  visibility: "hidden",
-                  backgroundColor: "rgb(28, 28, 28)",
-                  color: "white",
-                  borderRadius: "4px",
-                }}
-                type="text"
-                value="#showtooltip Banish/use [mod:shift,@focus] [] Banish"
-                id="myInputInterrupt"
-              ></input>
-            </Grid>
-          </li>
-        </ul>
+            <li className={classes.li}>
+              <Grid container>
+                <Typography className={classes.subtittle}>
+                  Interrupt Mouseover
+                </Typography>
+                <FileCopyIcon
+                  onClick={myInterrupt}
+                  style={{ cursor: "pointer", margin: "0px 20px" }}
+                />
+              </Grid>
+            </li>
+          </ul>
+        </Grid>
       </Grid>
     </Grid>
   );

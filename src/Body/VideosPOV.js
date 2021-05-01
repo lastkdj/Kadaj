@@ -1,20 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { Grid, makeStyles, Typography } from "@material-ui/core";
-import cn from "../Img/wowback.jpg";
-import cnraid from "../Img/cn.jpg";
-import Shriekwing from "../Img/cn/Castle Nathria Mythic Shriekwing.jpg";
-import Huntsman from "../Img/cn/Castle Nathria Mythic Huntsman Altimor.jpg";
-import Hungering from "../Img/cn/Castle Nathria Mythic Hungering Destroyer.jpg";
-import Lady from "../Img/cn/Castle Nathria Mythic Lady Inerva Darkvein.jpg";
-import Xymox from "../Img/cn/Castle Nathria Mythic Artificer Xymox.jpg";
-import Sunsking from "../Img/cn/Castle Nathria Mythic Sun Kings salvation.jpg";
-import Council from "../Img/cn/Castle Nathria Mythic The Council of Blood.jpg";
-import Sludgefist from "../Img/cn/Castle Nathria Mythic Sludgefist.jpg";
-import Generals from "../Img/cn/Castle Nathria Mythic Stone Legion Generals.jpg";
-import Denathrius from "../Img/cn/Castle Nathria Mythic Denathrius.jpg";
+import cnraid from "../Img/cn/denathriuswall.jpg";
+import Shriekwing from "../Img/cn/shriekwingphone.jpg";
+import Huntsman from "../Img/cn/huntsman2.jpg";
+import Hungering from "../Img/cn/hungering.jpg";
+import Lady from "../Img/cn/lady.jpg";
+import Xymox from "../Img/cn/xymox.jpg";
+import Sunsking from "../Img/cn/sunsking.jpg";
+import Council from "../Img/cn/council.jpg";
+import Sludgefist from "../Img/cn/sludgefist.jpg";
+import Generals from "../Img/cn/stonegenerals.jpg";
+import Denathrius from "../Img/cn/denathrius.jpg";
 import "./cnStyles.css";
 import { useMediaQuery } from "react-responsive";
-import BossesSheets from "./BossesSheets";
 
 const useStyles = makeStyles((theme) => ({
   spec: {
@@ -22,18 +20,15 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     textDecoration: "none",
     fontFamily: "Poppins, sans-serif",
-    fontSize: "1em",
+    fontSize: "1.1em",
     animation: "fadeInBot ease 1.8s",
     marginTop: "50px",
 
     [theme.breakpoints.up("md")]: {},
 
-    [theme.breakpoints.up("lg")]: {
-      fontSize: "2.1em",
-      marginTop: "70px",
-    },
+    [theme.breakpoints.up("lg")]: { fontSize: "1.5em" },
 
-    [theme.breakpoints.up("xl")]: {},
+    [theme.breakpoints.up("xl")]: { marginTop: "70px", fontSize: "2.1em" },
   },
 
   borderThumbnail: {
@@ -62,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
   nathriagrid: {
     overflow: "hidden",
     height: "900px",
-    backgroundImage: `url(${cn})`,
+    backgroundImage: `url(${cnraid})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     borderTopStyle: "solid",
@@ -74,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up("lg")]: {
       backgroundImage: `url(${cnraid})`,
-      height: "600px",
+      backgroundPosition: "right",
     },
 
     [theme.breakpoints.up("xl")]: {
@@ -83,12 +78,14 @@ const useStyles = makeStyles((theme) => ({
   },
 
   iframe: {
-    borderRadius: "6px",
     borderStyle: "solid",
     borderWidth: "1px",
-    borderColor: "rgb(254, 179, 0)",
+    borderColor: "#504137",
     width: "560px",
     height: "330px",
+    justifySelf: "center",
+    boxShadow: "10px -8px 73px 27px rgba(0,0,0,0.92)",
+
     [theme.breakpoints.up("md")]: {},
 
     [theme.breakpoints.up("lg")]: {},
@@ -124,6 +121,34 @@ const useStyles = makeStyles((theme) => ({
       padding: "0px",
     },
   },
+
+  bossesgrid: {
+    backgroundRepeat: "no-repeat",
+    width: "100%",
+    height: "70px",
+    boxShadow: "inset 0 0 0 1px #504137",
+    marginBottom: "2px",
+  },
+
+  BossesSheets: {
+    padding: "10px 10px 10px 10px",
+    justifyContent: "center",
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {
+      padding: "10px 10px 30px 30px",
+    },
+
+    [theme.breakpoints.up("xl")]: {},
+  },
+
+  cnVideos: {
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {},
+
+    [theme.breakpoints.up("xl")]: {},
+  },
 }));
 
 const VideosPOV = () => {
@@ -132,34 +157,89 @@ const VideosPOV = () => {
   const classes = useStyles();
 
   const onClickShriekwing = () => {
+    if (isMobile) {
+      window.open(
+        "https://www.youtube.com/watch?v=wxnBOpmZAY4&ab_channel=Kadaj"
+      );
+    }
     setUrl("https://www.youtube.com/embed/wxnBOpmZAY4");
   };
 
   const onClickHuntsman = () => {
+    if (isMobile) {
+      window.open(
+        "https://youtu.be/2FK1yQLDAK8?list=PLvUajLfjohzU4Q5ENngN7Rmkjt6QMKMGH"
+      );
+    }
     setUrl("https://www.youtube.com/embed/2FK1yQLDAK8");
   };
   const onClickHungering = () => {
+    if (isMobile) {
+      window.open(
+        "https://youtu.be/XxVvCAQs-vA?list=PLvUajLfjohzU4Q5ENngN7Rmkjt6QMKMGH"
+      );
+    }
     setUrl("https://www.youtube.com/embed/XxVvCAQs-vA");
   };
   const onClickLady = () => {
+    if (isMobile) {
+      window.open(
+        " https://youtu.be/5gufn0coduk?list=PLvUajLfjohzU4Q5ENngN7Rmkjt6QMKMGH"
+      );
+    }
+
     setUrl("https://www.youtube.com/embed/5gufn0coduk");
   };
   const onClickXymox = () => {
+    if (isMobile) {
+      window.open(
+        "https://youtu.be/PehuXJ4YE_o?list=PLvUajLfjohzU4Q5ENngN7Rmkjt6QMKMGH"
+      );
+    }
+
     setUrl("https://www.youtube.com/embed/PehuXJ4YE_o");
   };
   const onClickSunsking = () => {
+    if (isMobile) {
+      window.open(
+        "https://youtu.be/JJhB4T04Gws?list=PLvUajLfjohzU4Q5ENngN7Rmkjt6QMKMGH"
+      );
+    }
+
     setUrl("https://www.youtube.com/embed/JJhB4T04Gws");
   };
   const onClickCouncil = () => {
+    if (isMobile) {
+      window.open(
+        "https://youtu.be/dhCUYr2jev8?list=PLvUajLfjohzU4Q5ENngN7Rmkjt6QMKMGH"
+      );
+    }
+
     setUrl("https://www.youtube.com/embed/dhCUYr2jev8");
   };
   const onClickSludgefist = () => {
+    if (isMobile) {
+      window.open(
+        "https://youtu.be/gEcTGjLPcpo?list=PLvUajLfjohzU4Q5ENngN7Rmkjt6QMKMGH"
+      );
+    }
+
     setUrl("https://www.youtube.com/embed/gEcTGjLPcpo");
   };
   const onClickGenerals = () => {
+    if (isMobile) {
+      window.open(
+        "https://youtu.be/Kfvn-bR1I8k?list=PLvUajLfjohzU4Q5ENngN7Rmkjt6QMKMGH"
+      );
+    }
     setUrl("https://www.youtube.com/embed/Kfvn-bR1I8k");
   };
   const onClickDenathrius = () => {
+    if (isMobile) {
+      window.open(
+        "https://youtu.be/bgSebA5bTNs?list=PLvUajLfjohzU4Q5ENngN7Rmkjt6QMKMGH"
+      );
+    }
     setUrl("https://www.youtube.com/embed/bgSebA5bTNs");
   };
 
@@ -265,25 +345,102 @@ const VideosPOV = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 960px)" });
 
   return (
-    <Grid
-      container
-      item
-      xs={12}
-      className={classes.nathriagrid}
-      justify="center"
-      id="raid"
-    >
+    <Grid container item xs={12} className={classes.nathriagrid} id="raid">
       <Grid item xs={12} sm={12} md={12} lg={12} class="fade fadeOut">
         <Typography className={classes.spec} style={{ textAlign: "center" }}>
           <span style={{ color: "rgb(254, 179, 0)" }}>Mythic</span> Castle
           Nathria, <span style={{ fontWeight: "400" }}>Warlock POV</span>
         </Typography>
       </Grid>
-
-      {!isMobile ? (
-        <Grid container item xs={12} className={classes.videoplayer}>
-          <Grid container item xs={6} class="cnPlayer fadeOut">
-            {" "}
+      <Grid container className={classes.cnVideos}>
+        <Grid
+          container
+          item
+          xs={12}
+          sm={12}
+          md={6}
+          lg={3}
+          className={classes.BossesSheets}
+        >
+          <Grid
+            onClick={onClickShriekwing}
+            class="cnFade1 fadeOut"
+            item
+            xs={12}
+            style={{ backgroundImage: `url(${Shriekwing})` }}
+          ></Grid>
+          <Grid
+            onClick={onClickHuntsman}
+            class="cnFade2 fadeOut"
+            item
+            xs={12}
+            style={{ backgroundImage: `url(${Huntsman})` }}
+          ></Grid>
+          <Grid
+            onClick={onClickHungering}
+            class="cnFade3 fadeOut"
+            item
+            xs={12}
+            style={{ backgroundImage: `url(${Hungering})` }}
+          ></Grid>
+          <Grid
+            onClick={onClickLady}
+            class="cnFade4 fadeOut"
+            item
+            xs={12}
+            style={{ backgroundImage: `url(${Lady})` }}
+          ></Grid>
+          <Grid
+            onClick={onClickXymox}
+            class="cnFade5 fadeOut"
+            item
+            xs={12}
+            style={{ backgroundImage: `url(${Xymox})` }}
+          ></Grid>
+          <Grid
+            onClick={onClickSunsking}
+            class="cnFade6 fadeOut"
+            item
+            xs={12}
+            style={{ backgroundImage: `url(${Sunsking})` }}
+          ></Grid>
+          <Grid
+            onClick={onClickCouncil}
+            class="cnFade7 fadeOut"
+            item
+            xs={12}
+            style={{ backgroundImage: `url(${Council})` }}
+          ></Grid>
+          <Grid
+            onClick={onClickSludgefist}
+            class="cnFade8 fadeOut"
+            item
+            xs={12}
+            style={{ backgroundImage: `url(${Sludgefist})` }}
+          ></Grid>
+          <Grid
+            onClick={onClickGenerals}
+            class="cnFade9 fadeOut"
+            item
+            xs={12}
+            style={{ backgroundImage: `url(${Generals})` }}
+          ></Grid>
+          <Grid
+            onClick={onClickDenathrius}
+            class="cnFade10 fadeOut"
+            item
+            xs={12}
+            style={{ backgroundImage: `url(${Denathrius})` }}
+          ></Grid>
+        </Grid>
+        {!isMobile ? (
+          <Grid
+            container
+            direction="column"
+            item
+            xs={7}
+            class="cnPlayer fadeOut"
+          >
             <iframe
               src={url}
               title="YouTube video player"
@@ -292,118 +449,8 @@ const VideosPOV = () => {
               className={classes.iframe}
             ></iframe>
           </Grid>
-
-          <Grid
-            container
-            item
-            xs={6}
-            direction="row"
-            justify="flex-start"
-            alignItems="flex-start"
-            className={classes.thumbnailframe}
-          >
-            <Grid class="cnFade1 fadeOut">
-              <img
-                onClick={onClickShriekwing}
-                className={classes.borderThumbnail}
-                alt=""
-                src={Shriekwing}
-              />
-            </Grid>
-            <Grid class="cnFade2 fadeOut">
-              <img
-                onClick={onClickHuntsman}
-                className={classes.borderThumbnail}
-                alt=""
-                src={Huntsman}
-              />
-            </Grid>
-            <Grid class="cnFade3 fadeOut">
-              <img
-                onClick={onClickHungering}
-                className={classes.borderThumbnail}
-                alt=""
-                src={Hungering}
-              />
-            </Grid>
-            <Grid class="cnFade4 fadeOut">
-              <img
-                onClick={onClickLady}
-                className={classes.borderThumbnail}
-                alt=""
-                src={Lady}
-              />
-            </Grid>
-            <Grid class="cnFade5 fadeOut">
-              <img
-                onClick={onClickXymox}
-                className={classes.borderThumbnail}
-                alt=""
-                src={Xymox}
-              />
-            </Grid>
-            <Grid class="cnFade6 fadeOut">
-              <img
-                onClick={onClickSunsking}
-                className={classes.borderThumbnail}
-                alt=""
-                src={Sunsking}
-              />{" "}
-            </Grid>
-            <Grid class="cnFade7 fadeOut">
-              <img
-                onClick={onClickCouncil}
-                className={classes.borderThumbnail}
-                alt=""
-                src={Council}
-              />
-            </Grid>
-            <Grid class="cnFade8 fadeOut">
-              <img
-                onClick={onClickSludgefist}
-                className={classes.borderThumbnail}
-                alt=""
-                src={Sludgefist}
-                style={{}}
-              />
-            </Grid>
-            <Grid class="cnFade9 fadeOut">
-              <img
-                onClick={onClickGenerals}
-                className={classes.borderThumbnail}
-                alt=""
-                src={Generals}
-              />
-            </Grid>
-            <Grid class="cnFade10 fadeOut">
-              <img
-                onClick={onClickDenathrius}
-                className={classes.borderThumbnail}
-                alt=""
-                src={Denathrius}
-              />
-            </Grid>
-          </Grid>
-        </Grid>
-      ) : (
-        <Grid container item xs={12} sm={5} md={5} style={{ padding: "10px" }}>
-          {BossesSheets.map((b) => (
-            <Grid
-              class="cnFade1 fadeOut"
-              item
-              xs={12}
-              style={{
-                backgroundImage: `url(${b})`,
-                backgroundRepeat: "no-repeat",
-                width: "100%",
-                height: "70px",
-                boxShadow: "inset 0 0 0 1px #504137",
-                marginBottom: "2px",
-              }}
-            ></Grid>
-          ))}
-        </Grid>
-      )}
+        ) : null}
+      </Grid>
     </Grid>
   );
 };

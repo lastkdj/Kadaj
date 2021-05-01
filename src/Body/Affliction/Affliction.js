@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up("lg")]: {
       justifyContent: "flex-start",
-      height: "704px",
+      height: "820px",
     },
 
     [theme.breakpoints.up("xl")]: {},
@@ -36,7 +36,7 @@ const Affliction = () => {
   const isTablet = useMediaQuery({ query: "(max-width: 960px)" });
 
   return (
-    <Grid container xs={12} item id="Guides" className={classes.affliction}>
+    <Grid container xs={12} item id="affGuide" className={classes.affliction}>
       {isTablet ? <PhoneGuide /> : <Affmenu />}
 
       {stats ? (

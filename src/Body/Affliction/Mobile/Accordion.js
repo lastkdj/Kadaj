@@ -16,6 +16,9 @@ import Skull from "../../../Img/skull.png";
 import "../../guideStyles.css";
 import Stats from "./Stats";
 import Lego from "./Lego";
+import Covenant from "./Covenant";
+import Talents from "./Talents";
+import Raid from "./Raid";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -177,10 +180,7 @@ export default function ControlledAccordions() {
           </Grid>
         </AccordionSummary>
         <AccordionDetails className={classes.accordiondetails}>
-          <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
-            sit amet egestas eros, vitae egestas augue. Duis vel est augue.
-          </Typography>
+          <Covenant />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -206,10 +206,7 @@ export default function ControlledAccordions() {
           </Grid>
         </AccordionSummary>
         <AccordionDetails className={classes.accordiondetails}>
-          <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
-            sit amet egestas eros, vitae egestas augue. Duis vel est augue.
-          </Typography>
+          <Talents />
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -237,10 +234,7 @@ export default function ControlledAccordions() {
           </Grid>
         </AccordionSummary>
         <AccordionDetails className={classes.accordiondetails}>
-          <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
-            sit amet egestas eros, vitae egestas augue. Duis vel est augue.
-          </Typography>
+          <Raid />
         </AccordionDetails>
       </Accordion>
     </Grid>
