@@ -19,7 +19,7 @@ const XymoxComponent = () => {
   return (
     <Grid container xs={12} direction="column" className={classes.aligned}>
       {" "}
-      <Typography className={classes.tittle}>Shriekwing</Typography>
+      <Typography className={classes.tittle}>Artificer Xymox</Typography>
       <Divider variant="inset" component="hr" />
       <Typography className={classes.subtittle}>Talent Choice:</Typography>
       <img

@@ -62,11 +62,11 @@ const Header = () => {
           item
           xs={12}
           md={9}
-          style={{ justifyContent: "flex-end" }}
+          style={!isMobile ? { justifyContent: "flex-end" } : null}
         >
           {isMobile ? (
             scrolled ? (
-              <Grid container item xs={10} style={{ paddingTop: "15px" }}>
+              <Grid container item xs={10}>
                 <Link
                   activeClass="active"
                   to="affGuide"
@@ -210,24 +210,6 @@ const Header = () => {
               </Typography>
             </li>
           </ul>
-          {!isMobile ? (
-            <Grid item>
-              <Button
-                stlye={{ margin: "0px 20px" }}
-                variant="contained"
-                onClick={onClick}
-                classes={{
-                  contained: classes.youtube, // class name, e.g. `classes-nesting-root-x`
-                }}
-              >
-                Youtube
-              </Button>
-            </Grid>
-          ) : (
-            <Grid item xs={2}>
-              <SimpleMenu scrolled={scrolled} />
-            </Grid>
-          )}
         </Grid>
       </Grid>
     </Grid>
