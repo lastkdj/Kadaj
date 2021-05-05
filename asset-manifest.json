@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Kadaj/static/css/main.e9766dd9.chunk.css",
-    "main.js": "/Kadaj/static/js/main.78431642.chunk.js",
-    "main.js.map": "/Kadaj/static/js/main.78431642.chunk.js.map",
-    "runtime-main.js": "/Kadaj/static/js/runtime-main.da263d1b.js",
-    "runtime-main.js.map": "/Kadaj/static/js/runtime-main.da263d1b.js.map",
-    "static/js/2.fb35ffa8.chunk.js": "/Kadaj/static/js/2.fb35ffa8.chunk.js",
-    "static/js/2.fb35ffa8.chunk.js.map": "/Kadaj/static/js/2.fb35ffa8.chunk.js.map",
-    "static/js/3.fd18c762.chunk.js": "/Kadaj/static/js/3.fd18c762.chunk.js",
-    "static/js/3.fd18c762.chunk.js.map": "/Kadaj/static/js/3.fd18c762.chunk.js.map",
+    "main.js": "/Kadaj/static/js/main.e0c4fd6c.chunk.js",
+    "main.js.map": "/Kadaj/static/js/main.e0c4fd6c.chunk.js.map",
+    "runtime-main.js": "/Kadaj/static/js/runtime-main.8bc1298d.js",
+    "runtime-main.js.map": "/Kadaj/static/js/runtime-main.8bc1298d.js.map",
+    "static/js/2.739a1d3d.chunk.js": "/Kadaj/static/js/2.739a1d3d.chunk.js",
+    "static/js/2.739a1d3d.chunk.js.map": "/Kadaj/static/js/2.739a1d3d.chunk.js.map",
+    "static/js/3.40bc765f.chunk.js": "/Kadaj/static/js/3.40bc765f.chunk.js",
+    "static/js/3.40bc765f.chunk.js.map": "/Kadaj/static/js/3.40bc765f.chunk.js.map",
     "index.html": "/Kadaj/index.html",
     "static/css/main.e9766dd9.chunk.css.map": "/Kadaj/static/css/main.e9766dd9.chunk.css.map",
-    "static/js/2.fb35ffa8.chunk.js.LICENSE.txt": "/Kadaj/static/js/2.fb35ffa8.chunk.js.LICENSE.txt",
+    "static/js/2.739a1d3d.chunk.js.LICENSE.txt": "/Kadaj/static/js/2.739a1d3d.chunk.js.LICENSE.txt",
     "static/media/Awareness.ad8b6ec3.png": "/Kadaj/static/media/Awareness.ad8b6ec3.png",
     "static/media/aff.d251cc3c.png": "/Kadaj/static/media/aff.d251cc3c.png",
     "static/media/affimg2.02fb2d32.jpg": "/Kadaj/static/media/affimg2.02fb2d32.jpg",
@@ -48,7 +48,6 @@
     "static/media/gladiator.0a633975.png": "/Kadaj/static/media/gladiator.0a633975.png",
     "static/media/gladiator.6779e371.png": "/Kadaj/static/media/gladiator.6779e371.png",
     "static/media/grim.782fd24a.png": "/Kadaj/static/media/grim.782fd24a.png",
-    "static/media/guldan.94788b16.jpg": "/Kadaj/static/media/guldan.94788b16.jpg",
     "static/media/hungering.1bca8612.jpg": "/Kadaj/static/media/hungering.1bca8612.jpg",
     "static/media/hungering.22845fe7.jpg": "/Kadaj/static/media/hungering.22845fe7.jpg",
     "static/media/huntsman.6bf6f377.jpg": "/Kadaj/static/media/huntsman.6bf6f377.jpg",
@@ -94,9 +93,9 @@
     "static/media/youtube.f7f1cbf6.svg": "/Kadaj/static/media/youtube.f7f1cbf6.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.da263d1b.js",
-    "static/js/2.fb35ffa8.chunk.js",
+    "static/js/runtime-main.8bc1298d.js",
+    "static/js/2.739a1d3d.chunk.js",
     "static/css/main.e9766dd9.chunk.css",
-    "static/js/main.78431642.chunk.js"
+    "static/js/main.e0c4fd6c.chunk.js"
   ]
 }
