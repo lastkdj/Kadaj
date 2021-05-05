@@ -7,9 +7,8 @@ import VideosPOV from "./Body/VideosPOV";
 import Guides from "./Body/Guides";
 import { Grid } from "@material-ui/core";
 import Addons from "./Body/Addons";
-import Asset from "./Img/Kadaj Brand/wall2.jpg";
+import Asset from "./Img/wall2.jpg";
 import { makeStyles } from "@material-ui/core";
-import Guldan from "./Img/guldan.jpg";
 
 const useStyles = makeStyles((theme) => ({
   background: {

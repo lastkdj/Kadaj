@@ -5,22 +5,21 @@ import UI from "../Img/ui.png";
 import Dialog from "@material-ui/core/Dialog";
 import Zoom from "@material-ui/core/Zoom";
 import "./AddonsStyles.css";
-import Tooltip from "@material-ui/core/Tooltip";
 import FileCopyIcon from "@material-ui/icons/FileCopy";
 
 const useStyles = makeStyles((theme) => ({
-  spec: {
+
+spec: {
     fontWeight: 600,
     color: "white",
     textDecoration: "none",
     fontFamily: "Poppins, sans-serif",
     fontSize: "1.1em",
     animation: "fadeInBot ease 1.8s",
-    marginTop: "50px",
     marginBottom: "50px",
     textAlign: "center",
     marginTop: "20px",
-    textAlign: "center",
+    
 
     [theme.breakpoints.up("md")]: {},
 
@@ -28,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up("xl")]: { marginTop: "70px", fontSize: "2.1em" },
   },
-
+  
   borderThumbnail: {
     backgroundPosition: "center",
     backgroundImage: `url(${bolvar})`,
@@ -160,11 +159,10 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Zoom direction="up" ref={ref} {...props} />;
 });
 
-const banish = "#showtooltip Banish/use [mod:shift,@focus] [] Banish";
 
 const Addons = () => {
   const [open, setOpen] = React.useState(false);
-  const [tooltip, setTooltip] = React.useState(false);
+ 
 
   const handleOpen = () => {
     setOpen(true);
@@ -209,100 +207,8 @@ const Addons = () => {
     fadeElmsmacros.forEach((el) => observer.observe(el));
   }, []);
 
-  const myBanish = () => {
-    /* Get the text field */
+  
 
-    /* Select the text field */
-    var copyText = document.getElementById("myInputBanish");
-
-    /* Select the text field */
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /* For mobile devices */
-    /* Copy the text inside the text field */
-    document.execCommand("copy");
-    setTooltip(true);
-
-    setTimeout(function () {
-      setTooltip(false);
-    }, 1000);
-    /* Alert the copied text */
-  };
-
-  const mySoulstone = () => {
-    /* Get the text field */
-
-    /* Select the text field */
-    var copyText = document.getElementById("myInputSoulstone");
-
-    /* Select the text field */
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /* For mobile devices */
-    /* Copy the text inside the text field */
-    document.execCommand("copy");
-    setTooltip(true);
-
-    setTimeout(function () {
-      setTooltip(false);
-    }, 1000);
-    /* Alert the copied text */
-  };
-
-  const myDot = () => {
-    /* Get the text field */
-
-    /* Select the text field */
-    var copyText = document.getElementById("myInputDot");
-
-    /* Select the text field */
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /* For mobile devices */
-    /* Copy the text inside the text field */
-    document.execCommand("copy");
-    setTooltip(true);
-
-    setTimeout(function () {
-      setTooltip(false);
-    }, 1000);
-    /* Alert the copied text */
-  };
-
-  const myCircle = () => {
-    /* Get the text field */
-
-    /* Select the text field */
-    var copyText = document.getElementById("myInputCircle");
-
-    /* Select the text field */
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /* For mobile devices */
-    /* Copy the text inside the text field */
-    document.execCommand("copy");
-    setTooltip(true);
-
-    setTimeout(function () {
-      setTooltip(false);
-    }, 1000);
-    /* Alert the copied text */
-  };
-
-  const myInterrupt = () => {
-    /* Get the text field */
-
-    /* Select the text field */
-    var copyText = document.getElementById("myInputInterrupt");
-
-    /* Select the text field */
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /* For mobile devices */
-    /* Copy the text inside the text field */
-    document.execCommand("copy");
-    setTooltip(true);
-
-    setTimeout(function () {
-      setTooltip(false);
-    }, 1000);
-    /* Alert the copied text */
-  };
 
   return (
     <Grid container className={classes.borderThumbnail} id="Addons">
@@ -493,7 +399,7 @@ const Addons = () => {
                 </Typography>
 
                 <FileCopyIcon
-                  onClick={myBanish}
+                  
                   style={{ cursor: "pointer", margin: "0px 20px" }}
                 />
               </Grid>
@@ -505,7 +411,7 @@ const Addons = () => {
                   Soulstone Mouseover
                 </Typography>
                 <FileCopyIcon
-                  onClick={mySoulstone}
+                 
                   style={{ cursor: "pointer", margin: "0px 20px" }}
                 />
               </Grid>
@@ -517,7 +423,7 @@ const Addons = () => {
                 </Typography>
 
                 <FileCopyIcon
-                  onClick={myDot}
+                 
                   style={{ cursor: "pointer", margin: "0px 20px" }}
                 />
               </Grid>
@@ -528,7 +434,6 @@ const Addons = () => {
                   Demonic Circle
                 </Typography>
                 <FileCopyIcon
-                  onClick={myCircle}
                   style={{ cursor: "pointer", margin: "0px 20px" }}
                 />
               </Grid>
@@ -540,7 +445,7 @@ const Addons = () => {
                   Interrupt Mouseover
                 </Typography>
                 <FileCopyIcon
-                  onClick={myInterrupt}
+                  
                   style={{ cursor: "pointer", margin: "0px 20px" }}
                 />
               </Grid>

@@ -358,8 +358,8 @@ const Spec = () => {
         } else {
           // fade out observed elements that are not in view
           return;
-        }
-      });
+                }
+                     });
     };
 
     const fadeElms = document.querySelectorAll(".fade");
