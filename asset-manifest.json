@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Kadaj/static/css/main.e9766dd9.chunk.css",
-    "main.js": "/Kadaj/static/js/main.e0c4fd6c.chunk.js",
-    "main.js.map": "/Kadaj/static/js/main.e0c4fd6c.chunk.js.map",
-    "runtime-main.js": "/Kadaj/static/js/runtime-main.8bc1298d.js",
-    "runtime-main.js.map": "/Kadaj/static/js/runtime-main.8bc1298d.js.map",
-    "static/js/2.739a1d3d.chunk.js": "/Kadaj/static/js/2.739a1d3d.chunk.js",
-    "static/js/2.739a1d3d.chunk.js.map": "/Kadaj/static/js/2.739a1d3d.chunk.js.map",
-    "static/js/3.40bc765f.chunk.js": "/Kadaj/static/js/3.40bc765f.chunk.js",
-    "static/js/3.40bc765f.chunk.js.map": "/Kadaj/static/js/3.40bc765f.chunk.js.map",
+    "main.css": "/Kadaj/static/css/main.298ece00.chunk.css",
+    "main.js": "/Kadaj/static/js/main.857141f0.chunk.js",
+    "main.js.map": "/Kadaj/static/js/main.857141f0.chunk.js.map",
+    "runtime-main.js": "/Kadaj/static/js/runtime-main.da263d1b.js",
+    "runtime-main.js.map": "/Kadaj/static/js/runtime-main.da263d1b.js.map",
+    "static/js/2.926f16c3.chunk.js": "/Kadaj/static/js/2.926f16c3.chunk.js",
+    "static/js/2.926f16c3.chunk.js.map": "/Kadaj/static/js/2.926f16c3.chunk.js.map",
+    "static/js/3.fd18c762.chunk.js": "/Kadaj/static/js/3.fd18c762.chunk.js",
+    "static/js/3.fd18c762.chunk.js.map": "/Kadaj/static/js/3.fd18c762.chunk.js.map",
     "index.html": "/Kadaj/index.html",
-    "static/css/main.e9766dd9.chunk.css.map": "/Kadaj/static/css/main.e9766dd9.chunk.css.map",
-    "static/js/2.739a1d3d.chunk.js.LICENSE.txt": "/Kadaj/static/js/2.739a1d3d.chunk.js.LICENSE.txt",
+    "static/css/main.298ece00.chunk.css.map": "/Kadaj/static/css/main.298ece00.chunk.css.map",
+    "static/js/2.926f16c3.chunk.js.LICENSE.txt": "/Kadaj/static/js/2.926f16c3.chunk.js.LICENSE.txt",
     "static/media/Awareness.ad8b6ec3.png": "/Kadaj/static/media/Awareness.ad8b6ec3.png",
     "static/media/aff.d251cc3c.png": "/Kadaj/static/media/aff.d251cc3c.png",
     "static/media/affimg2.02fb2d32.jpg": "/Kadaj/static/media/affimg2.02fb2d32.jpg",
@@ -66,6 +66,7 @@
     "static/media/rightimage.542b1ada.jpg": "/Kadaj/static/media/rightimage.542b1ada.jpg",
     "static/media/runecarver.0b2daeb2.jpg": "/Kadaj/static/media/runecarver.0b2daeb2.jpg",
     "static/media/sacrolash.70a64166.png": "/Kadaj/static/media/sacrolash.70a64166.png",
+    "static/media/Styles.css": "/Kadaj/static/media/scrollbutton.18577d7e.jpg",
     "static/media/shriekwing.c2f84d0c.jpg": "/Kadaj/static/media/shriekwing.c2f84d0c.jpg",
     "static/media/shriekwingphone.8412c918.jpg": "/Kadaj/static/media/shriekwingphone.8412c918.jpg",
     "static/media/shriekwingtalents.40380dd4.png": "/Kadaj/static/media/shriekwingtalents.40380dd4.png",
@@ -93,9 +94,9 @@
     "static/media/youtube.f7f1cbf6.svg": "/Kadaj/static/media/youtube.f7f1cbf6.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8bc1298d.js",
-    "static/js/2.739a1d3d.chunk.js",
-    "static/css/main.e9766dd9.chunk.css",
-    "static/js/main.e0c4fd6c.chunk.js"
+    "static/js/runtime-main.da263d1b.js",
+    "static/js/2.926f16c3.chunk.js",
+    "static/css/main.298ece00.chunk.css",
+    "static/js/main.857141f0.chunk.js"
   ]
 }
