@@ -9,6 +9,7 @@ import { Grid } from "@material-ui/core";
 import Addons from "./Body/Addons";
 import Asset from "./Img/wall2.jpg";
 import { makeStyles } from "@material-ui/core";
+import ScrollToTop from "./Body/ScrollToTop";
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <Grid id="Home">
+      <ScrollToTop />
       <Grid className={classes.background}>
         <Header />
         <Banner />

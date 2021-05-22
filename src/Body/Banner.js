@@ -69,6 +69,7 @@ const Banner = () => {
   return (
     <Grid container alignItems="flex-end" className={classes.banner}>
       <Particles isMobile={isMobile} />
+
       <Grid xs={12} container justify="center">
         <a href="https://www.twitch.tv/kadajgaming">
           <Avatar sizes="large" className={classes.large}>

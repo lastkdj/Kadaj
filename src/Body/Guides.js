@@ -30,7 +30,7 @@ const Guides = () => {
   const classes = useStyles();
   return (
     <Grid container className={classes.asset1} id="Guides">
-          <Affliction />
+      <Affliction />
       <Demonology />
       <Destruction />
     </Grid>
